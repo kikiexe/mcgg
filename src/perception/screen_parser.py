@@ -51,11 +51,23 @@ class ScreenParser:
     def detect_combat_active(self, frame: np.ndarray) -> bool:
         """
         Mendeteksi apakah ronde sedang dalam fase tempur animasi aktif.
-        Saat bertarung, bilah HP musuh (Red HP Bar) muncul di papan catur (Y: 200..700, X: 300..1600).
+        Kriteria:
+        1. Bilah HP musuh (Red HP Bar) memiliki geometri persegi panjang horizontal pipih
+           (lebar 25..120 px, tinggi 3..10 px, rasio aspek w/h >= 4.0).
+        2. Area pemindaian dibatasi pada papan catur murni (Y: 180..680, X: 400..1550),
+           mengecualikan area laci toko bawah dan hero card portraits.
         """
-        board_roi = frame[200:700, 300:1600]
-        red_hp_mask = (board_roi[:, :, 2] > 180) & (board_roi[:, :, 1] < 50) & (board_roi[:, :, 0] < 50)
-        return int(np.sum(red_hp_mask)) > 250
+        board_roi = frame[180:680, 400:1550]
+        red_mask = (board_roi[:, :, 2] > 180) & (board_roi[:, :, 1] < 60) & (board_roi[:, :, 0] < 60)
+        contours, _ = cv2.findContours(red_mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        
+        hp_bar_count = 0
+        for c in contours:
+            _, _, w, h = cv2.boundingRect(c)
+            if 25 <= w <= 120 and 3 <= h <= 10 and (w / max(1, h)) >= 4.0:
+                hp_bar_count += 1
+                
+        return hp_bar_count >= 1
 
     def extract_game_status(self, frame: np.ndarray) -> Dict[str, Any]:
         gold = self.parse_digits_in_region(frame, StatusRegions.GOLD_REGION, default=0)

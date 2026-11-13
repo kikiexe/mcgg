@@ -4,6 +4,7 @@ Decision Core: Multi-Provider LLM Brain Adapter with Robust Schema Parsing
 import os
 import json
 import re
+import time
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 import litellm
@@ -65,27 +66,39 @@ class LLMBrain:
         )
 
     def decide_turn(self, state: GameState) -> TurnDecision:
+        t0 = time.perf_counter()
         norm_round = state.round.replace("I-", "1-").strip()
 
-        # ATURAN KHUSUS RONDE 1-1: Langsung Deploy hero gratis dari Bench ke Papan Catur!
+        # ATURAN KHUSUS RONDE 1-1: Belanja hero pembuka (jika gold cukup) lalu siapkan papan
         if norm_round == "1-1":
+            actions = []
+            if state.gold >= 1 and state.shop:
+                for slot in state.shop:
+                    if not slot.is_empty and slot.cost <= state.gold:
+                        actions.append(ActionCommand(
+                            action="BUY_HERO",
+                            slot=slot.slot,
+                            reasoning=f"Membeli hero pembuka {slot.hero_name} ({slot.cost}G)"
+                        ))
+                        break
+            actions.append(ActionCommand(action="CLOSE_SHOP", slot=None, reasoning="Tutup shop agar formasi terlihat jelas"))
+            actions.append(ActionCommand(action="END_TURN", slot=None, reasoning="Selesai belanja ronde 1-1, lanjut ke deploy otomatis"))
+
+            latency_ms = (time.perf_counter() - t0) * 1000.0
             return TurnDecision(
-                strategic_plan="Ronde 1-1: Pasang hero gratis dari bench ke papan catur untuk mengalahkan creep pertama.",
+                strategic_plan="Ronde 1-1: Beli hero pembuka lalu siapkan deploy otomatis ke papan catur.",
                 policy_source="fast_rule",
-                actions=[
-                    ActionCommand(action="CLOSE_SHOP", slot=None, reasoning="Tutup shop agar papan catur terlihat jelas"),
-                    ActionCommand(action="DEPLOY", slot=1, reasoning="Menaruh Hero Gratis 1 ke papan catur"),
-                    ActionCommand(action="DEPLOY", slot=2, reasoning="Menaruh Hero Gratis 2 ke papan catur"),
-                    ActionCommand(action="DEPLOY", slot=3, reasoning="Menaruh Hero Gratis 3 ke papan catur"),
-                    ActionCommand(action="END_TURN", slot=None, reasoning="Formasi creep ronde 1-1 siap bertarung")
-                ]
+                latency_ms=latency_ms,
+                actions=actions
             )
 
         # ATURAN KHUSUS RONDE 1-2: Level Up ke Level 4 untuk membuka slot hero ke-4
         if norm_round == "1-2" and state.gold >= 4 and state.level == 3:
+            latency_ms = (time.perf_counter() - t0) * 1000.0
             return TurnDecision(
                 strategic_plan="Ronde 1-2: Naikkan Level ke 4 (-4G) untuk menambah kapasitas papan catur menjadi 4 hero.",
                 policy_source="fast_rule",
+                latency_ms=latency_ms,
                 actions=[
                     ActionCommand(action="LEVEL_UP", slot=None, reasoning="Menaikkan level ke Level 4 agar kapasitas hero menjadi 4"),
                     ActionCommand(action="CLOSE_SHOP", slot=None, reasoning="Tutup shop agar formasi terlihat rapi"),
@@ -94,10 +107,20 @@ class LLMBrain:
             )
 
         system_prompt = self.build_system_prompt()
-        user_content = f"STATUS GAME SAAT INI:\n{state.model_dump_json(indent=2)}\n\nBerikan keputusan aksi terbaik Anda dalam format JSON:"
+        user_content = (
+            f"STATUS PERTANDINGAN:\n"
+            f"- Ronde: {state.round} | Sisa Waktu: {state.timer_seconds}s\n"
+            f"- Saldo Gold: {state.gold}G | Level: {state.level} (Kapasitas Board: {state.level} hero)\n"
+            f"- HP Commander: {state.commander_hp} | Hero di Papan: {state.board_deployed_count}\n"
+            f"- Slot Bench Terisi: {state.bench}\n"
+            f"- Pilihan Kartu Toko: {[s.model_dump() for s in state.shop]}\n\n"
+            f"Tentukan keputusan aksi belanja terbaik dalam format JSON."
+        )
 
         if not self.api_key or self.api_key.strip() == "":
-            return self._offline_heuristic_policy(state)
+            dec = self._offline_heuristic_policy(state)
+            dec.latency_ms = (time.perf_counter() - t0) * 1000.0
+            return dec
 
         try:
             kwargs = {
@@ -132,11 +155,15 @@ class LLMBrain:
                 if "reasoning" not in act:
                     act["reasoning"] = "Aksi adaptasi otomatis dari LLM"
 
+            latency_ms = (time.perf_counter() - t0) * 1000.0
+            parsed_json["latency_ms"] = latency_ms
             return TurnDecision.model_validate(parsed_json)
 
         except Exception as e:
             print(f"[LLM Warning] Parsing LLM gagal ({e}), beralih ke rule-based fallback.")
-            return self._offline_heuristic_policy(state)
+            dec = self._offline_heuristic_policy(state)
+            dec.latency_ms = (time.perf_counter() - t0) * 1000.0
+            return dec
 
     def _offline_heuristic_policy(self, state: GameState) -> TurnDecision:
         actions = []

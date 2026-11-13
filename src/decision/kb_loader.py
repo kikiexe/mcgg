@@ -53,13 +53,21 @@ class KnowledgeBase:
 
     def get_summary_prompt_context(self) -> str:
         """Returns a concise token-efficient summary of core Patch 7.2 rules for LLM prompt."""
+        synergies_summary = ", ".join([
+            f"{s.get('Nama Sinergi')}" for s in self.synergies if s.get('Nama Sinergi')
+        ])
+        
+        all_heroes_summary = "\n".join([
+            f"- {h.get('Nama Hero')} ({int(float(h.get('Harga Gold', 1)))}G): {h.get('Sinergi Lengkap', '')}"
+            for h in self.heroes if h.get('Nama Hero')
+        ])
+
         return (
             "=== ATURAN EKONOMI MCGG PATCH 7.2 ===\n"
-            "- Bunga Maksimal: +4 Gold jika saldo akhir ronde >= 20 Gold.\n"
-            "- Bunga Tingkat 1: +2 Gold jika saldo akhir ronde 10 - 19 Gold.\n"
-            "- Biaya Reroll Shop: 2 Gold | Biaya Beli EXP: 4 Gold (+4 EXP).\n"
-            "- Jaga disiplin ekonomi: Hindari belanja berlebihan jika saldo turun di bawah 20 Gold, kecuali HP sekarat!\n\n"
-            "=== DAFTAR HERO & SINERGI LENGKAP PATCH 7.2 ===\n"
-            + ", ".join([f"{h.get('Nama Hero')} ({int(float(h.get('Harga Gold', 1)))}G - {h.get('Sinergi Lengkap')})" for h in self.heroes[:30]])
-            + "\n...(dan hero lainnya)"
+            "1. Pendapatan Dasar: +5G (Babak I-1 s/d II-6), +6G (Babak III), +7G (Babak IV+).\n"
+            "2. Bunga Gold (Interest) di akhir ronde: +2G jika Gold >= 10, +4G (maksimal) jika Gold >= 20.\n"
+            "3. Biaya: Reroll Toko = 2G | Beli EXP (Level Up) = 4G (+4 EXP).\n"
+            "4. Strategi Tabungan: Capai 20G secepatnya untuk memaksimalkan bunga +4G tiap ronde (slow-roll di atas 20G).\n\n"
+            f"=== DAFTAR 21 SINERGI PATCH 7.2 ===\n{synergies_summary}\n\n"
+            f"=== DAFTAR LENGKAP 58 HERO PATCH 7.2 ===\n{all_heroes_summary}"
         )

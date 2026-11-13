@@ -1,6 +1,6 @@
 """
-MCGG Autonomous Agent - Live Production Loop with Zero Hardcoded Coordinates
-Uses Computer Vision (Canny Hero Detector + Dynamic OCR Bounding Boxes)
+MCGG Autonomous Agent - Live Production Loop with Dynamic Vision & Single Flow Action Pipeline
+Integrated with Computer Vision, Win32 DirectInput, and PRD Section 5 Research Logger
 """
 import os
 import sys
@@ -16,6 +16,7 @@ from src.perception.ui_detector import DynamicUIDetector
 from src.decision.models import GameState, ShopSlot, TurnDecision, ActionCommand
 from src.decision.kb_loader import KnowledgeBase
 from src.decision.llm_router import LLMBrain
+from src.decision.research_logger import ResearchLogger
 from src.action.executor import ActionExecutor
 from src.action.window_manager import GameWindowManager
 from src.constants.coordinates import BoardCoords
@@ -41,6 +42,7 @@ def run_live_bot():
     hero_det = HeroDetector()
     ui_det = DynamicUIDetector()
     brain = LLMBrain(config, kb)
+    logger = ResearchLogger()
     executor = ActionExecutor(action_delay_ms=config.get("delays", {}).get("action_delay_ms", 180))
     win_mgr = GameWindowManager(title_sub)
     cap = ScreenCapture(monitor_idx=1)
@@ -89,13 +91,13 @@ def run_live_bot():
             if special_phase == "GOGO_CARD" and last_acted_phase != f"GOGO_{current_round}":
                 print(f"\n[EVENT GO GO CARD] Memindai letak kartu kekuatan di layar...")
                 win_mgr.focus_game_window()
-                cards = ui_det.detect_clickable_gogo_cards(frame)
-                card_choice = 1
-                if cards and cards[0]["center"][0] > 960:
-                    card_choice = 2
-
-                print(f"[ACTION] Memilih Kartu Go Go Slot {card_choice} via Double-Click...")
-                executor.pick_gogo_card(card_choice)
+                card_boxes = ui_det.detect_gogo_cards(frame)
+                if card_boxes:
+                    print(f"[UI DETECTOR] Terdeteksi {len(card_boxes)} Go Go Card via Contours.")
+                    executor.pick_gogo_card(1)
+                else:
+                    print("[FALLBACK] Memilih Go Go Card Slot 1 (Koordinat Default)...")
+                    executor.pick_gogo_card(1)
                 last_acted_phase = f"GOGO_{current_round}"
                 time.sleep(1.5)
                 continue
@@ -111,53 +113,24 @@ def run_live_bot():
                 time.sleep(1.0)
                 
                 print("[EQUIP] Memasang item ke Hero di Papan Catur...")
-                executor.equip_item_to_hero(hero_target_idx=1)
+                executor.equip_item_to_hero(item_bag_idx=1, hero_target_idx=1)
                 continue
 
             # -------------------------------------------------------------
             # SKENARIO 4: FASE PERSIAPAN PERTANDINGAN
             # -------------------------------------------------------------
-            # Saring fase persiapan: Label ronde valid, timer aktif, dan BUKAN fase combat animasi
+            # Syarat: Label ronde valid, ada tanda "-", timer aktif, dan bukan combat aktif
             is_prep_phase = (current_round != "UNKNOWN") and ("-" in current_round) and (timer > 2) and (not is_combat)
 
             if is_prep_phase and current_round != last_acted_round:
+                turn_start_time = time.perf_counter()
                 print(f"\n=======================================================")
-                print(f"[FASE AKTIF] Ronde: {current_round} | Timer: {timer}s | Saldo: {gold}G | Lv: {level}")
+                print(f"[FASE PERSIAPAN] Ronde: {current_round} | Timer: {timer}s | Saldo: {gold}G | Lv: {level}")
                 print(f"=======================================================")
 
                 win_mgr.focus_game_window()
 
-                # Hitung kebutuhan deploy berdasarkan kapasitas board (Level)
-                heroes_needed = max(0, level - board_deployed_count)
-                occupied_bench = hero_det.scan_occupied_bench_slots(frame)
-                
-                if heroes_needed > 0 and occupied_bench:
-                    print(f"[VISION BENCH] Terdeteksi {len(occupied_bench)} hero di bench. Membutuhkan deploy: {heroes_needed} hero.")
-                    executor.close_shop()
-                    time.sleep(0.2)
-
-                    target_coords = [
-                        BoardCoords.CHESSBOARD_GRID[(3, 4)],  # Center Back
-                        BoardCoords.CHESSBOARD_GRID[(3, 3)],  # Mid-Left Back
-                        BoardCoords.CHESSBOARD_GRID[(3, 5)],  # Mid-Right Back
-                        BoardCoords.CHESSBOARD_GRID[(3, 2)],  # Far-Left Back
-                        BoardCoords.CHESSBOARD_GRID[(3, 6)],  # Far-Right Back
-                        BoardCoords.CHESSBOARD_GRID[(2, 4)],  # Center Mid
-                        BoardCoords.CHESSBOARD_GRID[(2, 3)],  # Mid-Left Mid
-                        BoardCoords.CHESSBOARD_GRID[(2, 5)],  # Mid-Right Mid
-                    ]
-
-                    deploy_count = min(len(occupied_bench), heroes_needed)
-                    for i in range(deploy_count):
-                        slot_num, cx, cy = occupied_bench[i]
-                        target_idx = (board_deployed_count + i) % len(target_coords)
-                        target_xy = target_coords[target_idx]
-                        print(f"[LIVE DEPLOY] Menarik Hero Slot {slot_num} dari ({cx}, {cy}) ke Board ({target_xy[0]}, {target_xy[1]})...")
-                        executor.drag_hero_to_board(cx, cy, target_xy[0], target_xy[1], label=f"Deploy Hero Slot {slot_num}")
-                        time.sleep(0.15)
-                    board_deployed_count += deploy_count
-
-                # Ekstraksi Toko & Keputusan LLM
+                # 1. Ekstraksi Toko & Bench saat toko terbuka
                 raw_shop = parser.extract_shop_cards(frame)
                 shop_slots = []
                 for s in raw_shop:
@@ -168,7 +141,7 @@ def run_live_bot():
                         is_empty = s["is_empty"]
                     else:
                         hero_name = s["raw_text"].strip() if s["raw_text"].strip() else "KOSONG"
-                        cost = 99  # Biaya tidak terjangkau untuk data noise
+                        cost = 99
                         is_empty = True
 
                     shop_slots.append(ShopSlot(
@@ -178,24 +151,92 @@ def run_live_bot():
                         is_empty=is_empty
                     ))
 
+                # Pindai slot bench yang terisi hero
+                initial_occupied_bench = hero_det.scan_occupied_bench_slots(frame)
+                bench_indices = [s[0] for s in initial_occupied_bench]
+
                 game_state = GameState(
                     round=current_round,
                     timer_seconds=timer,
                     gold=gold,
                     level=level,
+                    commander_hp=100,
+                    board_deployed_count=board_deployed_count,
+                    bench=bench_indices,
                     shop=shop_slots,
                     current_phase="PREPARATION"
                 )
 
-                print("[THINKING] Menghubungi LLM Brain untuk strategi...")
+                print(f"[THINKING] Menghubungi Brain ({brain.provider.upper()}) untuk keputusan belanja...")
                 decision: TurnDecision = brain.decide_turn(game_state)
-                print(f"[DECISION] Strategi: {decision.strategic_plan}")
+                print(f"[DECISION] [{decision.policy_source.upper()}] {decision.strategic_plan}")
 
+                # 2. Eksekusi Aksi Belanja TERLEBIH DAHULU selagi toko terbuka
+                executed_actions: List[Dict[str, Any]] = []
                 for act in decision.actions:
-                    executor.execute_command(act)
+                    if act.action in ("BUY_HERO", "LEVEL_UP", "REROLL"):
+                        executor.execute_command(act)
+                        executed_actions.append(act.model_dump())
+                        time.sleep(0.18)
+
+                # 3. Tutup Toko dengan aman (idempotent klik netral)
+                executor.close_shop()
+                executed_actions.append({
+                    "action": "CLOSE_SHOP",
+                    "slot": None,
+                    "reasoning": "Menutup toko sebelum inspeksi papan dan deploy hero"
+                })
+                time.sleep(0.25)
+
+                # 4. Ambil FRAME BARU setelah toko tertutup untuk memastikan keakuratan bench
+                frame_board = cap.capture_frame()
+                current_occupied_bench = hero_det.scan_occupied_bench_slots(frame_board)
+
+                # 5. Pemasangan (Deploy) Hero dari Bench ke Papan Catur sesuai kapasitas Level
+                heroes_needed = max(0, level - board_deployed_count)
+                if heroes_needed > 0 and current_occupied_bench:
+                    print(f"[BOARD DEPLOY] Kapasitas level: {level}, terpasang: {board_deployed_count}, butuh: {heroes_needed} hero.")
+                    
+                    target_coords = [
+                        BoardCoords.CHESSBOARD_GRID[(3, 4)],  # Baris 3 Tengah
+                        BoardCoords.CHESSBOARD_GRID[(3, 3)],  # Baris 3 Tengah-Kiri
+                        BoardCoords.CHESSBOARD_GRID[(3, 5)],  # Baris 3 Tengah-Kanan
+                        BoardCoords.CHESSBOARD_GRID[(3, 2)],  # Baris 3 Kiri Luar
+                        BoardCoords.CHESSBOARD_GRID[(3, 6)],  # Baris 3 Kanan Luar
+                        BoardCoords.CHESSBOARD_GRID[(2, 4)],  # Baris 2 Tengah
+                        BoardCoords.CHESSBOARD_GRID[(2, 3)],  # Baris 2 Kiri
+                        BoardCoords.CHESSBOARD_GRID[(2, 5)],  # Baris 2 Kanan
+                    ]
+
+                    deploy_count = min(len(current_occupied_bench), heroes_needed)
+                    for i in range(deploy_count):
+                        slot_num, cx, cy = current_occupied_bench[i]
+                        target_idx = (board_deployed_count + i) % len(target_coords)
+                        target_xy = target_coords[target_idx]
+                        
+                        print(f"[LIVE DEPLOY] Menarik Hero Slot {slot_num} dari ({cx}, {cy}) ke Board ({target_xy[0]}, {target_xy[1]})...")
+                        executor.drag_hero_to_board(cx, cy, target_xy[0], target_xy[1], label=f"Deploy Slot {slot_num}")
+                        
+                        executed_actions.append({
+                            "action": "DEPLOY",
+                            "slot": slot_num,
+                            "reasoning": f"Deploy hero slot {slot_num} ke grid catur {target_xy}"
+                        })
+                        time.sleep(0.2)
+
+                    board_deployed_count += deploy_count
+
+                # 6. Catat log pertandingan turn-by-turn ke Research Logger (PRD Bagian 5)
+                turn_latency_ms = (time.perf_counter() - turn_start_time) * 1000.0
+                logger.log_turn(
+                    state=game_state,
+                    decision=decision,
+                    executed_actions=executed_actions,
+                    execution_latency_ms=turn_latency_ms
+                )
 
                 last_acted_round = current_round
-                print(f"[DONE] Ronde {current_round} selesai dieksekusi. Menunggu babak selanjutnya...")
+                print(f"[DONE] Ronde {current_round} selesai dieksekusi ({turn_latency_ms:.1f}ms). Menunggu babak berikutnya...\n")
 
             time.sleep(loop_interval)
 

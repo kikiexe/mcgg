@@ -15,6 +15,9 @@ class GameState(BaseModel):
     timer_seconds: int = Field(default=30, description="Sisa waktu fase persiapan (detik)")
     gold: int = Field(default=0, ge=0, description="Jumlah saldo gold saat ini")
     level: int = Field(default=3, ge=3, le=10, description="Level commander saat ini")
+    commander_hp: int = Field(default=100, ge=0, le=100, description="Sisa HP Commander")
+    board_deployed_count: int = Field(default=0, ge=0, description="Jumlah hero yang berada di papan catur")
+    bench: List[int] = Field(default_factory=list, description="Daftar nomor slot bench yang terisi hero (1-8)")
     shop: List[ShopSlot] = Field(default_factory=list, description="5 Slot kartu di shop")
     current_phase: Literal["PREPARATION", "COMBAT", "GOGO_CARD", "ITEM_SELECTION"] = Field(
         default="PREPARATION", description="Fase game saat ini"
@@ -40,4 +43,5 @@ class TurnDecision(BaseModel):
     policy_source: Literal["llm", "offline_heuristic", "fast_rule"] = Field(
         default="llm", description="Sumber kebijakan keputusan (llm, offline_heuristic, atau fast_rule)"
     )
+    latency_ms: float = Field(default=0.0, description="Durasi komputasi keputusan (ms)")
     actions: List[ActionCommand] = Field(default_factory=list, description="Urutan tindakan yang harus dieksekusi")
