@@ -1,0 +1,1401 @@
+{
+  "metadata": {
+    "patch": "7.2",
+    "total": 199
+  },
+  "gogo_cards": [
+    {
+      "Nama Kartu": "Lancelot's Power (Commander Lancelot)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Lancelot",
+      "Tipe Fokus": "Gold & Ekonomi",
+      "Deskripsi Efek": "Dapatkan 2 Gold per babak saat mencapai Commander Lv.5."
+    },
+    {
+      "Nama Kartu": "Alice's Power (Commander Alice)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Alice",
+      "Tipe Fokus": "EXP & Hero Buff",
+      "Deskripsi Efek": "Dapatkan 12 EXP. Hero yang dipilih skill Alice mendapat 30% Hybrid ATK tambahan. (Eksklusif untuk Commander Alice)"
+    },
+    {
+      "Nama Kartu": "Harley's Power (Commander Harley)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Harley",
+      "Tipe Fokus": "Gold & Shop",
+      "Deskripsi Efek": "Dapatkan 6 Gold. Shop akan auto refresh sekali untuk menampilkan minimal Hero 4-Gold ×2."
+    },
+    {
+      "Nama Kartu": "Popol and Kupa's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Hero & Gold",
+      "Deskripsi Efek": "Mulai dari Round II-1, buat Copy Trap. Sekali per babak, jika musuh menginjaknya, dapatkan versi 1-Star musuh itu dan 1 Gold. Jika tidak, dapatkan 1 Gold."
+    },
+    {
+      "Nama Kartu": "Minotaur's Power (Commander Minotaur)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Minotaur",
+      "Tipe Fokus": "Equipment",
+      "Deskripsi Efek": "Pilih sebuah Equipment untuk diperkuat. Bisa dipakai 2 kali. Dapatkan Equipment acak ×2."
+    },
+    {
+      "Nama Kartu": "Kagura's Power (Commander Kagura)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Kagura",
+      "Tipe Fokus": "Hero Buff & Gold",
+      "Deskripsi Efek": "Pilih sebuah Hero. Saat battle mulai, dia mendapat 20% Hybrid Lifesteal dan 30% Hybrid ATK. Dapatkan 9 Gold."
+    },
+    {
+      "Nama Kartu": "Johnson's Power (Commander Johnson)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Johnson",
+      "Tipe Fokus": "Hero Buff & Pool",
+      "Deskripsi Efek": "Tambah jumlah Johnny di Hero Pool sebanyak 5. Johnny mendapat 35% Hybrid ATK dan 30% Max HP. (Eksklusif untuk Commander Johnson)"
+    },
+    {
+      "Nama Kartu": "Lunox's Power (Commander Lunox)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Lunox",
+      "Tipe Fokus": "Gold & Sinergi",
+      "Deskripsi Efek": "Dapatkan 10 Gold. Saat pertama kali mengaktifkan Sinergi ke 6, dapatkan 20 Gold lagi. (Eksklusif untuk Commander Lunox)"
+    },
+    {
+      "Nama Kartu": "Lylia's Power (Commander Lylia)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Lylia",
+      "Tipe Fokus": "Hero & Equipment",
+      "Deskripsi Efek": "Saat Commander mencapai Lv.6, terima Hero 5-Gold beserta 2 Equipment."
+    },
+    {
+      "Nama Kartu": "Aamon's Power (Commander Aamon)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Aamon",
+      "Tipe Fokus": "Gold & Star-Up",
+      "Deskripsi Efek": "Dapatkan 4 Gold setiap kali Hero mencapai 2-Star (total maksimal 20 Gold)."
+    },
+    {
+      "Nama Kartu": "Cyclops' Power (Commander Cyclops)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Cyclops",
+      "Tipe Fokus": "Gold & Eliminasi",
+      "Deskripsi Efek": "Dapatkan 12 Gold. Saat Commander mana pun tereliminasi, dapatkan 15% total cost Hero yang mereka deploy sebagai Gold."
+    },
+    {
+      "Nama Kartu": "Chou's Power (Commander Chou)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Chou",
+      "Tipe Fokus": "Equipment",
+      "Deskripsi Efek": "Dapatkan Chou's Sash. Setelah membunuh 4 musuh, dapatkan 1 Equipment Chest. (Maks: 4 chest)"
+    },
+    {
+      "Nama Kartu": "Wanwan's Power (Commander Wanwan)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Wanwan",
+      "Tipe Fokus": "Gold & Kill",
+      "Deskripsi Efek": "Punya 50% peluang mendapat 1 Gold setiap kali kamu membunuh musuh (Maks Gold: 35)."
+    },
+    {
+      "Nama Kartu": "Nana's Power (Commander Nana)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Nana",
+      "Tipe Fokus": "Pertahanan & Gold",
+      "Deskripsi Efek": "Dapatkan 1 Equipment Chest dan 8 Gold. Commander kebal terhadap DMG fatal sebanyak satu kali."
+    },
+    {
+      "Nama Kartu": "Ling's Power (Commander Ling)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Ling",
+      "Tipe Fokus": "Hero Tier Tinggi",
+      "Deskripsi Efek": "Di Commander Lv.4, 5, dan 7, dapatkan Hero 4-Gold acak yang sama."
+    },
+    {
+      "Nama Kartu": "Layla's Power (Commander Layla)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Layla",
+      "Tipe Fokus": "Hero & Damage",
+      "Deskripsi Efek": "Setiap 50000 DMG yang diberikan semua sekutu, dapatkan 1 Hero dari Sinergi yang paling aktif."
+    },
+    {
+      "Nama Kartu": "Vale's Power (Commander Vale)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Vale",
+      "Tipe Fokus": "Hero & Gold",
+      "Deskripsi Efek": "Dapatkan 1 pembelian Hero gratis dan 1 Gold setiap Commander Level naik."
+    },
+    {
+      "Nama Kartu": "Zilong's Power (Commander Zilong)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Zilong",
+      "Tipe Fokus": "Equipment & Trait",
+      "Deskripsi Efek": "Great Dragon Spear + 30% Hybrid ATK. Shop otomatis refresh untuk mengisi semua slot dengan trait-nya. Pilih 1 trait secara gratis. (Eksklusif untuk Commander Zilong)"
+    },
+    {
+      "Nama Kartu": "Fanny's Power (Commander Fanny)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Fanny",
+      "Tipe Fokus": "Kapasitas Hero",
+      "Deskripsi Efek": "Setelah Commander mencapai Lv.5, Hero Capacity +1."
+    },
+    {
+      "Nama Kartu": "Moskov's Power (Commander Moskov)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Moskov",
+      "Tipe Fokus": "Hero Berjenjang",
+      "Deskripsi Efek": "Dapatkan Hero 1-Gold acak langsung. Di setiap babak berikutnya, dapatkan Hero 2-Gold, 3-Gold, 4-Gold, dan 5-Gold acak secara berurutan."
+    },
+    {
+      "Nama Kartu": "Guinevere's Power (Commander Guinevere)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Guinevere",
+      "Tipe Fokus": "Free Hero & Shop",
+      "Deskripsi Efek": "Selama 13 babak berikutnya, 1 Hero gratis muncul di Shop setelah auto-refresh di awal setiap babak."
+    },
+    {
+      "Nama Kartu": "Lukas's Power (Commander Lukas)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Lukas",
+      "Tipe Fokus": "Buff & Gold",
+      "Deskripsi Efek": "Dapatkan 12 Gold. Sacred Beast mendapat 30% DMG tambahan dan 30% HP. (Eksklusif untuk Commander Lukas)"
+    },
+    {
+      "Nama Kartu": "Miya's Power (Commander Miya)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Miya",
+      "Tipe Fokus": "Equipment & Gold",
+      "Deskripsi Efek": "Dapatkan 12 Gold. Dapatkan Busur Panjang Bulan. Saat dipakai, memberi 20% ATK Speed. Saat membunuh musuh, memulihkan 20% Max HP sekutu."
+    },
+    {
+      "Nama Kartu": "Aurora's Power (Commander Aurora)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Aurora",
+      "Tipe Fokus": "Ekonomi & Reward",
+      "Deskripsi Efek": "Hingga 6 kali per match: Jika kamu tidak membeli Hero apa pun dalam satu babak, terima hadiah acak senilai minimal 4 Gold saat babak berikutnya mulai."
+    },
+    {
+      "Nama Kartu": "Karina's Power (Commander Karina)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Karina",
+      "Tipe Fokus": "Equipment Buff & Gold",
+      "Deskripsi Efek": "Dapatkan 6 Gold. Twinblades mendapat 40% ATK Speed. (Eksklusif untuk Commander Karina)"
+    },
+    {
+      "Nama Kartu": "Valir's Power (Commander Valir)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Valir",
+      "Tipe Fokus": "Gold & Random Card",
+      "Deskripsi Efek": "Dapatkan 4 Gold. Dapatkan Commander Power Card acak."
+    },
+    {
+      "Nama Kartu": "Dyrroth's Power (Commander Dyrroth)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Dyrroth",
+      "Tipe Fokus": "Devour & Upgrade",
+      "Deskripsi Efek": "Setiap 3 babak, devour satu Hero 1-Star dari slot-mu dan beri Hero acak dengan cost +1 Gold (maksimal 5-Gold). Setiap devour memberi 3 EXP."
+    },
+    {
+      "Nama Kartu": "Paquito's Power (Commander Paquito)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Paquito",
+      "Tipe Fokus": "Equipment & Duplikat",
+      "Deskripsi Efek": "Dapatkan Glory Gloves. Pasang ke Hero berbiaya 3-Gold atau lebih rendah untuk mendapat 2 duplikat 1-Star-nya dan 4 Gold."
+    },
+    {
+      "Nama Kartu": "Gusion's Power (Commander Gusion)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Gusion",
+      "Tipe Fokus": "Sinergi Crystal & Gold",
+      "Deskripsi Efek": "Dapatkan 1 Role Magic Crystal Chest dan 3 Gold."
+    },
+    {
+      "Nama Kartu": "Karina's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Equipment & Eksekusi",
+      "Deskripsi Efek": "Dapatkan Twinblades. Saat dipakai, mengeksekusi musuh di sekitar dengan HP di bawah 18%. Setiap eksekusi memberi 2% DMG tambahan (maks 36%)."
+    },
+    {
+      "Nama Kartu": "Zilong's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Equipment & Trait",
+      "Deskripsi Efek": "Dapatkan Great Dragon Spear. Saat dipakai, memberi 20% peluang memicu serangan tambahan setiap Basic ATK. Ambil trait dari Shop untuk meningkatkan Equipment."
+    },
+    {
+      "Nama Kartu": "Lukas's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Summon & Debuff",
+      "Deskripsi Efek": "Dapatkan 1 patung. Saat battle dimulai, patung memberi DMG dan memasang debuff, lalu meninggalkan medan perang."
+    },
+    {
+      "Nama Kartu": "Johnson's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Hero Shop & Sinergi",
+      "Deskripsi Efek": "Buka Skill Shop Johnson untuk memilih Johnny (Hero 3-Gold) dengan 2 Sinergi acak. Semua Johnny berikutnya di refresh Shop biasa akan memiliki Sinergi yang sama."
+    },
+    {
+      "Nama Kartu": "Lunox's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Gold & Blessing",
+      "Deskripsi Efek": "Dapatkan 6 Gold. Pilih salah satu Hero-mu yang belum punya Blessing untuk diberi Blessing acak."
+    },
+    {
+      "Nama Kartu": "Yu Zhong's Power (Commander Yu Zhong)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Yu Zhong",
+      "Tipe Fokus": "Card Upgrade",
+      "Deskripsi Efek": "Go Go Card berikutnya naik 1 tingkat quality. Jika sudah quality maksimum, terima Black Dragon Treasure acak sebagai gantinya."
+    },
+    {
+      "Nama Kartu": "Alice's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Hero & Star-Up",
+      "Deskripsi Efek": "Dapatkan versi 1-Star dari Hero pilihan. Salinan tambahan Hero ini otomatis digabung, langsung memberi sebagian bonus Star-Up. Bisa dipilih 3 kali."
+    },
+    {
+      "Nama Kartu": "Luo Yi's Power (Commander Luo Yi)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Luo Yi",
+      "Tipe Fokus": "Hero Duplikat",
+      "Deskripsi Efek": "Langsung dapatkan 1 Hero 3-Gold acak, lalu dapatkan Hero yang sama di setiap awal babak, hingga total 6."
+    },
+    {
+      "Nama Kartu": "Diggie's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Point & Chest",
+      "Deskripsi Efek": "Panggil Alarm Chest. Dapatkan 15 Time Point tiap babak, dan 10 Point ekstra saat menang. Setiap kali Chest mencapai Point tertentu, ia memberi hadiah lalu naik ke rarity yang lebih tinggi."
+    },
+    {
+      "Nama Kartu": "Diggie's Power (Commander Diggie)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Diggie",
+      "Tipe Fokus": "Point & Gold Chest",
+      "Deskripsi Efek": "Dapatkan 15 Time Point tambahan setiap babak. Alarm Chest terbuka 1 kali ekstra untuk memberi hadiah senilai 25 Gold. (Eksklusif untuk Commander Diggie)"
+    },
+    {
+      "Nama Kartu": "Vexana's Power (Commander Vexana)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Vexana",
+      "Tipe Fokus": "Go Go Box & Reforge",
+      "Deskripsi Efek": "Untuk 4 babak Go Go Box pertama, kamu bisa memilih satu hadiah tambahan dari yang tersisa. Setelah memilih, langsung dapatkan 1 Penempa Ulang Equipment."
+    },
+    {
+      "Nama Kartu": "Popol and Kupa's Power (Commander Popol and Kupa)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Popol dan Kupa",
+      "Tipe Fokus": "Gold & Equipment Chest",
+      "Deskripsi Efek": "Dapatkan 2 Gold saat berhasil menangkap Hero. Dapatkan 2 Equipment Chest setelah menangkap 10 Hero untuk pertama kalinya. (Eksklusif untuk Commander Popol dan Kupa)"
+    },
+    {
+      "Nama Kartu": "Ruby's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Equipment Khusus",
+      "Deskripsi Efek": "Dapatkan Sabit Amuk (memberi DMG berkala) dan Jubah Amuk (memulihkan HP & menghidupkan kembali)."
+    },
+    {
+      "Nama Kartu": "Ruby's Power (Commander Ruby)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Ruby",
+      "Tipe Fokus": "Gold & Survival",
+      "Deskripsi Efek": "Dapatkan 2 Gold untuk setiap pembawa Cloak atau Scythe yang selamat saat battle berakhir. Maksimal Gold: 35 (Eksklusif untuk Commander Ruby)"
+    },
+    {
+      "Nama Kartu": "Kalea's Power (Commander Kalea)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Kalea",
+      "Tipe Fokus": "Lucky Dice & Gold",
+      "Deskripsi Efek": "Lempar Lucky Dice sekarang dan sekali lagi di awal Stage Ⅲ untuk mendapat hadiah senilai total 21–35 Gold sesuai hasil lemparanmu."
+    },
+    {
+      "Nama Kartu": "Alucard's Power (Commander Alucard)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Alucard",
+      "Tipe Fokus": "Altar Rewards",
+      "Deskripsi Efek": "Dapatkan Demonic Altar (berisi 6 Rewards). Di Round I-2, II-2, dan III-2, kamu bisa membuang 1 hadiah dan mengambil 1 dari hadiah yang tersisa."
+    },
+    {
+      "Nama Kartu": "Freya's Power (Commander Freya)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Freya",
+      "Tipe Fokus": "Sinergi & Chest",
+      "Deskripsi Efek": "Saat mengklaim hadiah di jumlah 2 / 4 / 6 Sinergi yang diperkuat, dapatkan masing-masing 10 Gold, 1 Equipment Chest, dan 1 Enhanced Equipment Chest. (Eksklusif untuk Commander Freya)"
+    },
+    {
+      "Nama Kartu": "Freya's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Sinergi Buff",
+      "Deskripsi Efek": "Pilih sebuah Role Synergy untuk memperkuat Synergy Effects dan klaim Rewards di jumlah 2 / 4 / 6 Synergy tersebut. (Jumlah klaim dibagi untuk semua Synergy.)"
+    },
+    {
+      "Nama Kartu": "Angela's Power (Commander Angela)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Angela",
+      "Tipe Fokus": "Hero Buff & Heal DMG",
+      "Deskripsi Efek": "Hero yang dilindungi menembakkan Love Energy tiap 3s, memulihkan HP sebesar 5% Max HP mereka ke ally di jalurnya dan memberi 100 / 190 / 320 / 540 Magic DMG sesuai Stage ke musuh di jalurnya. (Eksklusif untuk Commander Angela)"
+    },
+    {
+      "Nama Kartu": "Angela's Power",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Umum / Semua Commander",
+      "Tipe Fokus": "Hero Buff & Mana",
+      "Deskripsi Efek": "Pilih seorang ally untuk dilindungi. Hero terpilih mendapat 30% Skill DMG Increase dan memulihkan 20% Mana setelah memakai skill. Saat battle mulai, lindungi 1 Hero tambahan."
+    },
+    {
+      "Nama Kartu": "Franco's Power (Commander Franco)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Franco",
+      "Tipe Fokus": "Equipment & Gold Hook",
+      "Deskripsi Efek": "Dapatkan Equipment: Plunderer's Claw. Melempar Iron Hook ke musuh terdekat, men-stun mereka dan memberi Gold sesuai biayanya. Equipment ter-upgrade setelah mengumpulkan 26 Gold."
+    },
+    {
+      "Nama Kartu": "Brody's Power (Commander Brody)",
+      "Kualitas / Kelompok": "Commander Power",
+      "Commander / Syarat": "Eksklusif Commander Brody",
+      "Tipe Fokus": "EXP & Hero 4-Gold",
+      "Deskripsi Efek": "Dapatkan 20 EXP langsung, dan dapatkan Hero 4-Gold ×2 di Round II-2."
+    },
+    {
+      "Nama Kartu": "Weapon Master's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Weapon Master",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Weapon Master Magic Crystal, Kapak Perang, dan Martis."
+    },
+    {
+      "Nama Kartu": "Echomancer's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Echomancer",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Echomancer Magic Crystal, Equipment Chest, dan Harley."
+    },
+    {
+      "Nama Kartu": "Bruiser's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Bruiser",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Bruiser Magic Crystal, Tongkat Emas, dan Belerick."
+    },
+    {
+      "Nama Kartu": "Dauntless' Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Dauntless",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Dauntless Magic Crystal, Zirah Antik, dan Balmond."
+    },
+    {
+      "Nama Kartu": "Defender's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Defender",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Defender Magic Crystal, Ancient Wrath, dan Hylos."
+    },
+    {
+      "Nama Kartu": "Swiftblade's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Swiftblade",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Swiftblade Magic Crystal, Mahkota Musim Dingin, dan Natalia."
+    },
+    {
+      "Nama Kartu": "Mage's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Mage",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Mage Magic Crystal, Spellblade Talisman, dan Zhuxin."
+    },
+    {
+      "Nama Kartu": "Marksman's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Marksman",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Marksman Magic Crystal, Tongkat Emas, dan Granger."
+    },
+    {
+      "Nama Kartu": "Stargazer's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Stargazer",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Stargazer Magic Crystal, Ice Queen Wand, dan Luo Yi."
+    },
+    {
+      "Nama Kartu": "Dragon Altar's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Dragon Altar",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Dragon Altar Magic Crystal, Equipment Chest, dan Luo Yi."
+    },
+    {
+      "Nama Kartu": "Starbelle's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Starbelle",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Starbelle Magic Crystal, Equipment Chest, dan Miya."
+    },
+    {
+      "Nama Kartu": "SPECTRE's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi SPECTRE",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan SPECTRE Magic Crystal, Equipment Chest, dan Granger."
+    },
+    {
+      "Nama Kartu": "Astro Power's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Astro Power",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Astro Power Magic Crystal, Equipment Chest, dan Martis."
+    },
+    {
+      "Nama Kartu": "Kishin's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Kishin",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Kishin Magic Crystal, Equipment Chest, dan Angela."
+    },
+    {
+      "Nama Kartu": "Dragoncaller's Blessing",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Sinergi Dragoncaller",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Dragoncaller Magic Crystal, Equipment Chest, dan Balmond."
+    },
+    {
+      "Nama Kartu": "Turret of Guardians",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu Sinergi / Combat",
+      "Tipe Fokus": "Summon & Sinergi",
+      "Deskripsi Efek": "Dapatkan Turret jarak jauh dengan Sinergi acak ×2."
+    },
+    {
+      "Nama Kartu": "Ally's Call",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Hero & Sinergi",
+      "Deskripsi Efek": "Menaikkan bintang Hero memberi 1 Hero acak yang punya setidaknya 1 Synergy yang sama."
+    },
+    {
+      "Nama Kartu": "The Hunt",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment & Gold",
+      "Deskripsi Efek": "Dapatkan Golden Staff, Demon Hunter Sword, Sea Halberd, dan 10 Gold."
+    },
+    {
+      "Nama Kartu": "Box of Holy Objects",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment & Gold",
+      "Deskripsi Efek": "Dapatkan Spellblade Talisman, Glowing Wand, Ice Queen Wand, dan 10 Gold."
+    },
+    {
+      "Nama Kartu": "Fortified",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment & Gold",
+      "Deskripsi Efek": "Dapatkan Dominance Ice, Blade Armor, Guardian Helmet, dan 10 Gold."
+    },
+    {
+      "Nama Kartu": "Fully Armed",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Saat battle dimulai, Hero sekutu tanpa Equipment mendapat 2 Equipment sementara acak."
+    },
+    {
+      "Nama Kartu": "Territory Agreement",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Ekonomi / Gold",
+      "Deskripsi Efek": "Dapatkan 53 Gold, tetapi Commander kamu hanya bisa naik sampai level 7."
+    },
+    {
+      "Nama Kartu": "Premium Client Ⅱ",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shop Refresh",
+      "Deskripsi Efek": "Saat kamu refresh Shop, ada peluang 48% mendapat refresh Shop gratis."
+    },
+    {
+      "Nama Kartu": "Party's Opening",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Kapasitas & Gold",
+      "Deskripsi Efek": "Tambah kapasitas Hero sebanyak 1, dan dapatkan 3 Gold."
+    },
+    {
+      "Nama Kartu": "Magic Immersion Ⅲ",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Mana Buff",
+      "Deskripsi Efek": "Hero sekutu yang memakai Equipment memulihkan 12 Mana tambahan saat Basic ATK."
+    },
+    {
+      "Nama Kartu": "Breath of Berserk Ⅲ",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Lifesteal Buff",
+      "Deskripsi Efek": "Hero sekutu mendapat 28% Hybrid Lifesteal."
+    },
+    {
+      "Nama Kartu": "Sharp Arrow",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "ATK Buff",
+      "Deskripsi Efek": "Hero sekutu di baris paling belakang menambah Physical ATK sebesar 10% setiap Basic ATK, maksimal 8 stack."
+    },
+    {
+      "Nama Kartu": "Opening Promotion",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Free Hero & Gold",
+      "Deskripsi Efek": "Dapatkan 2 Gold. Pembelian Hero pertama setiap babak gratis."
+    },
+    {
+      "Nama Kartu": "Vault Upgrade+",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Interest & Gold",
+      "Deskripsi Efek": "Naikkan batas interest menjadi 8. Dapatkan 18 Gold."
+    },
+    {
+      "Nama Kartu": "Technological Revolution+",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "EXP Diskon",
+      "Deskripsi Efek": "Kurangi EXP yang dibutuhkan untuk menaikkan Level Commander sebesar 25%. Dapatkan 5 EXP."
+    },
+    {
+      "Nama Kartu": "Golden Era+",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Free Refresh",
+      "Deskripsi Efek": "Dapatkan 10 refresh Shop gratis. Dapatkan 5 refresh Shop gratis tambahan setiap kali Level Commander naik."
+    },
+    {
+      "Nama Kartu": "Last Resort",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Hadiah Kuat",
+      "Deskripsi Efek": "Dapatkan hadiah acak yang kuat!"
+    },
+    {
+      "Nama Kartu": "Novel Equipment",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Enhanced Equipment",
+      "Deskripsi Efek": "Dapatkan 3 Equipment enhanced acak. Equipment lain yang sama dengan Equipment yang didapat juga ikut di-enhance."
+    },
+    {
+      "Nama Kartu": "Ethereal Essence",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Mana Buff",
+      "Deskripsi Efek": "Setelah Hero sekutu memakai skill untuk pertama kali, mereka mendapat 70% Mana."
+    },
+    {
+      "Nama Kartu": "The More, the Merrier",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Gold & Sinergi",
+      "Deskripsi Efek": "Setelah battle, dapatkan 1 Gold untuk setiap 1 Synergy yang aktif."
+    },
+    {
+      "Nama Kartu": "Peculiar Merchant",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Special Shop",
+      "Deskripsi Efek": "Buka shop promo khusus sekali, tempat kamu bisa menemukan semua yang kamu butuhkan!"
+    },
+    {
+      "Nama Kartu": "Death Oracle",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shield & HP Refresh",
+      "Deskripsi Efek": "Commander mendapat 30 Shield. Hingga 35 refresh Shop berikutnya memakan 1 HP sebagai gantinya."
+    },
+    {
+      "Nama Kartu": "Copycat",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Duplicator",
+      "Deskripsi Efek": "Dapatkan 6 Gold dan 1 Equipment Duplicator. Pakai Equipment Duplicator pada Equipment untuk mendapat 3 salinannya. (Equipment khusus tidak bisa disalin.)"
+    },
+    {
+      "Nama Kartu": "Shield of Fortune",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shield & Gold",
+      "Deskripsi Efek": "Dapatkan 10 Gold dan 30 Shield of Fortune (dipakai lebih dulu). Setelah 5 babak, sisa Shield of Fortune diubah menjadi Gold dengan rasio 1:1."
+    },
+    {
+      "Nama Kartu": "Shield of Fortune+",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shield & Gold",
+      "Deskripsi Efek": "Dapatkan 15 Gold dan 30 Shield of Fortune (dipakai lebih dulu). Setelah 2 babak, sisa Shield of Fortune diubah menjadi Gold dengan rasio 1:1."
+    },
+    {
+      "Nama Kartu": "Glorious Claim",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Gold Tabungan",
+      "Deskripsi Efek": "Simpan 4 Gold setelah menang babak. Terima semua Gold yang tersimpan saat kalah berikutnya atau saat sudah tersimpan 8 Gold."
+    },
+    {
+      "Nama Kartu": "Experienced Shuffle",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "EXP & Refresh",
+      "Deskripsi Efek": "Langsung dapatkan 25 EXP. Setelah itu, dapatkan 2 EXP tambahan pada refresh Shop manual pertama setiap babak."
+    },
+    {
+      "Nama Kartu": "Meltdown Armor Ⅲ",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "On-Death DMG",
+      "Deskripsi Efek": "Saat ally mati, mereka memberi Magic DMG sebesar 28% Max HP mereka ke musuh di sekitar."
+    },
+    {
+      "Nama Kartu": "Rising Fury Ⅲ",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Ramp-up DMG",
+      "Deskripsi Efek": "DMG ally naik 5% untuk setiap detik mereka bertahan di battle, maksimal 50%."
+    },
+    {
+      "Nama Kartu": "Divine Execution",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Eksekusi & True DMG",
+      "Deskripsi Efek": "Saat ally menyerang musuh dengan HP di bawah 16%, mereka langsung mengeksekusi target dan memberi 550 True DMG ke musuh di dekatnya."
+    },
+    {
+      "Nama Kartu": "Disco Fever",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Crowd Control & Buff",
+      "Deskripsi Efek": "Setiap 8s setelah battle dimulai, buat 2 musuh acak menari selama 2s. 2 ally terkuatmu mendapat 35% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "Synergy Constellation",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Sinergi Stat Buff",
+      "Deskripsi Efek": "Untuk setiap Synergy aktif, ally mendapat 2.5% Hybrid ATK dan HP. Bonus ini naik 50% saat 10 Synergy aktif."
+    },
+    {
+      "Nama Kartu": "Rising Festivities",
+      "Kualitas / Kelompok": "Kartu Oranye",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Gold & Free Hero",
+      "Deskripsi Efek": "Dapatkan 5 Gold. Setelah itu, dapatkan 1 Hero acak setiap babak seharga (Level Commander -5) Gold (Min 1 Gold)."
+    },
+    {
+      "Nama Kartu": "Valor's Embrace",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Dragon Altar",
+      "Tipe Fokus": "Sinergi Shield",
+      "Deskripsi Efek": "Saat ally mati, Hero Dragon Altar mendapat Shield sebesar 8% Max HP mereka."
+    },
+    {
+      "Nama Kartu": "Astro Judgment",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Astro Power",
+      "Tipe Fokus": "Sinergi DMG",
+      "Deskripsi Efek": "Astro Sovereign melancarkan Judgment Bolt ke setiap musuh yang terkena skill-nya, memberi True DMG sebesar 160% Hybrid ATK. (Cooldown: 3s per musuh)"
+    },
+    {
+      "Nama Kartu": "Crushing Claw",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Dragon Altar",
+      "Tipe Fokus": "Sinergi Debuff",
+      "Deskripsi Efek": "Naga memberi 25% DMG ekstra dan mengurangi Hybrid DEF musuh sebesar 20."
+    },
+    {
+      "Nama Kartu": "Kishin Unbound",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Kishin",
+      "Tipe Fokus": "Sinergi Upgrade",
+      "Deskripsi Efek": "Upgrade Equipment eksklusif Kishin ke versi enhanced dan dapatkan 5 refresh Shop gratis."
+    },
+    {
+      "Nama Kartu": "Astro Power's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Astro Power",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Astro Power Magic Crystal, dan Martis."
+    },
+    {
+      "Nama Kartu": "Kishin's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Kishin",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Kishin Magic Crystal, dan Angela."
+    },
+    {
+      "Nama Kartu": "Dragoncaller's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Dragoncaller",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Dragoncaller Magic Crystal, dan Balmond."
+    },
+    {
+      "Nama Kartu": "Bruiser's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Bruiser",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Bruiser Magic Crystal, dan Belerick."
+    },
+    {
+      "Nama Kartu": "Dauntless' Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Dauntless",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Dauntless Magic Crystal, dan Balmond."
+    },
+    {
+      "Nama Kartu": "Defender's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Defender",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Defender Magic Crystal, dan Hylos."
+    },
+    {
+      "Nama Kartu": "Swiftblade's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Swiftblade",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Swiftblade Magic Crystal, dan Natalia."
+    },
+    {
+      "Nama Kartu": "Echomancer's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Echomancer",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Echomancer Magic Crystal, dan Harley."
+    },
+    {
+      "Nama Kartu": "Mage's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Mage",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Mage Magic Crystal, dan Zhuxin."
+    },
+    {
+      "Nama Kartu": "Marksman's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Marksman",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Marksman Magic Crystal, dan Granger."
+    },
+    {
+      "Nama Kartu": "Stargazer's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Stargazer",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Stargazer Magic Crystal, dan Luo Yi."
+    },
+    {
+      "Nama Kartu": "Dragon Altar's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Dragon Altar",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Dragon Altar Magic Crystal, dan Luo Yi."
+    },
+    {
+      "Nama Kartu": "Starbelle's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Starbelle",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Starbelle Magic Crystal, dan Miya."
+    },
+    {
+      "Nama Kartu": "SPECTRE's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi SPECTRE",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan SPECTRE Magic Crystal, dan Granger."
+    },
+    {
+      "Nama Kartu": "Weapon Master's Badge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Weapon Master",
+      "Tipe Fokus": "Sinergi Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan Weapon Master Magic Crystal, dan Martis."
+    },
+    {
+      "Nama Kartu": "Emergency Rift",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu Spesial",
+      "Tipe Fokus": "Summon Hero Legacy",
+      "Deskripsi Efek": "Dapatkan 15 Echo Energy langsung. Panggil Chrono Wanderer tambahan (Hero 5-Gold dari season sebelumnya), yang naik ke 2-Star setelah Round III-5 dan tetap 2-Star hingga match berakhir."
+    },
+    {
+      "Nama Kartu": "Exclusive Fan",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu Spesial",
+      "Tipe Fokus": "Equipment Lightstick",
+      "Deskripsi Efek": "Dapatkan Lightstick tambahan, dan semua Lightstick menjadi versi enhanced. Setiap Fan memberi bonus Hybrid ATK, dengan rasio bonus disesuaikan menjadi 80% dari nilai asli. Fan tidak memberi Hybrid ATK satu sama lain."
+    },
+    {
+      "Nama Kartu": "Neon Zenith",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu Spesial",
+      "Tipe Fokus": "Hero & EXP",
+      "Deskripsi Efek": "Dapatkan Gord saat mencapai Commander Lv.8, dan Alice saat mencapai Lv.9. Dapat 8 EXP."
+    },
+    {
+      "Nama Kartu": "Hail of Shots",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Sinergi Marksman",
+      "Tipe Fokus": "ATK Speed Buff",
+      "Deskripsi Efek": "Marksman mendapat 50% ATK Speed di awal battle. Bonus ini berkurang selama 10s."
+    },
+    {
+      "Nama Kartu": "Quaking Blow",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Minotaur",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Minotaur 3-Star dan perkuat skill serta atribut Minotaur-mu."
+    },
+    {
+      "Nama Kartu": "Cyclone Sigil",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Vale",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Vale 3-Star dan perkuat skill serta atribut Vale-mu."
+    },
+    {
+      "Nama Kartu": "Backline Breach",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Yi Sun-shin",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Yi Sun-shin 3-Star dan perkuat skill serta atribut Yi Sun-shin-mu."
+    },
+    {
+      "Nama Kartu": "Demonic Wrath",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Phoveus",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Phoveus 3-Star dan perkuat skill serta atribut Phoveus-mu."
+    },
+    {
+      "Nama Kartu": "Forked Lightning",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Eudora",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Eudora 3-Star dan perkuat skill serta atribut Eudora-mu."
+    },
+    {
+      "Nama Kartu": "Yo-yo Virtuoso",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Cici",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Cici 3-Star dan perkuat skill serta atribut Cici-mu."
+    },
+    {
+      "Nama Kartu": "Abyssal Smash",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Dyrroth",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Dyrroth 3-Star dan perkuat skill serta atribut Dyrroth-mu."
+    },
+    {
+      "Nama Kartu": "Vengeful Aegis",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Hero Uranus",
+      "Tipe Fokus": "Hero 3-Star & Skill",
+      "Deskripsi Efek": "Dapatkan Uranus 3-Star dan perkuat skill serta atribut Uranus-mu."
+    },
+    {
+      "Nama Kartu": "Customize Recruitment Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shop Probability",
+      "Deskripsi Efek": "Peluang menemukan Hero 4 Gold saat refresh Shop naik 9%, sedangkan peluang Hero 1, 2, dan 3 Gold turun 3%."
+    },
+    {
+      "Nama Kartu": "Reinforcement",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Hero 4-Gold",
+      "Deskripsi Efek": "Dapatkan 3 Hero 4 Gold."
+    },
+    {
+      "Nama Kartu": "Fateful Dice",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Mirror Device",
+      "Deskripsi Efek": "Dapatkan 1 Mirror Device."
+    },
+    {
+      "Nama Kartu": "Counteraction",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Chest",
+      "Deskripsi Efek": "Saat HP Commander turun di bawah 55, dapatkan 3 Equipment Chest."
+    },
+    {
+      "Nama Kartu": "Apex Weapons",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment & Gold",
+      "Deskripsi Efek": "Langsung dapatkan 4 Gold, dan dapatkan 2 Equipment Chest saat mencapai Lv.8 dan Lv.9 masing-masing."
+    },
+    {
+      "Nama Kartu": "Payday",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Gold Ekonomi",
+      "Deskripsi Efek": "Langsung dapatkan 7 Gold dan 7 Gold per babak selama 2 babak berikutnya."
+    },
+    {
+      "Nama Kartu": "Full Throttle",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "EXP Diskon",
+      "Deskripsi Efek": "Kurangi EXP yang dibutuhkan untuk menaikkan Level Commander sebesar 15%."
+    },
+    {
+      "Nama Kartu": "Premium Client I",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shop Refresh",
+      "Deskripsi Efek": "Saat kamu refresh Shop, ada peluang 35% mendapat refresh Shop gratis."
+    },
+    {
+      "Nama Kartu": "Adequate Stock",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Free Refresh",
+      "Deskripsi Efek": "Dapatkan satu refresh Shop gratis di awal setiap babak."
+    },
+    {
+      "Nama Kartu": "Glittering Jewels Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Free Refresh",
+      "Deskripsi Efek": "Dapatkan 13 refresh Shop gratis."
+    },
+    {
+      "Nama Kartu": "Manic Slam",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Golden Staff. Ally yang memakainya mendapat 3.5% ATK Speed tambahan setiap Basic ATK."
+    },
+    {
+      "Nama Kartu": "Howling Wind",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Winter Crown. Hero yang memakai Equipment ini memulihkan 25% HP saat efeknya aktif."
+    },
+    {
+      "Nama Kartu": "Total Domination",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Dominance Ice. Ally yang memakainya memulihkan 50% Mana lebih banyak saat terkena serangan."
+    },
+    {
+      "Nama Kartu": "Bright Sunshine",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Oracle. Hero yang memakainya memberi 6% HP tambahan ke ally di baris yang sama."
+    },
+    {
+      "Nama Kartu": "Barrier's Seal Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Frontline HP",
+      "Deskripsi Efek": "Ally di baris depan mendapat 950 HP."
+    },
+    {
+      "Nama Kartu": "Magic Immersion Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Mana Buff",
+      "Deskripsi Efek": "Hero sekutu yang memakai Equipment memulihkan 6 Mana tambahan saat Basic ATK."
+    },
+    {
+      "Nama Kartu": "Blood Claw",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Haas' Claws. Ally yang memakainya mendapat 10% Physical ATK tambahan dan 10% Lifesteal."
+    },
+    {
+      "Nama Kartu": "Steel Front",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Formation DEF",
+      "Deskripsi Efek": "Jika ada setidaknya 3 Hero sekutu di baris yang sama, mereka mendapat 32 Hybrid DEF."
+    },
+    {
+      "Nama Kartu": "Frontier Blitz",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Formation ATK",
+      "Deskripsi Efek": "Saat battle dimulai, ally di kedua ujung setiap baris lineup mendapat 28% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "Elite Team",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Low-Cost Buff",
+      "Deskripsi Efek": "Hero sekutu seharga 3 Gold atau kurang mendapat 30% ATK Speed."
+    },
+    {
+      "Nama Kartu": "Peerless Valor",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "High-Cost Buff",
+      "Deskripsi Efek": "Saat battle dimulai, Hero 4 Gold dan 5 Gold mendapat 25% ATK Speed."
+    },
+    {
+      "Nama Kartu": "Pas de Deux",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Duplikat & Star-Up",
+      "Deskripsi Efek": "Saat dua Hero yang sama diturunkan, mereka mendapat 30% Hybrid ATK dan 30% HP. Saat Hero mencapai 3-Star, dapatkan duplikat 2-Star dari Hero itu."
+    },
+    {
+      "Nama Kartu": "Solid Alliance Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Sinergi ATK",
+      "Deskripsi Efek": "Untuk setiap 1 Synergy aktif, ally mendapat 3% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "All-around Warrior Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Stat Buff",
+      "Deskripsi Efek": "Hero sekutu mendapat 160 HP, 10 Hybrid DEF, dan 5% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "Breath of Berserk Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Lifesteal Buff",
+      "Deskripsi Efek": "Hero sekutu mendapat 16% Hybrid Lifesteal."
+    },
+    {
+      "Nama Kartu": "Reinforcement+",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Hero 4-Gold 2-Star",
+      "Deskripsi Efek": "Dapatkan 1 Hero 4 Gold 2-Star."
+    },
+    {
+      "Nama Kartu": "Fast Promotion",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Free Hero 2-Star",
+      "Deskripsi Efek": "Hero berikutnya yang kamu beli gratis dan langsung naik ke 2-Star."
+    },
+    {
+      "Nama Kartu": "Magic Surge",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Full Mana",
+      "Deskripsi Efek": "Hero sekutu di baris paling belakang mendapat 100% Mana saat battle dimulai."
+    },
+    {
+      "Nama Kartu": "Talisman Unleashed",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Spellblade Talisman. Perkuat semua Spellblade Talisman kamu: pulihkan 80% Mana dan naikkan Skill DMG sebesar 15% saat battle dimulai."
+    },
+    {
+      "Nama Kartu": "Fortified Defense",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Shield",
+      "Deskripsi Efek": "Setiap Hero yang memakai 3 Equipment memberi Shield 1400 untuk dirinya dan ally di dekatnya."
+    },
+    {
+      "Nama Kartu": "Fully Loaded",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment DMG",
+      "Deskripsi Efek": "Saat battle dimulai, setiap ally yang memakai 3 Equipment mendapat 20% DMG tambahan."
+    },
+    {
+      "Nama Kartu": "Glorious Rogue",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Buff",
+      "Deskripsi Efek": "Dapatkan Claude's Theft Device. Perkuat semua Claude's Theft Device kamu: dapat 15% DMG tambahan."
+    },
+    {
+      "Nama Kartu": "Vanguard Leader",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "High Risk ATK",
+      "Deskripsi Efek": "Hero mendapat 25% Hybrid ATK, tetapi Commander menerima 2 DMG lebih banyak."
+    },
+    {
+      "Nama Kartu": "Rogue Mercenary",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Hero Buff Permanen",
+      "Deskripsi Efek": "Dapatkan Hero 4 Gold acak. Hero ini mendapat 25% DMG tambahan dan 1000 HP secara permanen."
+    },
+    {
+      "Nama Kartu": "Purest Power Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Sinergi ATK",
+      "Deskripsi Efek": "Saat jumlah Synergy aktif mencapai 6, Hero di Synergy ini mendapat 28% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "Forbidden Power",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "High Risk DMG",
+      "Deskripsi Efek": "Saat battle dimulai, Hero di baris paling belakang kehilangan 10% Max HP tetapi mendapat 25% DMG Increase."
+    },
+    {
+      "Nama Kartu": "Legacy of Valor",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Crystal & Hero",
+      "Deskripsi Efek": "Dapatkan 1 Faction Magic Crystal dan dua Hero dari Synergy Faksi itu (3 Gold dan 4 Gold), secara acak."
+    },
+    {
+      "Nama Kartu": "Dimensional Shot Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Jarak DMG",
+      "Deskripsi Efek": "Untuk setiap 1 tile antara Hero sekutu dan targetnya, DMG ke target itu naik 6%."
+    },
+    {
+      "Nama Kartu": "Trust Fund",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Level-Up Gold",
+      "Deskripsi Efek": "Dapatkan 8 / 16 / 25 Gold saat Commander mencapai Lv.8 / 9 / 10, masing-masing."
+    },
+    {
+      "Nama Kartu": "Tactical Airdrop",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "AoE DMG & ATK",
+      "Deskripsi Efek": "Saat battle dimulai, jatuhkan 4 Energy Ball yang memberi Magic DMG sebesar 16% Max HP target ke musuh yang terkena dan memberi 15% Hybrid ATK ke ally di area itu."
+    },
+    {
+      "Nama Kartu": "Transmutation",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Card Upgrade",
+      "Deskripsi Efek": "Setelah 4 babak, Go Go Card ini naik menjadi kartu acak berkualitas Oranye."
+    },
+    {
+      "Nama Kartu": "Knockout Punch",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Bruiser Stun",
+      "Deskripsi Efek": "ATK Bruiser punya peluang 20% untuk stun target selama 1.5s."
+    },
+    {
+      "Nama Kartu": "Aftershock",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Defender AoE DMG",
+      "Deskripsi Efek": "Setiap kehilangan 30% HP, Defender memberi Magic DMG sebesar 10% Max HP mereka ke musuh di dekatnya."
+    },
+    {
+      "Nama Kartu": "Blazing Valor",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Dauntless Buff",
+      "Deskripsi Efek": "Selama punya shield, Hero Dauntless membesar dan mendapat 3% HP dan Hybrid ATK setiap detik. Pada 5s, efeknya mencapai batas dan memberi 8% HP dan Hybrid ATK tambahan."
+    },
+    {
+      "Nama Kartu": "Whirl of Carnage",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Weapon Master DMG",
+      "Deskripsi Efek": "Weapon Master memberi Physical DMG sebesar 130% total Physical ATK mereka ke musuh di dekatnya setiap memakai skill."
+    },
+    {
+      "Nama Kartu": "Star Chorus",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Stargazer DMG",
+      "Deskripsi Efek": "Saat Stargazer memakai skill, mereka memberi Magic DMG sebesar 65% Magic ATK mereka ke 2 musuh acak."
+    },
+    {
+      "Nama Kartu": "Shrouded Blade",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Swiftblade Conceal",
+      "Deskripsi Efek": "Saat Hero yang terkena damage dari Hero Swiftblade mati, Hero Swiftblade itu masuk status Conceal, dan ATK berikutnya memberi bonus Adaptive DMG sebesar 180% dari nilai Hybrid ATK mereka yang lebih tinggi."
+    },
+    {
+      "Nama Kartu": "Critical Spellcraft",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Mage Crit Skill",
+      "Deskripsi Efek": "Skill Mage punya peluang 60% memberi 150% DMG."
+    },
+    {
+      "Nama Kartu": "Meltdown Armor Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "On-Death DMG",
+      "Deskripsi Efek": "Saat ally mati, mereka memberi Magic DMG sebesar 15% Max HP mereka ke musuh di sekitar."
+    },
+    {
+      "Nama Kartu": "Rising Fury Ⅱ",
+      "Kualitas / Kelompok": "Kartu Ungu",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Ramp-up DMG",
+      "Deskripsi Efek": "DMG ally naik 2.5% untuk setiap detik mereka bertahan di battle, maksimal 25%."
+    },
+    {
+      "Nama Kartu": "Excellent Recruit",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Hero 3-Gold",
+      "Deskripsi Efek": "Dapatkan 3 Hero 3 Gold."
+    },
+    {
+      "Nama Kartu": "Cyclical Support",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Chest Berkala",
+      "Deskripsi Efek": "Langsung dapatkan 1 Equipment Chest, lalu 1 Chest tambahan setiap 9 babak."
+    },
+    {
+      "Nama Kartu": "Glittering Jewels Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Free Refresh",
+      "Deskripsi Efek": "Dapatkan 9 refresh Shop gratis."
+    },
+    {
+      "Nama Kartu": "Rock Solid",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Commander Shield",
+      "Deskripsi Efek": "Commander mendapat 20 Shield."
+    },
+    {
+      "Nama Kartu": "Barrier's Seal Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Frontline HP",
+      "Deskripsi Efek": "Ally di baris depan mendapat 650 HP."
+    },
+    {
+      "Nama Kartu": "Magic Immersion Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Mana Buff",
+      "Deskripsi Efek": "Hero sekutu yang memakai Equipment memulihkan 4 Mana tambahan saat Basic ATK."
+    },
+    {
+      "Nama Kartu": "Breath of Berserk Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Lifesteal Buff",
+      "Deskripsi Efek": "Hero sekutu mendapat 8% Hybrid Lifesteal."
+    },
+    {
+      "Nama Kartu": "Solid Alliance Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Sinergi ATK",
+      "Deskripsi Efek": "Untuk setiap 1 Synergy aktif, ally mendapat 2% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "Jump the Gun+",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "EXP Commander",
+      "Deskripsi Efek": "Dapatkan 11 EXP Commander."
+    },
+    {
+      "Nama Kartu": "Healing Fountain",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "HP Regen & Gold",
+      "Deskripsi Efek": "Pulihkan 3 HP Commander setiap babak, dan dapatkan 6 Gold."
+    },
+    {
+      "Nama Kartu": "Dark Blade",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Anti-Heal",
+      "Deskripsi Efek": "DMG Hero bisa mengurangi Healing Effect target sebesar 40%."
+    },
+    {
+      "Nama Kartu": "Prime Selection",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Magic Crystal Chest",
+      "Deskripsi Efek": "Dapatkan 1 Magic Crystal Chest. Pilih 1 dari 3 Magic Crystal acak."
+    },
+    {
+      "Nama Kartu": "Rogue's Aid",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Equipment Khusus",
+      "Deskripsi Efek": "Dapatkan Claude's Theft Device."
+    },
+    {
+      "Nama Kartu": "Customize Recruitment I",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Shop Probability",
+      "Deskripsi Efek": "Peluang menemukan Hero 3 Gold saat refresh Shop naik 10%, sedangkan peluang Hero 1 dan 2 Gold turun 5%."
+    },
+    {
+      "Nama Kartu": "Uncertain Fortune",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Gold Peluang",
+      "Deskripsi Efek": "Peluang 50% mendapat 7 Gold, peluang 50% mendapat 15 Gold."
+    },
+    {
+      "Nama Kartu": "Purest Power Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Sinergi ATK",
+      "Deskripsi Efek": "Saat jumlah Synergy aktif mencapai 6, Hero di Synergy ini mendapat 20% Hybrid ATK."
+    },
+    {
+      "Nama Kartu": "Dimensional Shot Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Jarak DMG",
+      "Deskripsi Efek": "Untuk setiap 1 tile antara Hero sekutu dan targetnya, DMG ke target itu naik 4%."
+    },
+    {
+      "Nama Kartu": "Meltdown Armor Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "On-Death DMG",
+      "Deskripsi Efek": "Saat ally mati, mereka memberi Magic DMG sebesar 9% Max HP mereka ke musuh di sekitar."
+    },
+    {
+      "Nama Kartu": "Rising Fury Ⅰ",
+      "Kualitas / Kelompok": "Kartu Biru",
+      "Commander / Syarat": "Kartu umum",
+      "Tipe Fokus": "Ramp-up DMG",
+      "Deskripsi Efek": "DMG ally naik 1.5% untuk setiap detik mereka bertahan di battle, maksimal 15%."
+    }
+  ]
+}

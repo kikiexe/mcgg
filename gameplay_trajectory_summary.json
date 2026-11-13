@@ -1,0 +1,3506 @@
+[
+  {
+    "second": 0,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 2,
+    "round": "1-1",
+    "level": 3,
+    "gold": 2
+  },
+  {
+    "second": 4,
+    "round": "1-1",
+    "level": 3,
+    "gold": 2
+  },
+  {
+    "second": 6,
+    "round": "1-1",
+    "level": 3,
+    "gold": 2
+  },
+  {
+    "second": 8,
+    "round": "1-1",
+    "level": 3,
+    "gold": 1
+  },
+  {
+    "second": 10,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 12,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 14,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 16,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 18,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 20,
+    "round": "1-1",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 34,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 36,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 38,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 40,
+    "round": "1-1",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 42,
+    "round": "1-1",
+    "level": 3,
+    "gold": 1
+  },
+  {
+    "second": 44,
+    "round": "1-1",
+    "level": 3,
+    "gold": 1
+  },
+  {
+    "second": 46,
+    "round": "1-1",
+    "level": 3,
+    "gold": 6
+  },
+  {
+    "second": 48,
+    "round": "1-2",
+    "level": 3,
+    "gold": 6
+  },
+  {
+    "second": 50,
+    "round": "1-2",
+    "level": 3,
+    "gold": 6
+  },
+  {
+    "second": 52,
+    "round": "1-2",
+    "level": 3,
+    "gold": 6
+  },
+  {
+    "second": 54,
+    "round": "1-2",
+    "level": 3,
+    "gold": 6
+  },
+  {
+    "second": 56,
+    "round": "1-2",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 58,
+    "round": "1-2",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 60,
+    "round": "1-2",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 62,
+    "round": "1-2",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 64,
+    "round": "1-2",
+    "level": 3,
+    "gold": 18
+  },
+  {
+    "second": 66,
+    "round": "1-2",
+    "level": 3,
+    "gold": 18
+  },
+  {
+    "second": 68,
+    "round": "1-2",
+    "level": 3,
+    "gold": 15
+  },
+  {
+    "second": 70,
+    "round": "1-2",
+    "level": 3,
+    "gold": 15
+  },
+  {
+    "second": 72,
+    "round": "1-2",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 74,
+    "round": "1-2",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 76,
+    "round": "1-2",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 78,
+    "round": "1-2",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 80,
+    "round": "1-2",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 114,
+    "round": "S",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 120,
+    "round": "1-3",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 122,
+    "round": "1-3",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 124,
+    "round": "1-3",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 126,
+    "round": "1-3",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 128,
+    "round": "1-3",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 130,
+    "round": "1-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 132,
+    "round": "1-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 134,
+    "round": "1-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 136,
+    "round": "1-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 138,
+    "round": "1-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 140,
+    "round": "1-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 174,
+    "round": "1-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 176,
+    "round": "1-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 178,
+    "round": "1-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 180,
+    "round": "14",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 182,
+    "round": "14",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 184,
+    "round": "14",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 186,
+    "round": "14",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 188,
+    "round": "14",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 190,
+    "round": "14",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 192,
+    "round": "1-4",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 194,
+    "round": "1-4",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 196,
+    "round": "4",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 226,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 228,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 230,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 232,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 234,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 236,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 238,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 240,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 242,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 244,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 246,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 248,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 250,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 252,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 254,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 256,
+    "round": "14",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 262,
+    "round": "14",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 264,
+    "round": "14",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 266,
+    "round": "14",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 268,
+    "round": "14",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 270,
+    "round": "11-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 272,
+    "round": "11-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 274,
+    "round": "11-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 276,
+    "round": "11-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 278,
+    "round": "11-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 280,
+    "round": "11-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 290,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 292,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 298,
+    "round": "1I-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 300,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 302,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 304,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 306,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 308,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 310,
+    "round": "II-1",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 320,
+    "round": "11-1",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 322,
+    "round": "11-1",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 324,
+    "round": "11-1",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 326,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 328,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 330,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 334,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 336,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 338,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 340,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 342,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 344,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 346,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 348,
+    "round": "11-2",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 374,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 376,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 380,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 382,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 384,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 386,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 388,
+    "round": "11-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 390,
+    "round": "11-3",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 392,
+    "round": "11-3",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 394,
+    "round": "11-3",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 396,
+    "round": "11-3",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 398,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 400,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 402,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 404,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 406,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 408,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 420,
+    "round": "11-3",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 422,
+    "round": "11-3",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 424,
+    "round": "11-3",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 426,
+    "round": "11-3",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 428,
+    "round": "4",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 430,
+    "round": "11-4",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 432,
+    "round": "11-4",
+    "level": 3,
+    "gold": 2
+  },
+  {
+    "second": 434,
+    "round": "11-4",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 436,
+    "round": "11-4",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 438,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 440,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 442,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 444,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 446,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 448,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 450,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 452,
+    "round": "11-4",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 454,
+    "round": "11-4",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 464,
+    "round": "S",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 466,
+    "round": "S",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 476,
+    "round": "11-4",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 478,
+    "round": "11-4",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 480,
+    "round": "11-4",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 482,
+    "round": "11-4",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 486,
+    "round": "11-4",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 488,
+    "round": "11-4",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 490,
+    "round": "11-4",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 492,
+    "round": "11",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 494,
+    "round": "11-4",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 496,
+    "round": "11-4",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 502,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 504,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 506,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 508,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 510,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 512,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 514,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 516,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 518,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 520,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 522,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 524,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 526,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 528,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 542,
+    "round": "11-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 544,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 548,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 550,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 552,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 554,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 556,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 558,
+    "round": "11-5",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 562,
+    "round": "11-6",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 564,
+    "round": "11-6",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 566,
+    "round": "11-6",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 568,
+    "round": "11-6",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 570,
+    "round": "11-6",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 572,
+    "round": "11-6",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 574,
+    "round": "11-6",
+    "level": 3,
+    "gold": 44
+  },
+  {
+    "second": 576,
+    "round": "11-6",
+    "level": 3,
+    "gold": 44
+  },
+  {
+    "second": 578,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 580,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 582,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 584,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 586,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 588,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 590,
+    "round": "11-6",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 626,
+    "round": "11-6",
+    "level": 3,
+    "gold": 50
+  },
+  {
+    "second": 628,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 630,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 632,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 634,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 636,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 638,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 640,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 642,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 644,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 646,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 648,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 650,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 652,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 654,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 656,
+    "round": "11-6",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 658,
+    "round": "11-1",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 660,
+    "round": "11-1",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 662,
+    "round": "111-1",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 664,
+    "round": "111-1",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 666,
+    "round": "111-1",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 668,
+    "round": "111-1",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 670,
+    "round": "11-1",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 672,
+    "round": "11-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 674,
+    "round": "11-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 676,
+    "round": "111-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 678,
+    "round": "11-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 680,
+    "round": "111-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 682,
+    "round": "111-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 684,
+    "round": "111-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 686,
+    "round": "11-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 698,
+    "round": "111-1",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 720,
+    "round": "S",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 726,
+    "round": "11-1",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 728,
+    "round": "11-1",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 730,
+    "round": "111-2",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 732,
+    "round": "11-2",
+    "level": 3,
+    "gold": 2
+  },
+  {
+    "second": 734,
+    "round": "111-2",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 736,
+    "round": "111-2",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 738,
+    "round": "11-2",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 740,
+    "round": "111-2",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 742,
+    "round": "111-2",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 744,
+    "round": "111-2",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 746,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 748,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 750,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 752,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 754,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 756,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 758,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 760,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 766,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 774,
+    "round": "111-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 780,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 804,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 806,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 808,
+    "round": "11-2",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 810,
+    "round": "11-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 812,
+    "round": "111-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 814,
+    "round": "111-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 816,
+    "round": "111-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 818,
+    "round": "111-3",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 820,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 822,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 824,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 826,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 828,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 830,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 832,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 838,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 840,
+    "round": "111-3",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 842,
+    "round": "111-3",
+    "level": 3,
+    "gold": 48
+  },
+  {
+    "second": 844,
+    "round": "111-3",
+    "level": 3,
+    "gold": 48
+  },
+  {
+    "second": 846,
+    "round": "111-3",
+    "level": 3,
+    "gold": 48
+  },
+  {
+    "second": 848,
+    "round": "111-3",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 850,
+    "round": "11-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 856,
+    "round": "11-4",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 858,
+    "round": "11-4",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 860,
+    "round": "11-4",
+    "level": 3,
+    "gold": 1
+  },
+  {
+    "second": 862,
+    "round": "1-4",
+    "level": 3,
+    "gold": 15
+  },
+  {
+    "second": 864,
+    "round": "1-4",
+    "level": 3,
+    "gold": 15
+  },
+  {
+    "second": 866,
+    "round": "1-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 868,
+    "round": "1-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 870,
+    "round": "111-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 874,
+    "round": "\u5ddd",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 876,
+    "round": "11-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 878,
+    "round": "11-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 880,
+    "round": "111-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 882,
+    "round": "11-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 884,
+    "round": "111-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 886,
+    "round": "11-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 888,
+    "round": "111-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 890,
+    "round": "11-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 898,
+    "round": "111-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 900,
+    "round": "111-4",
+    "level": 3,
+    "gold": 0
+  },
+  {
+    "second": 902,
+    "round": "11-4",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 904,
+    "round": "11-4",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 906,
+    "round": "11-4",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 912,
+    "round": "11-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 914,
+    "round": "111-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 916,
+    "round": "111-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 918,
+    "round": "111-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 920,
+    "round": "111-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 922,
+    "round": "111-4",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 924,
+    "round": "11-4",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 926,
+    "round": "11-4",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 928,
+    "round": "11-4",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 930,
+    "round": "111-4",
+    "level": 3,
+    "gold": 45
+  },
+  {
+    "second": 932,
+    "round": "11-5",
+    "level": 3,
+    "gold": 45
+  },
+  {
+    "second": 934,
+    "round": "111-5",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 936,
+    "round": "111-5",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 938,
+    "round": "111-5",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 940,
+    "round": "111-5",
+    "level": 3,
+    "gold": 41
+  },
+  {
+    "second": 942,
+    "round": "111-5",
+    "level": 3,
+    "gold": 46
+  },
+  {
+    "second": 944,
+    "round": "111-5",
+    "level": 3,
+    "gold": 46
+  },
+  {
+    "second": 946,
+    "round": "111-5",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 948,
+    "round": "111-5",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 950,
+    "round": "111-5",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 952,
+    "round": "11-5",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 954,
+    "round": "111-5",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 956,
+    "round": "111-5",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 958,
+    "round": "111-5",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 960,
+    "round": "111-5",
+    "level": 3,
+    "gold": 33
+  },
+  {
+    "second": 962,
+    "round": "111-5",
+    "level": 3,
+    "gold": 33
+  },
+  {
+    "second": 964,
+    "round": "111-5",
+    "level": 3,
+    "gold": 33
+  },
+  {
+    "second": 966,
+    "round": "111-5",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 968,
+    "round": "111-5",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 970,
+    "round": "111-5",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 972,
+    "round": "111-5",
+    "level": 3,
+    "gold": 33
+  },
+  {
+    "second": 974,
+    "round": "111-5",
+    "level": 3,
+    "gold": 33
+  },
+  {
+    "second": 980,
+    "round": "\u5ddd-",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 982,
+    "round": "\u5ddd-",
+    "level": 3,
+    "gold": 28
+  },
+  {
+    "second": 984,
+    "round": "\u5ddd-",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 988,
+    "round": "111-5",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 990,
+    "round": "111-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 994,
+    "round": "111-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 996,
+    "round": "111-5",
+    "level": 3,
+    "gold": 31
+  },
+  {
+    "second": 1002,
+    "round": "111-5",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 1004,
+    "round": "111-5",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 1006,
+    "round": "111-5",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 1008,
+    "round": "111-5",
+    "level": 3,
+    "gold": 29
+  },
+  {
+    "second": 1010,
+    "round": "111-5",
+    "level": 3,
+    "gold": 35
+  },
+  {
+    "second": 1012,
+    "round": "111-5",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1014,
+    "round": "111-5",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1016,
+    "round": "111-5",
+    "level": 3,
+    "gold": 37
+  },
+  {
+    "second": 1018,
+    "round": "111-5",
+    "level": 3,
+    "gold": 37
+  },
+  {
+    "second": 1020,
+    "round": "111-5",
+    "level": 3,
+    "gold": 37
+  },
+  {
+    "second": 1022,
+    "round": "111-6",
+    "level": 3,
+    "gold": 37
+  },
+  {
+    "second": 1024,
+    "round": "111-6",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 1026,
+    "round": "111-6",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 1028,
+    "round": "111-6",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 1030,
+    "round": "111-6",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 1032,
+    "round": "111-6",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 1034,
+    "round": "111-6",
+    "level": 3,
+    "gold": 39
+  },
+  {
+    "second": 1036,
+    "round": "111-6",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 1038,
+    "round": "111-6",
+    "level": 3,
+    "gold": 21
+  },
+  {
+    "second": 1040,
+    "round": "111-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1042,
+    "round": "111-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1044,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1046,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1048,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1050,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1052,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1054,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1056,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1058,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1060,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1064,
+    "round": "11-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1072,
+    "round": "111-6",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1074,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1076,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1078,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1080,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1082,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1084,
+    "round": "11-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1086,
+    "round": "11-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1088,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1090,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1092,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1094,
+    "round": "111-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1096,
+    "round": "11-6",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1098,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1100,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1102,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1104,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1106,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1108,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1110,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1112,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1114,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1116,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1118,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1120,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1122,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1124,
+    "round": "I\u5ddd",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1126,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1128,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1130,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1134,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 1136,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1138,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1140,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1142,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1144,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1146,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1148,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1150,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1152,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1154,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1156,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1158,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1160,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1162,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1164,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1166,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1176,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1182,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1186,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 10
+  },
+  {
+    "second": 1188,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1190,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1192,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1194,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1196,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1198,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1200,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1202,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 1204,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 1206,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 1210,
+    "round": "IV-1",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1212,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1214,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1216,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1218,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1224,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1226,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1228,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1230,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1232,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1234,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1236,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1238,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1240,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1242,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1244,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 4
+  },
+  {
+    "second": 1246,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 9
+  },
+  {
+    "second": 1252,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 9
+  },
+  {
+    "second": 1256,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 9
+  },
+  {
+    "second": 1258,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1260,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1262,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1264,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1266,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1268,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1270,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1272,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1274,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1276,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 36
+  },
+  {
+    "second": 1278,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 32
+  },
+  {
+    "second": 1280,
+    "round": "IV-2",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1282,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1284,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1288,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1290,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 22
+  },
+  {
+    "second": 1292,
+    "round": "M",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1296,
+    "round": "M",
+    "level": 3,
+    "gold": 18
+  },
+  {
+    "second": 1298,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1300,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1302,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1304,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1306,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1310,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 13
+  },
+  {
+    "second": 1312,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1314,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1316,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1318,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 1320,
+    "round": "IV-3",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 1322,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 1324,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 1326,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 68
+  },
+  {
+    "second": 1330,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 68
+  },
+  {
+    "second": 1332,
+    "round": "IV",
+    "level": 3,
+    "gold": 42
+  },
+  {
+    "second": 1334,
+    "round": "IV",
+    "level": 3,
+    "gold": 40
+  },
+  {
+    "second": 1336,
+    "round": "IV",
+    "level": 3,
+    "gold": 30
+  },
+  {
+    "second": 1338,
+    "round": "IV",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1340,
+    "round": "IV",
+    "level": 3,
+    "gold": 26
+  },
+  {
+    "second": 1342,
+    "round": "IV",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 1344,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 1346,
+    "round": "IV-",
+    "level": 3,
+    "gold": 17
+  },
+  {
+    "second": 1354,
+    "round": "IV-",
+    "level": 3,
+    "gold": 155
+  },
+  {
+    "second": 1360,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1362,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1364,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1366,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1368,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1370,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1372,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1374,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1378,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 24
+  },
+  {
+    "second": 1384,
+    "round": "IV-4",
+    "level": 3,
+    "gold": 38
+  },
+  {
+    "second": 1388,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 1390,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 16
+  },
+  {
+    "second": 1392,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1394,
+    "round": "S",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 1396,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1398,
+    "round": "5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1400,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1402,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1404,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1406,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1408,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1410,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1412,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1414,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1416,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1418,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1420,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1422,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1424,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1426,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1428,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1438,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1440,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1442,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 12
+  },
+  {
+    "second": 1444,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 1446,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1448,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1450,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1452,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1454,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1456,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1458,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 37
+  },
+  {
+    "second": 1460,
+    "round": "IV-5",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 1464,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 1466,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 27
+  },
+  {
+    "second": 1470,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 25
+  },
+  {
+    "second": 1472,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 23
+  },
+  {
+    "second": 1474,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 19
+  },
+  {
+    "second": 1476,
+    "round": "IV- 6",
+    "level": 3,
+    "gold": 15
+  },
+  {
+    "second": 1478,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 11
+  },
+  {
+    "second": 1480,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1482,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1484,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1486,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1488,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1490,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1492,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1494,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1496,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1498,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1500,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1502,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1510,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 14
+  },
+  {
+    "second": 1520,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 20
+  },
+  {
+    "second": 1522,
+    "round": "IV-6",
+    "level": 3,
+    "gold": 34
+  },
+  {
+    "second": 1524,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1526,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1528,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1530,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1532,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1534,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1536,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1538,
+    "round": "IV-",
+    "level": 3,
+    "gold": 3
+  },
+  {
+    "second": 1540,
+    "round": "V-1",
+    "level": 3,
+    "gold": 79
+  },
+  {
+    "second": 1542,
+    "round": "V-1",
+    "level": 9,
+    "gold": 66
+  },
+  {
+    "second": 1544,
+    "round": "V-1",
+    "level": 9,
+    "gold": 62
+  },
+  {
+    "second": 1546,
+    "round": "V-1",
+    "level": 9,
+    "gold": 53
+  },
+  {
+    "second": 1550,
+    "round": "V-1",
+    "level": 9,
+    "gold": 41
+  },
+  {
+    "second": 1552,
+    "round": "V-1",
+    "level": 9,
+    "gold": 30
+  },
+  {
+    "second": 1556,
+    "round": "V-1",
+    "level": 9,
+    "gold": 20
+  },
+  {
+    "second": 1558,
+    "round": "V-1",
+    "level": 9,
+    "gold": 14
+  },
+  {
+    "second": 1560,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1562,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1564,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1566,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1568,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1570,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1572,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1574,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1576,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1578,
+    "round": "V-1",
+    "level": 9,
+    "gold": 2
+  },
+  {
+    "second": 1588,
+    "round": "V-1",
+    "level": 9,
+    "gold": 2
+  },
+  {
+    "second": 1590,
+    "round": "V-1",
+    "level": 9,
+    "gold": 2
+  },
+  {
+    "second": 1592,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1594,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1596,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1600,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1602,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1604,
+    "round": "V-1",
+    "level": 9,
+    "gold": 12
+  },
+  {
+    "second": 1606,
+    "round": "V-1",
+    "level": 9,
+    "gold": 40
+  },
+  {
+    "second": 1608,
+    "round": "V-1",
+    "level": 9,
+    "gold": 40
+  },
+  {
+    "second": 1610,
+    "round": "V-1",
+    "level": 9,
+    "gold": 40
+  },
+  {
+    "second": 1611,
+    "round": "V-1",
+    "level": 9,
+    "gold": 40
+  }
+]

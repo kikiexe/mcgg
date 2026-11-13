@@ -1,0 +1,324 @@
+{
+  "metadata": {
+    "patch": "7.2",
+    "season": "Season 7 (Chrono Echoes)"
+  },
+  "game_rules": {
+    "title": "PANDUAN LENGKAP MEKANIK & SISTEM PERTANDINGAN MAGIC CHESS: GO GO (SEASON 7)",
+    "subtitle": "Ringkasan Parameter Utama Pertandingan & Sistem Permainan S7 (Chrono Echoes)",
+    "overview_parameters": {
+      "HP Commander Awal": "100 HP",
+      "Batas Level Papan": "Level 10 (10 Hero)",
+      "Biaya Reroll Shop": "2 Gold / Refresh",
+      "Slot Cadangan (Bench)": "8 Slot Hero",
+      "Maks. Bunga Gold": "+4 Gold (Saldo ≥ 20)",
+      "Tier Hero Spesial S7": "Alpha (7 Gold)",
+      "Fase Go Go Card": "Ronde I-4 (Power Card), II-4, III-4",
+      "Biaya Level Up (EXP)": "4 Gold (+4 EXP)"
+    },
+    "level_exp_and_shop_odds": [
+      {
+        "Level Commander": "Level 3",
+        "Kapasitas Hero (Papan)": "3.0",
+        "EXP untuk Naik": "– (Level Awal)",
+        "Tier 1 (1 Gold)": "0.6",
+        "Tier 2 (2 Gold)": "0.3",
+        "Tier 3 (3 Gold)": "0.1",
+        "Tier 4 (4 Gold)": "0.0",
+        "Tier 5 (5 Gold)": "0.0"
+      },
+      {
+        "Level Commander": "Level 4",
+        "Kapasitas Hero (Papan)": "4.0",
+        "EXP untuk Naik": "3 EXP",
+        "Tier 1 (1 Gold)": "0.5",
+        "Tier 2 (2 Gold)": "0.35",
+        "Tier 3 (3 Gold)": "0.15",
+        "Tier 4 (4 Gold)": "0.0",
+        "Tier 5 (5 Gold)": "0.0"
+      },
+      {
+        "Level Commander": "Level 5",
+        "Kapasitas Hero (Papan)": "5.0",
+        "EXP untuk Naik": "8 EXP",
+        "Tier 1 (1 Gold)": "0.34",
+        "Tier 2 (2 Gold)": "0.35",
+        "Tier 3 (3 Gold)": "0.3",
+        "Tier 4 (4 Gold)": "0.01",
+        "Tier 5 (5 Gold)": "0.0"
+      },
+      {
+        "Level Commander": "Level 6",
+        "Kapasitas Hero (Papan)": "6.0",
+        "EXP untuk Naik": "20 EXP",
+        "Tier 1 (1 Gold)": "0.25",
+        "Tier 2 (2 Gold)": "0.3",
+        "Tier 3 (3 Gold)": "0.4",
+        "Tier 4 (4 Gold)": "0.05",
+        "Tier 5 (5 Gold)": "0.0"
+      },
+      {
+        "Level Commander": "Level 7",
+        "Kapasitas Hero (Papan)": "7.0",
+        "EXP untuk Naik": "32 EXP",
+        "Tier 1 (1 Gold)": "0.19",
+        "Tier 2 (2 Gold)": "0.28",
+        "Tier 3 (3 Gold)": "0.42",
+        "Tier 4 (4 Gold)": "0.1",
+        "Tier 5 (5 Gold)": "0.01"
+      },
+      {
+        "Level Commander": "Level 8",
+        "Kapasitas Hero (Papan)": "8.0",
+        "EXP untuk Naik": "40 EXP",
+        "Tier 1 (1 Gold)": "0.16",
+        "Tier 2 (2 Gold)": "0.26",
+        "Tier 3 (3 Gold)": "0.35",
+        "Tier 4 (4 Gold)": "0.18",
+        "Tier 5 (5 Gold)": "0.05"
+      },
+      {
+        "Level Commander": "Level 9",
+        "Kapasitas Hero (Papan)": "9.0",
+        "EXP untuk Naik": "54 EXP",
+        "Tier 1 (1 Gold)": "0.13",
+        "Tier 2 (2 Gold)": "0.22",
+        "Tier 3 (3 Gold)": "0.25",
+        "Tier 4 (4 Gold)": "0.26",
+        "Tier 5 (5 Gold)": "0.14"
+      },
+      {
+        "Level Commander": "Level 10",
+        "Kapasitas Hero (Papan)": "10.0",
+        "EXP untuk Naik": "74 EXP (Maksimal)",
+        "Tier 1 (1 Gold)": "0.06",
+        "Tier 2 (2 Gold)": "0.12",
+        "Tier 3 (3 Gold)": "0.22",
+        "Tier 4 (4 Gold)": "0.35",
+        "Tier 5 (5 Gold)": "0.25"
+      }
+    ],
+    "economy_rules": [
+      {
+        "mekanisme": "Gold Dasar Babak I – II",
+        "kondisi_syarat": "Mulai Babak I-1 hingga Babak II-6",
+        "reward_bonus": "+5 Gold",
+        "keterangan_strategi": "Pendapatan pasif dasar seluruh pemain per ronde"
+      },
+      {
+        "mekanisme": "Gold Dasar Babak III",
+        "kondisi_syarat": "Mulai Babak III-1 hingga Babak III-6",
+        "reward_bonus": "+6 Gold",
+        "keterangan_strategi": "Bonus ekstra +1 Gold dasar saat memasuki fase mid game"
+      },
+      {
+        "mekanisme": "Gold Dasar Babak IV – V+",
+        "kondisi_syarat": "Mulai Babak IV-1 hingga pertarungan akhir",
+        "reward_bonus": "+7 Gold",
+        "keterangan_strategi": "Bonus ekstra +2 Gold dasar untuk mempercepat transisi late game"
+      },
+      {
+        "mekanisme": "Interest (Bunga) Level 1",
+        "kondisi_syarat": "Menyimpan saldo 10 – 19 Gold di akhir ronde",
+        "reward_bonus": "+2 Gold",
+        "keterangan_strategi": "Threshold bunga pertama untuk mengumpulkan modal"
+      },
+      {
+        "mekanisme": "Interest (Bunga) Level 2 (Maksimal)",
+        "kondisi_syarat": "Menyimpan saldo ≥ 20 Gold di akhir ronde",
+        "reward_bonus": "+4 Gold",
+        "keterangan_strategi": "Batas interest tertinggi di MCGG (jaga saldo di atas 20G)"
+      },
+      {
+        "mekanisme": "Streak Menang (Win Streak)",
+        "kondisi_syarat": "2-3 Streak: +1G | 4-5 Streak: +2G | 6+ Streak: +3G",
+        "reward_bonus": "+1 s/d +3 Gold",
+        "keterangan_strategi": "Bonus kemenangan beruntun melawan commander lain"
+      },
+      {
+        "mekanisme": "Streak Kalah (Lose Streak)",
+        "kondisi_syarat": "2-3 Streak: +1G | 4-5 Streak: +2G | 6+ Streak: +3G",
+        "reward_bonus": "+1 s/d +3 Gold",
+        "keterangan_strategi": "Kompensasi kekalahan beruntun untuk strategi tabungan late-game"
+      },
+      {
+        "mekanisme": "Bonus Menang Ronde (PvP Win)",
+        "kondisi_syarat": "Menang melawan papan commander lain",
+        "reward_bonus": "+1 Gold",
+        "keterangan_strategi": "Hadiah instan setelah pertempuran PvP berhasil"
+      },
+      {
+        "mekanisme": "Bonus Eliminasi Pemain",
+        "kondisi_syarat": "Mengeliminasi commander lawan dari pertandingan",
+        "reward_bonus": "+2 s/d +5 Gold",
+        "keterangan_strategi": "Bonus hadiah saat pemain lawan tereliminasi"
+      },
+      {
+        "mekanisme": "EXP Pasif Gratis",
+        "kondisi_syarat": "Setiap akhir ronde pertandingan selesai",
+        "reward_bonus": "+2 EXP Gratis",
+        "keterangan_strategi": "Level commander bertambah alami tanpa belanja gold"
+      },
+      {
+        "mekanisme": "Biaya Beli EXP Manual",
+        "kondisi_syarat": "Tiap 4 Gold yang dibelanjakan di Shop",
+        "reward_bonus": "+4 EXP",
+        "keterangan_strategi": "Meningkatkan level commander lebih cepat (1 Gold = 1 EXP)"
+      }
+    ],
+    "match_phases_and_events": [
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak I-1",
+        "deskripsi_drop_dan_pilihan": "Creep Round (Monster Awal)"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak I-2 s/d I-3",
+        "deskripsi_drop_dan_pilihan": "Pertarungan PvP Fase 1"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak I-4",
+        "deskripsi_drop_dan_pilihan": "Go Go Card Fase 1 (Power Card)"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak I-5 s/d I-6",
+        "deskripsi_drop_dan_pilihan": "PvP Lanjutan & Go Go Box I"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak II-1",
+        "deskripsi_drop_dan_pilihan": "Creep Round & Choice Magic Crystal"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak II-2 s/d II-3",
+        "deskripsi_drop_dan_pilihan": "Pertarungan PvP Fase 2"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak II-4",
+        "deskripsi_drop_dan_pilihan": "Go Go Card Fase 2 (Mid-Game)"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak II-5 s/d II-6",
+        "deskripsi_drop_dan_pilihan": "PvP Lanjutan & Go Go Box II"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak III-1",
+        "deskripsi_drop_dan_pilihan": "Creep Round 3 (Monster Elite)"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak III-4",
+        "deskripsi_drop_dan_pilihan": "Go Go Card Fase 3 (Late-Game)"
+      },
+      {
+        "fase_ronde": "",
+        "jenis_event": "Babak IV-1 s/d V+ (Boss)",
+        "deskripsi_drop_dan_pilihan": "Creep Boss (Lord) & Sudden Death"
+      }
+    ],
+    "damage_calculation_by_round": [
+      {
+        "rentang_ronde": "Ronde I-2 s/d I-4 (Babak I)",
+        "base_dmg": "3 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Ringan (Kehilangan 4 – 8 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde II-1 s/d II-4 (Babak II Awal)",
+        "base_dmg": "5 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Rendah-Sedang (Kehilangan 7 – 13 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde II-5 s/d II-6 (Babak II Akhir)",
+        "base_dmg": "6 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Sedang (Kehilangan 8 – 15 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde III-1 s/d III-3 (Babak III Awal)",
+        "base_dmg": "7 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Signifikan (Kehilangan 10 – 18 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde III-4 s/d III-6 (Babak III Akhir)",
+        "base_dmg": "11 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Tinggi / Power Spike (Kehilangan 14 – 24 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde IV-1 s/d IV-3 (Babak IV Awal)",
+        "base_dmg": "13 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Sangat Tinggi (Kehilangan 16 – 28 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde IV-4 s/d IV-6 (Babak IV Akhir)",
+        "base_dmg": "14 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Ambang Eliminasi Kritis (Kehilangan 18 – 32 HP per ronde)"
+      },
+      {
+        "rentang_ronde": "Ronde V-1 s/d V-5 (Sudden Death)",
+        "base_dmg": "15 DMG",
+        "bobot_hero_bintang": "1★: +1 dmg | 2★: +2 dmg | 3★: +3 dmg",
+        "estimasi_kerugian_hp": "Risiko Fatal (Kekalahan telak rugi 20 – 35+ HP / Gugur)"
+      }
+    ],
+    "hero_pool_and_shared_rules": [
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Tier 1 (1 Gold)",
+        "strategi_roll_kontes": "25 Hero / Jenis"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Tier 2 (2 Gold)",
+        "strategi_roll_kontes": "21 Hero / Jenis"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Tier 3 (3 Gold)",
+        "strategi_roll_kontes": "18 Hero / Jenis"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Tier 4 (4 Gold)",
+        "strategi_roll_kontes": "14 Hero / Jenis"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Tier 5 (5 Gold)",
+        "strategi_roll_kontes": "9 Hero / Jenis"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Tier 7 (Alpha Khusus S7)",
+        "strategi_roll_kontes": "Unit Spesial Spectre"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Sistem Shared Pool",
+        "strategi_roll_kontes": "Pool Publik Bersama"
+      },
+      {
+        "tier_hero": "",
+        "total_unit_pool": "Recycle Hero Gugur",
+        "strategi_roll_kontes": "Otomatis Kembali"
+      }
+    ],
+    "special_mechanics": {
+      "kalkulasi_total_dmg": "= Base DMG + Σ(Bintang Hero Lawan)",
+      "keterangan": "Unit non-hero/summon tambah 1 DMG; Draw saling serang; All-In saat HP < 20",
+      "kunci_shop": ": Fitur Kunci Shop (Lock) (Gratis (0 Gold))"
+    }
+  }
+}

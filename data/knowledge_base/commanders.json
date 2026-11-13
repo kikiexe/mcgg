@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "patch": "7.2",
+    "total": 42
+  },
+  "commanders": [
+    {
+      "Nama Commander": "Alice",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Abyssal Gaze: Dapatkan 1 penggunaan di Round I-1/II-1/III-1. Setelah dipakai pada Hero, Hero itu tidak lagi butuh tiga Hero yang sama untuk Star Up. Sebagai gantinya, mendapatkan Hero yang sama meningkatkan atribut Hero itu, maksimal 8 kali.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Crimson Grace: Pakai skill untuk mendapat versi 1-Star dari Hero terpilih. Hero bisa menerima 4 peningkatan atribut tambahan, masing-masing memberi 10% Hybrid ATK dan 10% Max HP."
+    },
+    {
+      "Nama Commander": "Chou",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Warrior's Honor: Dapatkan 2 Gold setelah memenangkan babak.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Menang atau Kalah: Selain itu, dapat 3 Gold setelah kalah di sebuah babak."
+    },
+    {
+      "Nama Commander": "Fanny",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Blade Dancer: Fanny membangun Hero Launcher. Pembangunan butuh 10 babak dan memberi 4 Gold saat selesai. Seret Hero ke Launcher untuk memanggil Shadow yang ikut battle. Seret Shadow untuk mengatur posisi deploy Hero.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Heart of the Blade: Pembangunan Hero Launcher selesai hanya dalam 2 babak, dan Hero yang diluncurkan mendapat 20% Hybrid ATK dan HP ekstra."
+    },
+    {
+      "Nama Commander": "Lunox",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Power of Chaos: Bisa dipakai setelah Stage I-2. Pilih Hero tanpa Blessing untuk diberi Blessing acak. Bisa dipakai 1 kali. Blessing: Hero dengan efek Blessing menambah 1 hitungan ke Sinergi Role atau Faction-nya.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Power of Order: Setelah Lunox memakai skill, dapatkan 3 Hero acak dari Synergy yang diberikannya (terpengaruh peluang refresh Shop saat ini) dan 6 Gold."
+    },
+    {
+      "Nama Commander": "Aamon",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Blade of Resonance: Dapatkan 1 Mirror Device di awal match. Saat Hero mencapai 2-Star, kamu dapat 1 Shard. 7 Shard otomatis diubah menjadi 1 Mirror Device. Maksimal 2 Mirror Device.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Skybreaker Blade: Dapatkan 12 Gold tambahan setiap kali Alat Cermin dibuat."
+    },
+    {
+      "Nama Commander": "Angela",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Love's Protection: Pilih seorang ally untuk dilindungi. Hero terpilih mendapat 35% Skill DMG Increase dan memulihkan 20% Mana setelah memakai skill.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Ripples of Love: Angela melindungi satu hero tambahan dengan Power tertinggi."
+    },
+    {
+      "Nama Commander": "Franco",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Hook Plunder: Mulai dari Round I-3, saat battle mulai, lemparkan Iron Hook ke musuh acak untuk mendapat Loot dengan Quality yang sesuai. Maksimal 3 Loot bisa ada sekaligus. Tap tombol skill kapan saja untuk membuka antarmuka Loot dan mengubah Loot menjadi Gold secara manual.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Imbal Hasil Melimpah: Dapatkan 1 Gold dan 1 Commander Shield dari Loot fusion."
+    },
+    {
+      "Nama Commander": "Freya",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Power of Einherjar: Pilih sebuah Synergy untuk dialiri kekuatan Einherjar, memperkuat Synergy Effects. (Kamu bisa mengganti Synergy yang diperkuat kapan saja. Pergantian saat battle berlaku di babak berikutnya.)",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Contract of Faith: Klaim Rewards pada 2 / 4 / 6 jumlah Synergy yang diperkuat. (Hadiah tiap jumlah Synergy hanya bisa diklaim sekali per match. Mengganti Synergy tidak mereset kesempatan.)"
+    },
+    {
+      "Nama Commander": "Harley",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Midas Touch!: Bisa dipakai mulai Round II-2. Refresh Shop 1 kali untuk mengisinya dengan Hero 5-Gold ×3. Dapatkan 1 pembelian Hero gratis di babak ini.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Gold! Gold! Gold!: Refresh Shop di Active Skill kini mengisi Shop dengan Hero 5-Gold ×5."
+    },
+    {
+      "Nama Commander": "Kalea",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Serpent's Favor: Kalea memanggil Treasure Trove di samping medan perang. Mulai Round I-4, ketuk Lucky Dice setiap babak untuk mendapat 1–4 poin secara acak. Jika total melebihi 8 setelah lemparan, poin direset ke 0. Aktifkan Trove untuk mengklaim Rewards sesuai poin saat ini. Maks aktivasi per match: 2.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Wave of Fortune: Jumlah maksimum aktivasi Treasure Trove naik menjadi 3."
+    },
+    {
+      "Nama Commander": "Lancelot",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Golden Legacy: Tidak lagi mendapat Interest. Mulai dari Ⅰ/Ⅱ/Ⅲ dan stage berikutnya, dapat 2/3/3 Gold bonus setiap babak.\nDi akhir setiap babak, semua Gold digunakan untuk upgrade Lancelot.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Golden Blade: Mulai Stage Ⅰ/Ⅱ/Ⅲ, bonus Gold naik menjadi 4/5/5."
+    },
+    {
+      "Nama Commander": "Ling",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Showdown: Membuat Dueling Ring di Chessboard yang bertahan selama 25s. Saat battle dimulai, Hero ally di ring ini akan menyeret Hero musuh terjauh ke dalam ring dan bertarung hanya dengan Basic ATK.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Transcendent Stance: Setelah memenangkan duel, mendapat 6% Hybrid ATK tambahan secara permanen (hingga 11 stack)."
+    },
+    {
+      "Nama Commander": "Lukas",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Unleash the Beast: Panggil Sacred Beast untuk bergabung dalam battle. Setiap 3 babak, kamu bisa mengonsumsi Hero 1-Star. Sacred Beast mendapat 12% Hybrid ATK dasar Hero itu dan EXP sebesar Gold Cost Hero tersebut. Sacred Beast naik ke 2-Star di 4 EXP, dan 3-Star di 10 EXP.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Sacred Gift: Menaruh Hero ke altar juga memberi Gold acak sebesar 1 sampai 3 kali biaya Gold Hero tersebut."
+    },
+    {
+      "Nama Commander": "Luo Yi",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Duality Transformation: Panggil sebuah perangkat di samping medan battle. Seret Hero ke perangkat untuk mengubah kekuatannya menjadi Equipment, Essence Core. Essence Core mewarisi sebagian atribut Hero. Reset perangkat untuk mengubah Core kembali menjadi Hero.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Harmony of Essence: Berdasarkan Role Synergy dari Hero yang memberikan power, Essence Core mendapat efek penguatan tambahan: Enhancement Effects"
+    },
+    {
+      "Nama Commander": "Minotaur",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Molten Decree: Pilih sebuah Equipment untuk diperkuat. Bisa dipakai 3 kali. (Special Equipment dan Enhanced Equipment tidak bisa diperkuat.)",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Bloodline Resonance: Dapatkan 1 Equipment Chest. Dapat 3 Gold untuk setiap Equipment yang di-enhance oleh skill."
+    },
+    {
+      "Nama Commander": "Miya",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Lunar Longbow: Pilih satu Hero ally untuk serangan kompak. Setiap 6 Basic ATK dari Hero yang dipilih, Miya menembakkan 5 panah dengan cepat ke musuh, masing-masing memberi Physical DMG sebesar 7% Max HP target.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Moonshade Arrow: Miya menembakkan tambahan 3 Split Arrow, masing-masing memberi Physical DMG sebesar 4% Max HP musuh. Selain itu, Hero terpilih mendapat 60% ATK Speed."
+    },
+    {
+      "Nama Commander": "Moskov",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Power of Shadow: Membuat Shadow Field di sisi Battle Area. Tempatkan Hero 1-Gold, 2-Gold, 3-Gold, dan 4-Gold yang ditentukan satu per satu (dapat 5 Gold setiap kali) untuk menyelesaikan ritual. Lalu tempatkan satu Hero di dalamnya untuk mendapat Power of Shadows, meningkatkan Hybrid ATK sebesar 15% dan HP sebesar 15%.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Dark Star: Menghasilkan dua duplikat 1-Star tambahan dari Hero yang diperkuat."
+    },
+    {
+      "Nama Commander": "Nana",
+      "Tipe Commander": "Daya tahan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Molina's Blessing: Nana menghindari kematian pertamanya dan bertahan dengan 1 HP.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Molina's Gift: Dapatkan 10 Gold untuk setiap 10 DMG yang diterima, maksimal 3 kali. Memicu efek ini 3 kali memberi tambahan Equipment Chest ×1."
+    },
+    {
+      "Nama Commander": "Paquito",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Fist of Glory: Di Round II-1 dan Round III-1, dapatkan Boxing Gloves untuk Hero 3-Gold dan 4-Gold secara berurutan. Pasang Glove ke Hero dengan cost yang sesuai untuk mendapatkan 2 duplikat 1-Star-nya.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Champ Stance: Di Round IV-1, dapatkan Boxing Glove untuk Hero 5-Gold. Pasang Glove ke Hero dengan cost ini untuk mendapatkan 2 duplikat 1-Star-nya."
+    },
+    {
+      "Nama Commander": "Popol and Kupa",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Jebakan Salin: Saat Preparation Stage, Copy Trap yang bisa digeser muncul di sisi medan perangmu. Saat Hero musuh menginjak trap, dapatkan versi 1-Star Hero itu, maksimal 1 kali per babak.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Hunter's Mark: Dapatkan 1 Gold saat menyalin Hero. Jika tidak ada Hero yang disalin di akhir babak, dapatkan 1 Gold."
+    },
+    {
+      "Nama Commander": "Vale",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Updraft: Pilih sebuah Hero. Refresh Shop untuk menampilkan Hero yang punya minimal satu Sinergi sama dengan Hero terpilih, dan dapatkan 1 kesempatan membeli Hero gratis. Dapatkan satu skill charge saat mencapai Commander Level 6/8/10.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Shifting Wind: Dapatkan satu charge skill tambahan saat mencapai Commander Level 5/7/9."
+    },
+    {
+      "Nama Commander": "Valir",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Blazing Inferno: Valir bisa memilih Go Go Card dua kali di Go Go Card Stage Round II-3.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Incinerate: Dapatkan Commander EXP tambahan berdasarkan Card Quality di Round II-3: 16 EXP untuk kartu ungu. 26 EXP untuk kartu biru."
+    },
+    {
+      "Nama Commander": "Zilong",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Great Dragon Spear: Dapatkan Great Dragon Spear milik Zilong di awal match, memberi pembawanya 20% chance untuk memicu 2 ATK tambahan di setiap Basic ATK. Kamu bisa membeli hingga 1 trait dari Shop untuk memperkuat Great Dragon Spear.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Dragon's Roar: Kamu bisa membeli 2 trait tambahan untuk memperkuat Great Dragon Spear."
+    },
+    {
+      "Nama Commander": "Alucard",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Demonic Altar: Alucard memanggil Demonic Altar di samping medan perang, berisi 6 Rewards. Setiap kali mengaktifkan Altar, buang 1 hadiah dan terima 1 acak dari sisa hadiah. Kamu bisa mengaktifkan Altar sekali di Round I-3 dan II-3.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Plunder Expansion: Dapatkan 1 aktivasi tambahan di Round III-3."
+    },
+    {
+      "Nama Commander": "Aurora",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Harta Frost: Di awal setiap babak, Aurora membekukan Shop-mu. Jika kamu tidak membeli Hero apa pun dalam satu babak, kamu mendapat 2 Frost Energy. Saat Frost Energy mencapai 6, kamu mendapat hadiah acak senilai tidak kurang dari 7 Gold, lalu mulai menumpuk lagi.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Icy Blessing: Frost Energy yang didapat naik menjadi 3."
+    },
+    {
+      "Nama Commander": "Brody",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Abyssal Call: Brody memanggil Abyss Domain di samping medan perang. Kamu bisa menaruh 2 Hero berbeda ke dalamnya. Jika Gold cost atau Synergy mereka sama, dapatkan Hero acak dengan Gold cost atau Synergy yang sama. Dapat 1 kali pemakaian Domain setiap 4 babak.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Abyssal Surge: Dapatkan 1 penggunaan Domain dan 2 Commander EXP setiap 3 babak."
+    },
+    {
+      "Nama Commander": "Cyclops",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Astral Blessing: Saat Commander lain tereliminasi, Cyclops membuka Star-Core Jar untuk mendapat Gold sebesar 14% nilai lineup Commander yang tereliminasi dan 1 Hero acak dari lineup mereka dengan star level saat ini.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Astral Resonance: Saat HP-mu pertama kali turun ke 80 atau kurang, dapatkan 3 Hero dari Sinergi dengan hitungan tertinggi saat ini dan 1 Equipment Chest."
+    },
+    {
+      "Nama Commander": "Diggie",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Alarm Chest: Diggie memanggil Alarm Chest di medan perang. Chest mengumpulkan 15 Time Point per babak. Setiap kali Chest mencapai 100 poin, Chest otomatis terbuka memberi Rewards lalu naik ke rarity lebih tinggi. Buka maksimal: 3.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Akselerasi Waktu: Menang babak memberi 10 Time Point ekstra. Kalah babak menambah Max HP Alarm Chest secara permanen sebesar 300."
+    },
+    {
+      "Nama Commander": "Dyrroth",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Abyssal Devourer: Mulai Round I-4, Dyrroth bisa devour satu Hero 1-Star setiap 3 babak dan mengembalikan Hero berkualitas lebih tinggi (cost Gold +1, maksimal 5-Gold).",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Abyssal Favor: Dyrroth mendapat 2 Commander EXP per devour. Setelah setiap 2 devour, devour berikutnya memberi 2 Hero, masing-masing berbagi satu Sinergi dengan Hero yang di-devour. (Devour Hero 5-Gold memberi 2 Hero 5-Gold acak.)"
+    },
+    {
+      "Nama Commander": "Gusion",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Light Sigil: Gusion memanggil Light Sigil yang menampilkan Role Synergy acak. Seret Hero ke Sigil untuk memberinya Sinergi tersebut. Sigil lalu lenyap dan memberi 7 Gold. Kamu punya 3 kesempatan untuk me-refresh Role Synergy.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Sigil Resonance: Setelah Stage Ⅱ, Sigil bisa dipakai satu kali lagi."
+    },
+    {
+      "Nama Commander": "Johnson",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Johnny, Go!: Tap skill untuk membuka shop eksklusif. Pilih 1 dari 5 Johnny (3-Gold) secara gratis. Setiap Johnny punya 2 Synergy berbeda yang dipilih acak dari ?. Setelah memilih, Shop hanya akan me-refresh Johnny dengan Synergy yang sama.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Transform!: Saat battle mulai, Johnny menerjang area dengan musuh terbanyak, memberi Magic DMG sebesar 10% Max HP-nya ke musuh di sekitar."
+    },
+    {
+      "Nama Commander": "Kagura",
+      "Tipe Commander": "Daya tahan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Payung Shield: Saat Preparation Stage, kamu bisa memilih satu Hero untuk mendapat Shield. Saat HP Hero itu pertama kali turun di bawah 50% dalam battle, dia mendapat Shield sebesar 60% Max HP-nya.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Yin Yang Gathering: Nilai Shield naik menjadi 125% Max HP."
+    },
+    {
+      "Nama Commander": "Karina",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Shadow Twinblades: Dapatkan Shadow Twinblades di awal: Saat HP Hero musuh di sebelah pemakai di bawah 18%, Karina mengeksekusi target.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Twinblades Evolution: Setelah Karina mengeksekusi target, pemakai mendapat 2% DMG tambahan, hingga 36%."
+    },
+    {
+      "Nama Commander": "Layla",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Hologram: Destruction Rush: Layla membuat hologram yang memancarkan laser untuk menembus musuh, memberi 340 Physical DMG, dan menambah ATK Speed sebesar 3% setiap babak.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Hologram: Synergy Freedom: Setiap 8000 DMG yang diberikan, dapatkan Hero dari Sinergi aktif tertinggimu di babak berikutnya."
+    },
+    {
+      "Nama Commander": "Lylia",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Go, Tharz!: Bisa dipakai setelah Capacity mencapai 8: Tharz melahap Shop dan menggantinya dengan Little Witch's Shop, tempat kamu bisa memakai Witch Coin untuk membeli Hero yang sudah di-deploy. Hero yang sudah habis di Shared Hero Pool tidak bisa dibeli. Dapat 7 Witch Coin di awal setiap babak.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Party Time!: Dapatkan 15 Witch Coin langsung saat Shop diganti. Setelah setiap kemenangan babak, dapatkan 5 Witch Coin tambahan di babak berikutnya."
+    },
+    {
+      "Nama Commander": "Ruby",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Red Hood's Rage: Dapatkan 2 Equipment: Cloak dan Scythe.\nCloak: Basic ATK pemakai Cloak memberi Rage Mark ke target saat ini. Saat musuh yang ditandai mati, pemakai memulihkan 10% HP. (Hanya 1 Rage Mark yang bisa ada sekaligus. Tanda berpindah ke target baru saat pemakai berganti target.)\nScythe: Memberi 260% Physical DMG berdasarkan Adaptive ATK ke musuh yang memiliki Rage Mark setiap 2s.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Life from Death: Cloak dan Scythe sama-sama mendapat efek Pasif tambahan:\nCloak: Saat mati, pemakai Cloak bangkit kembali dengan 30% HP (sekali per babak).\nScythe: Setelah pemakai Cloak bangkit kembali, pemakai Scythe mendapat 55% Hybrid ATK."
+    },
+    {
+      "Nama Commander": "Vexana",
+      "Tipe Commander": "Suplai",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "I Want All of Them!: Untuk 3 babak Go Go Box pertama, setelah semua Commander selesai memilih, pilih satu hadiah tambahan dari opsi yang tersisa.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Tanpa Batas: Di babak Go Go Box pertama, salin item atau Hero pertama yang kamu pilih dan dapatkan 13 Gold."
+    },
+    {
+      "Nama Commander": "Yu Zhong",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Soul Grip: Go Go Card di awal Round Ⅱ-3 naik 1 tingkat kualitas. Jika sudah kualitas maksimum, dapatkan Black Dragon Treasure acak sebagai gantinya.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Cursing Touch: Peningkatan quality juga berlaku untuk Go Go Card di awal Babak Ⅲ-3. Terima Black Dragon Treasure ×1 ekstra saat pemilihan Go Go Card Babak Ⅰ-2."
+    },
+    {
+      "Nama Commander": "Akai",
+      "Tipe Commander": "Daya tahan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Anger: Berikan 2 Commander DMG tambahan saat menang.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Serang & Bertahan: Dapatkan 1 Shield untuk setiap 6 Commander DMG yang diberikan."
+    },
+    {
+      "Nama Commander": "Guinevere",
+      "Tipe Commander": "Strategi",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Super Magic: Dapatkan Equipment ×1 di awal match. 14% peluang 1 Hero gratis muncul di Shop setelah auto-refresh.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Mystic Evolution: Peluang menemukan Hero gratis naik menjadi 24%."
+    },
+    {
+      "Nama Commander": "Odette",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Blessing: Saat minimal satu Sinergi dengan hitungan 6 atau lebih aktif, Hybrid ATK semua Hero ally naik 10%.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Supplication: Saat hanya satu Sinergi dengan hitungan 6 atau lebih yang aktif, dan tidak ada Sinergi lain yang aktif, Hero ally mendapat 8% ATK Speed ekstra."
+    },
+    {
+      "Nama Commander": "Wanwan",
+      "Tipe Commander": "Pertarungan",
+      "Tipe Skill 1": "Pasif",
+      "Skill 1": "Tiger Pounce: Saat HP Hero musuh pertama kali turun di bawah 30%, Wanwan menyerang Hero musuh dengan HP terendah 20 kali, memberi 180 / 310 / 430 / 550 Physical DMG tergantung Stage saat ini.",
+      "Tipe Skill 2": "Pasif",
+      "Skill 2": "Reinforcement: Dapatkan 1 Gold saat membunuh Hero musuh, maksimal 3 kali."
+    }
+  ]
+}

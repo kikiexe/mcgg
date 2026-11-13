@@ -1,0 +1,744 @@
+{
+  "metadata": {
+    "patch": "7.2",
+    "total": 92
+  },
+  "items": [
+    {
+      "Nama Item": "Inspire",
+      "Kategori": "Spell",
+      "Fungsi / Ringkasan": "Tambah ATK Speed",
+      "Statistik Dasar": "-",
+      "Efek Item": "Inspire: Beri 20/25/30/40% ATK Speed (naik sesuai progres Stage).",
+      "Efek Saat Di-upgrade": "Inspire: Beri 20/25/30/40% ATK Speed (naik sesuai progres Stage). · Swift: Dapatkan 20% ATK Speed."
+    },
+    {
+      "Nama Item": "Revitalize",
+      "Kategori": "Spell",
+      "Fungsi / Ringkasan": "Pulihkan HP saat HP Rendah",
+      "Statistik Dasar": "-",
+      "Efek Item": "Revitalize: Panggil Healing Spring selama 5s saat HP di bawah 50%, memulihkan 6% HP tiap 1s untuk sekutu di dalam area.",
+      "Efek Saat Di-upgrade": "Revitalize: Panggil Healing Spring selama 5s saat HP di bawah 50%, memulihkan 6% HP tiap 1s untuk sekutu di dalam area. · Longevity: Dapatkan 20% Max HP."
+    },
+    {
+      "Nama Item": "Purify",
+      "Kategori": "Spell",
+      "Fungsi / Ringkasan": "Control Immunity",
+      "Statistik Dasar": "+15% ATK Speed",
+      "Efek Item": "Purify: Saat battle mulai, kebal terhadap control dan displacement selama 30s pertama.",
+      "Efek Saat Di-upgrade": "Purify: Saat battle mulai, kebal terhadap control dan displacement selama 30s pertama. · Swift: Dapatkan 20% ATK Speed."
+    },
+    {
+      "Nama Item": "Aegis",
+      "Kategori": "Spell",
+      "Fungsi / Ringkasan": "Provide Shields to Allies",
+      "Statistik Dasar": "-",
+      "Efek Item": "Aegis: Saat battle mulai, beri Shield sebesar 25% HP yang bertahan 25s ke Hero ini dan sekutu dalam 1 tile di kiri dan kanan.",
+      "Efek Saat Di-upgrade": "Aegis: Saat battle mulai, beri Shield sebesar 25% HP yang bertahan 25s ke Hero ini dan sekutu dalam 1 tile di kiri dan kanan. · Longevity: Dapatkan 20% Max HP."
+    },
+    {
+      "Nama Item": "Retribution",
+      "Kategori": "Spell",
+      "Fungsi / Ringkasan": "Peningkatan DMG",
+      "Statistik Dasar": "-",
+      "Efek Item": "Retribution: Beri 20/25/30/40% DMG ekstra (naik sesuai progres Stage).",
+      "Efek Saat Di-upgrade": "Retribution: Beri 20/25/30/40% DMG ekstra (naik sesuai progres Stage). · Onslaught: Dapatkan 20% DMG tambahan."
+    },
+    {
+      "Nama Item": "Demon Hunter Sword",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "Tank Killer",
+      "Statistik Dasar": "+10% ATK Speed",
+      "Efek Item": "Engulf: Basic ATK memberi tambahan Physical DMG sebesar 2% dari max HP target.",
+      "Efek Saat Di-upgrade": "Engulf: Basic ATK memberi tambahan Physical DMG sebesar 4% dari max HP target."
+    },
+    {
+      "Nama Item": "Golden Staff",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "ATK Speed Sangat Tinggi",
+      "Statistik Dasar": "+15% ATK Speed",
+      "Efek Item": "Impulsive: Setiap Basic ATK menambah ATK Speed sebesar 2%, bertumpuk hingga 50 kali.",
+      "Efek Saat Di-upgrade": "Impulsive: Setiap Basic ATK menambah ATK Speed sebesar 3.5%, bertumpuk hingga 50 kali."
+    },
+    {
+      "Nama Item": "War Axe",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "Spell Vamp",
+      "Statistik Dasar": "+10% Physical ATK · +15% Spell Vamp",
+      "Efek Item": "Fighting Spirit: Saat memberi DMG, tambah 4 Hybrid DEF selama 3s, stack hingga 5 kali. Di stack maksimal, dapatkan 10% DMG ekstra.",
+      "Efek Saat Di-upgrade": "Fighting Spirit: Saat memberi DMG, tambah 6 Hybrid DEF selama 3s, stack hingga 5 kali. Di stack maksimal, dapatkan 30% DMG ekstra."
+    },
+    {
+      "Nama Item": "Sea Halberd",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "Lawan Lifesteal",
+      "Statistik Dasar": "+15% Physical ATK · +40% Physical Penetration",
+      "Efek Item": "Lifebane: Beri DMG untuk mengurangi HP Regen target sebesar 30% selama 5s.",
+      "Efek Saat Di-upgrade": "Lifebane: Beri DMG untuk mengurangi HP Regen target sebesar 30% selama 5s. · Pierce: Dapatkan 25% Physical PEN dan 15% Physical ATK."
+    },
+    {
+      "Nama Item": "Berserker's Fury",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "Tambah Crit",
+      "Statistik Dasar": "+10% Physical ATK · +20% Crit Chance · +40% Crit DMG",
+      "Efek Item": "-",
+      "Efek Saat Di-upgrade": "Valiant: Dapatkan 15% Crit Chance."
+    },
+    {
+      "Nama Item": "Blade of Despair",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "DMG Tambahan",
+      "Statistik Dasar": "+20% Physical ATK",
+      "Efek Item": "Despair: Beri 25% DMG tambahan selama 2s saat mengenai target dengan HP di bawah 50%. (Berlaku sebelum DMG dihitung.)",
+      "Efek Saat Di-upgrade": "Despair: Beri 50% DMG tambahan selama 2s saat mengenai target dengan HP di bawah 50%. (Berlaku sebelum DMG dihitung.)"
+    },
+    {
+      "Nama Item": "Haas' Claws",
+      "Kategori": "Fisik",
+      "Fungsi / Ringkasan": "Lifesteal",
+      "Statistik Dasar": "+20% Physical ATK · +15% Crit Chance · +15% Lifesteal",
+      "Efek Item": "-",
+      "Efek Saat Di-upgrade": "Frenzy: Dapatkan 10% Lifesteal dan 10% Physical ATK."
+    },
+    {
+      "Nama Item": "Divine Glaive",
+      "Kategori": "Magic",
+      "Fungsi / Ringkasan": "Magic Penetration",
+      "Statistik Dasar": "+25% Magic ATK · +40% Magic Penetration",
+      "Efek Item": "-",
+      "Efek Saat Di-upgrade": "Spellbreaker: Dapatkan 25% Magic Penetration dan 15% Magic ATK."
+    },
+    {
+      "Nama Item": "Glowing Wand",
+      "Kategori": "Magic",
+      "Fungsi / Ringkasan": "Skill Burn",
+      "Statistik Dasar": "+15% Magic ATK",
+      "Efek Item": "Scorch: Skill DMG membakar target selama 3s, memberi Magic DMG sebesar 2.5% Max HP-nya (minimal 10 DMG) per detik. Skill juga mengurangi Healing Received target sebesar 30% selama 3s.",
+      "Efek Saat Di-upgrade": "Scorch: Skill DMG membakar target selama 3s, memberi Magic DMG sebesar 5% Max HP-nya (minimal 10 DMG) per detik. Skill juga mengurangi Healing Received target sebesar 30% selama 3s."
+    },
+    {
+      "Nama Item": "Ice Queen Wand",
+      "Kategori": "Magic",
+      "Fungsi / Ringkasan": "Spell Vamp",
+      "Statistik Dasar": "+15% Magic ATK · +15% Spell Vamp",
+      "Efek Item": "Ice Bound: Setelah memberi skill DMG, menurunkan ATK Speed target sebesar 15% selama 5s.",
+      "Efek Saat Di-upgrade": "Ice Bound: Setelah memberi skill DMG, menurunkan ATK Speed target sebesar 15% selama 5s. · Extract: Dapatkan 10% Spell Vamp dan 10% Magic ATK."
+    },
+    {
+      "Nama Item": "Holy Crystal",
+      "Kategori": "Magic",
+      "Fungsi / Ringkasan": "Highest Magic DMG",
+      "Statistik Dasar": "+20% Magic ATK",
+      "Efek Item": "Mystery: Menambah Skill DMG sebesar 10%.",
+      "Efek Saat Di-upgrade": "Mystery: Menambah Skill DMG sebesar 30%."
+    },
+    {
+      "Nama Item": "Blade Armor",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Physical DMG Bounce",
+      "Statistik Dasar": "+50 Physical DEF",
+      "Efek Item": "Vengeance: Beri 30% dari DMG yang diterima sebagai Physical DMG ke penyerang saat terkena Basic ATK.",
+      "Efek Saat Di-upgrade": "Vengeance: Beri 30% dari DMG yang diterima sebagai Physical DMG ke penyerang saat terkena Basic ATK. · Defiance: Dapatkan 25 Physical DEF."
+    },
+    {
+      "Nama Item": "Guardian Helmet",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "High Base HP",
+      "Statistik Dasar": "+15% Max HP",
+      "Efek Item": "Recovery: Regen 1.5% Max HP setiap detik.",
+      "Efek Saat Di-upgrade": "Recovery: Regen 1.5% Max HP setiap detik. · Titan: Dapatkan 20% Max HP."
+    },
+    {
+      "Nama Item": "Antique Cuirass",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Kurangi Hybrid ATK Target",
+      "Statistik Dasar": "+10% Max HP · +10% DMG Reduction",
+      "Efek Item": "Deter: Kurangi Hybrid ATK musuh sebesar 4% selama 3s saat terkena DMG darinya. Stack hingga 5 kali.",
+      "Efek Saat Di-upgrade": "Deter: Kurangi Hybrid ATK musuh sebesar 7% selama 4s saat terkena DMG darinya. Stack hingga 5 kali."
+    },
+    {
+      "Nama Item": "Thunder Belt",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "DMG Tank",
+      "Statistik Dasar": "+20 Physical DEF · +20 Magic DEF",
+      "Efek Item": "Power of Thunder: Setiap 3s, Basic ATK berikutnya memberi Magic DMG tambahan sebesar 8% Max HP ke target dan musuh di dekatnya.",
+      "Efek Saat Di-upgrade": "+20% Max HP · Power of Thunder: Setiap 3s, Basic ATK berikutnya memberi Magic DMG tambahan sebesar 8% Max HP ke target dan musuh di dekatnya."
+    },
+    {
+      "Nama Item": "Oracle",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Group DEF",
+      "Statistik Dasar": "+20 Physical DEF · +20 Magic DEF",
+      "Efek Item": "Magic Resist: Saat battle mulai, Hero sekutu di baris yang sama mendapat 20 Hybrid DEF.",
+      "Efek Saat Di-upgrade": "Magic Resist: Saat battle mulai, Hero sekutu di baris yang sama mendapat 20 Hybrid DEF dan 6% HP."
+    },
+    {
+      "Nama Item": "Dominance Ice",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Regen Mana Tank",
+      "Statistik Dasar": "+50 Magic DEF · +10% Max HP",
+      "Efek Item": "Arctic Cold: Kurangi ATK Speed Hero musuh di sekitar sebesar 20%. Tambah Mana Regen sebesar 25% saat menerima DMG.",
+      "Efek Saat Di-upgrade": "Arctic Cold: Kurangi ATK Speed Hero musuh di sekitar sebesar 20%. Tambah Mana Regen sebesar 50% saat menerima DMG."
+    },
+    {
+      "Nama Item": "Ancient Wrath",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Taunt & DEF",
+      "Statistik Dasar": "+15% Max HP",
+      "Efek Item": "Provocation: Saat battle mulai, taunt musuh di sekitar. Pembawa mendapat 10 Hybrid DEF untuk setiap musuh yang menargetnya.",
+      "Efek Saat Di-upgrade": "Provocation: Saat battle mulai, taunt musuh di sekitar. Pembawa mendapat 18 Hybrid DEF untuk setiap musuh yang menargetnya."
+    },
+    {
+      "Nama Item": "Nether Claw",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Crowd Control",
+      "Statistik Dasar": "+20% Max HP",
+      "Efek Item": "Nether: Pemakai mendapat HP tambahan. Memanggil Nether Claw untuk men-stun musuh di depan. Mortal: +25% HP & stun 1s; Refined: +35% HP & stun 1s; Arcane: +50% HP & stun 2s; Supreme: +200% HP & stun all 3s (Eksklusif Kishin).",
+      "Efek Saat Di-upgrade": "+40% Max HP · Nether: Pemakai mendapat HP tambahan. Memanggil Nether Claw untuk men-stun musuh di depan (Mortal s.d. Supreme)."
+    },
+    {
+      "Nama Item": "Crimson Cloak",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Ruby's Cloak 1-Star",
+      "Statistik Dasar": "+20% Max HP",
+      "Efek Item": "Mastery: Basic ATK pemakai Cloak memasang Rage Mark ke maksimal 1 musuh. Saat musuh yang ditandai mati, pemakai memulihkan 10% HP.",
+      "Efek Saat Di-upgrade": "+40% Max HP · Mastery: Basic ATK pemakai Cloak memasang Rage Mark ke maksimal 1 musuh. Saat musuh yang ditandai mati, pemakai memulihkan 10% HP."
+    },
+    {
+      "Nama Item": "Raging Cloak",
+      "Kategori": "Pertahanan",
+      "Fungsi / Ringkasan": "Ruby's Cloak 2-Star",
+      "Statistik Dasar": "+20% Max HP",
+      "Efek Item": "Mastery: Basic ATK memasang Rage Mark, pulihkan 10% HP saat musuh mati. · Life from Death: Saat mati, pemakai bangkit kembali dengan 30% HP (1x per babak).",
+      "Efek Saat Di-upgrade": "+40% Max HP · Mastery: Rage Mark & pulihkan HP. · Life from Death: Bangkit kembali dengan 30% HP saat mati."
+    },
+    {
+      "Nama Item": "Spellblade Talisman",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Skill Cepat",
+      "Statistik Dasar": "+15% Magic ATK · +15% Physical ATK",
+      "Efek Item": "Recharge: Saat battle mulai, langsung pulihkan 55% Mana.",
+      "Efek Saat Di-upgrade": "Recharge: Saat battle mulai, pulihkan 80% Mana dan tambah Skill DMG yang diberikan sebesar 15%."
+    },
+    {
+      "Nama Item": "Winter Crown",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Invincible at Low HP",
+      "Statistik Dasar": "+10% Magic ATK · +10% Physical ATK · +10% Max HP",
+      "Efek Item": "Freeze: Saat HP turun di bawah 25% atau saat menerima DMG mematikan, membeku dan memulihkan 10% Max HP selama 1s.",
+      "Efek Saat Di-upgrade": "Freeze: Membeku saat HP turun di bawah 25% atau saat menerima DMG fatal, lalu memulihkan 25% HP dan 10% Mana selama 1s."
+    },
+    {
+      "Nama Item": "Feline Blade",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Kontrol Tunggal",
+      "Statistik Dasar": "+15% Physical ATK · +15% Magic ATK · +10% Max HP",
+      "Efek Item": "Witchcraft: Saat battle mulai, ubah Hero musuh dengan Star Level tertinggi menjadi Leonin selama 3s. Saat Basic ATK memberi DMG, ubah target menjadi Leonin selama 1.5s (CD 12s).",
+      "Efek Saat Di-upgrade": "Witchcraft: Ubah musuh bintang tertinggi jadi Leonin 3s (terima +60% DMG). Basic ATK ubah target jadi Leonin 1.5s (CD 12s)."
+    },
+    {
+      "Nama Item": "Purple Buff",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Mana Regen Tambahan",
+      "Statistik Dasar": "+10% Physical ATK · +10% Magic ATK",
+      "Efek Item": "Elemental Power: Dapatkan 10 Mana setelah meng-cast skill.",
+      "Efek Saat Di-upgrade": "Elemental Power: Dapatkan 10 Mana setelah meng-cast skill. · Malefic: Dapatkan 20% Hybrid ATK."
+    },
+    {
+      "Nama Item": "Claude's Theft Device",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Salin Equipment",
+      "Statistik Dasar": "+10% Physical ATK · +10% Magic ATK",
+      "Efek Item": "Neat Pick: Saat battle mulai, salin 2 Equipment acak dari pool Equipment. Dihitung sebagai memakai 3 Equipment.",
+      "Efek Saat Di-upgrade": "Neat Pick: Saat battle mulai, salin 2 Equipment acak dan dapatkan 15% DMG. (Dihitung sebagai memakai 3 Equipment.)"
+    },
+    {
+      "Nama Item": "Justice Sword",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "AoE DMG",
+      "Statistik Dasar": "+20% Physical ATK · +20% Magic ATK",
+      "Efek Item": "Justice: Tiap 5s Rain of Swords beri True DMG (8%-100% Hybrid ATK). Di 3s Giant Sword jatuh beri 500% True DMG ke semua musuh (Eksklusif Kishin).",
+      "Efek Saat Di-upgrade": "+40% Physical ATK · +40% Magic ATK · Justice: Efek Rain of Swords dan Giant Sword diperkuat."
+    },
+    {
+      "Nama Item": "Guren Chakram",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Peningkatan DMG",
+      "Statistik Dasar": "+20% Lifesteal · +20% Spell Vamp",
+      "Efek Item": "Guren: Naikkan tier untuk perkuat. Mortal: +25% DMG; Refined: +35% DMG; Arcane: +55% DMG; Supreme: Guren's Guard, +150% DMG, +65% HP (Eksklusif Kishin).",
+      "Efek Saat Di-upgrade": "+30% Lifesteal · +30% Spell Vamp · Guren: Bonus DMG Increase dan HP diperkuat."
+    },
+    {
+      "Nama Item": "Lightstick",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Must-have for fans!",
+      "Statistik Dasar": "+25% Physical ATK · +25% Magic ATK",
+      "Efek Item": "Cheer: Saat battle mulai, Fan dengan Lightstick beri bonus Hybrid ATK ke Starbelles dan dirinya sendiri (15%/25%/50%/100% sesuai sinergi Starbelle).",
+      "Efek Saat Di-upgrade": "+15% Max HP · Cheer: Beri bonus Hybrid ATK ke Starbelles dan dirinya sendiri sesuai tingkatan sinergi Starbelle."
+    },
+    {
+      "Nama Item": "Lunar Longbow",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Heal Ally saat Musuh Terbunuh",
+      "Statistik Dasar": "+20% ATK Speed",
+      "Efek Item": "Moonlight: Pulihkan 20% HP ally dengan persentase HP terendah saat membunuh musuh (Eksklusif Power Card Miya).",
+      "Efek Saat Di-upgrade": "Moonlight: Pulihkan 30% HP ally dengan persentase HP terendah saat membunuh musuh."
+    },
+    {
+      "Nama Item": "Chou's Sash",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Hybrid ATK + Kill Bonus",
+      "Statistik Dasar": "+50% Physical ATK · +50% Magic ATK",
+      "Efek Item": "Martial Arts: Setelah membunuh 4 musuh, dapatkan 1 Equipment Chest (Maks: 4 chest, Eksklusif Power Card Chou).",
+      "Efek Saat Di-upgrade": "+20% ATK Speed · Martial Arts: Setelah membunuh 4 musuh, dapatkan 1 Equipment Chest (Maks: 4 chest)."
+    },
+    {
+      "Nama Item": "Great Dragon Spear",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Artefak Surgawi yang Bisa Ditingkatkan",
+      "Statistik Dasar": "-",
+      "Efek Item": "Dragon Flurry: Setiap Basic ATK punya peluang 20% diikuti 2 serangan tambahan.",
+      "Efek Saat Di-upgrade": "+20% Physical ATK · +20% Magic ATK · Dragon Flurry: Setiap Basic ATK punya peluang 20% diikuti 2 serangan tambahan."
+    },
+    {
+      "Nama Item": "Essence Core",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Hero's Power Inherited",
+      "Statistik Dasar": "+10% Physical ATK · +10% Magic ATK · +10% Max HP",
+      "Efek Item": "Duality Transformation: Jika kekuatan Hero Blessing ditransformasikan, Sinergi Blessing tetap dihitung, tapi pemakai tidak dapat efek Blessing.",
+      "Efek Saat Di-upgrade": "+20% Physical ATK · +20% Magic ATK · +20% Max HP · Duality Transformation."
+    },
+    {
+      "Nama Item": "Shadow Twinblades",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Karina's Twinblades 1-Star",
+      "Statistik Dasar": "+35% Physical ATK · +35% Magic ATK · +25% Max HP",
+      "Efek Item": "Execute: Karina mengeksekusi Hero musuh di sebelahnya saat HP-nya turun di bawah 18%.",
+      "Efek Saat Di-upgrade": "+55% Physical ATK · +55% Magic ATK · +30% Max HP · Execute: Karina mengeksekusi musuh saat HP di bawah 18%."
+    },
+    {
+      "Nama Item": "Supreme Blades",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Karina's Twinblades 2-Star",
+      "Statistik Dasar": "+35% Physical ATK · +35% Magic ATK · +25% Max HP",
+      "Efek Item": "Gift: Saat HP musuh di dekatnya turun di bawah 18%, Karina mengeksekusinya. Setelah eksekusi, dapat 2% DMG ekstra (hingga 36%).",
+      "Efek Saat Di-upgrade": "+55% Physical ATK · +55% Magic ATK · +30% Max HP · Gift: Eksekusi musuh HP < 18% dan peroleh stacking bonus DMG."
+    },
+    {
+      "Nama Item": "Hunting Scythe",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Ruby's Scythe 1-Star",
+      "Statistik Dasar": "+20% Physical ATK · +20% Magic ATK",
+      "Efek Item": "Hunt: Beri 260% Physical DMG berdasarkan Adaptive ATK ke musuh yang memiliki Rage Mark tiap 2s.",
+      "Efek Saat Di-upgrade": "+40% Physical ATK · +40% Magic ATK · Hunt: Beri 260% Physical DMG berdasarkan Adaptive ATK ke musuh Rage Mark tiap 2s."
+    },
+    {
+      "Nama Item": "Raging Scythe",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Ruby's Scythe 2-Star",
+      "Statistik Dasar": "+20% Physical ATK · +20% Magic ATK",
+      "Efek Item": "Hunt: Beri 260% Physical DMG ke musuh Rage Mark. · Life from Death: Setelah pemakai Cloak bangkit kembali, pemakai Scythe dapat 55% Hybrid ATK.",
+      "Efek Saat Di-upgrade": "+40% Physical ATK · +40% Magic ATK · Hunt & Life from Death: Setelah Cloak bangkit, Scythe dapat 55% Hybrid ATK."
+    },
+    {
+      "Nama Item": "Plunderer's Claw",
+      "Kategori": "Hybrid ATK",
+      "Fungsi / Ringkasan": "Franco's Gift",
+      "Statistik Dasar": "+20% Physical ATK · +20% Magic ATK · +20% Max HP",
+      "Efek Item": "Gold Plunder: Lempar Iron Hook, stun 1.5s dan dapat Gold sesuai cost musuh. Naik level setelah 26 Gold (+25% DMG).",
+      "Efek Saat Di-upgrade": "+40% Physical ATK · +40% Magic ATK · +40% Max HP · Gold Plunder: Stun musuh dan dapat bonus DMG setelah terkumpul."
+    },
+    {
+      "Nama Item": "Glory Gloves",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero Murah dan Dapat Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Glory: Salin Hero 1 s.d. 3 Gold dan dapat Gold.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Tier 3 Boxing Glove",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero 3 Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Glory: Salin Hero dengan cost tertentu (3 Gold).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Tier 4 Boxing Glove",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero 4 Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Glory: Salin Hero dengan cost tertentu (4 Gold).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Tier 5 Boxing Glove",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero 5 Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Glory: Salin Hero dengan cost tertentu (5 Gold).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Low-Tier Mirror Device",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero 1 s.d. 3 Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Mirror: Salin Hero dengan cost tertentu (1 s.d. 3 Gold).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Choice Magic Crystal",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Sinergi Tambahan",
+      "Statistik Dasar": "-",
+      "Efek Item": "Choice: Memberi Hero satu Sinergi tambahan.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Mirror Device",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero Apa Saja",
+      "Statistik Dasar": "-",
+      "Efek Item": "Mirror: Salin Hero apa saja.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Equipment Reforger",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Tempa Ulang Equipment",
+      "Statistik Dasar": "-",
+      "Efek Item": "Reforge: Menempa ulang sebuah Equipment menjadi yang baru.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Bruiser Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Bruiser",
+      "Statistik Dasar": "-",
+      "Efek Item": "Potent: Pasang di Hero untuk memberi Sinergi Bruiser.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Dauntless Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Dauntless",
+      "Statistik Dasar": "-",
+      "Efek Item": "Fearless: Pasang ke Hero untuk memberi Sinergi Dauntless.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Defender Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Defender",
+      "Statistik Dasar": "-",
+      "Efek Item": "Fortitude: Pasang ke Hero untuk memberi Sinergi Defender.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Weapon Master Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Weapon Master",
+      "Statistik Dasar": "-",
+      "Efek Item": "Frenzy: Pasang di Hero untuk memberi Sinergi Weapon Master.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Marksman Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Marksman",
+      "Statistik Dasar": "-",
+      "Efek Item": "Precision: Pasang ke Hero untuk memberi Sinergi Marksman.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Mage Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Mage",
+      "Statistik Dasar": "-",
+      "Efek Item": "Mysticism: Pasang ke Hero untuk memberi Sinergi Mage.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Stargazer Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Stargazer",
+      "Statistik Dasar": "-",
+      "Efek Item": "Universe: Pasang ke Hero untuk memberi Sinergi Stargazer.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Swiftblade Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Swiftblade",
+      "Statistik Dasar": "-",
+      "Efek Item": "Conceal: Pasang di Hero untuk memberi Sinergi Swiftblade.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Echomancer Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Echomancer",
+      "Statistik Dasar": "-",
+      "Efek Item": "Echo: Pasang ke Hero untuk memberi Sinergi Echomancer.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "SPECTRE Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi SPECTRE",
+      "Statistik Dasar": "-",
+      "Efek Item": "Haunt: Pasang ke Hero untuk memberi Sinergi SPECTRE.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Dragon Altar Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Dragon Altar",
+      "Statistik Dasar": "-",
+      "Efek Item": "Dragon: Pasang ke Hero untuk memberi Sinergi Dragon Altar.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Astro Power Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Astro Power",
+      "Statistik Dasar": "-",
+      "Efek Item": "Astro: Pasang ke Hero untuk memberi Sinergi Astro Power.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Dragoncaller Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Dragoncaller",
+      "Statistik Dasar": "-",
+      "Efek Item": "Divine Dragon: Pasang ke Hero untuk memberi Sinergi Dragoncaller.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Starbelle Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Starbelle",
+      "Statistik Dasar": "-",
+      "Efek Item": "Spotlight: Pasang ke Hero untuk memberi Sinergi Starbelle.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Kishin Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Dapatkan Sinergi Kishin",
+      "Statistik Dasar": "-",
+      "Efek Item": "Demonic Power: Pasang ke Hero untuk memberi Sinergi Kishin.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Go Go Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Capacity +1",
+      "Statistik Dasar": "-",
+      "Efek Item": "Ekspansi: Tambah Capacity sebanyak 1.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Inspire – Burning Will",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "ATK Speed Tambahan",
+      "Statistik Dasar": "-",
+      "Efek Item": "Burning Will: Beri 15/20/25/30% ATK Speed (naik sesuai progres Stage).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Purify – Dragonblood Ritual",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Control Immunity",
+      "Statistik Dasar": "+20% ATK Speed",
+      "Efek Item": "Purify: Saat battle mulai, kebal terhadap control dan displacement selama 30s pertama.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Retribution – Crimson Hunt",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Peningkatan DMG",
+      "Statistik Dasar": "-",
+      "Efek Item": "Crimson Hunt: Dapatkan 20/25/30/40% DMG tambahan (naik seiring progres Stage).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Revitalize – Sacred Offering",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "HP Regen",
+      "Statistik Dasar": "-",
+      "Efek Item": "Crimson Chalcedony: Saat HP turun di bawah 50%, pulihkan 10% HP tiap 1s selama 5s.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Aegis – Ember Fortress",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "High Shield",
+      "Statistik Dasar": "-",
+      "Efek Item": "Dragonsoul Shield: Saat battle mulai, dapatkan Shield sebesar 30% HP yang bertahan 25s.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Inspire – Thunderous Will",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "ATK Speed Ally Naik",
+      "Statistik Dasar": "-",
+      "Efek Item": "Thunderous Will: Saat battle mulai, beri 10/12/15/20% ATK Speed ke diri sendiri dan Hero sekutu di sebelahnya (naik sesuai Stage).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Purify – Frost Immune",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Control Immunity Ally",
+      "Statistik Dasar": "-",
+      "Efek Item": "Frost Immune: Saat battle mulai, beri diri sendiri dan Hero sekutu di sebelahnya Control Resistance selama 15s dan 10% ATK Speed.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Retribution – Azure Hunt",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "DMG Increase Ally",
+      "Statistik Dasar": "-",
+      "Efek Item": "Azure Hunt: Saat battle mulai, beri 10/15/20/25% DMG ekstra ke diri sendiri dan Hero sekutu di sebelahnya (naik sesuai Stage).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Revitalize – Sacred Tide",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Pemulihan HP Ally",
+      "Statistik Dasar": "-",
+      "Efek Item": "Azure Spring: Saat HP turun di bawah 50%, pulihkan 8% HP tiap 1s untuk sekutu di sekitar dalam area selama 5s.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Aegis – Azure Guardian",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Shield Ally",
+      "Statistik Dasar": "-",
+      "Efek Item": "Froststeel Shield: Saat battle mulai, beri Shield sebesar 20% HP yang bertahan 25s ke diri sendiri dan sekutu dalam 1 tile di kiri dan kanan.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Hunting Revolver",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Basic ATK Blast",
+      "Statistik Dasar": "+20% ATK Speed · +20% Physical ATK",
+      "Efek Item": "Basic ATK menghasilkan tembakan peledak ekstra.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Sunset Shield",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "DMG Berkelanjutan",
+      "Statistik Dasar": "+10% Max HP · +12 Physical DEF · +12 Magic DEF",
+      "Efek Item": "Memberikan DMG berkelanjutan ke area sekitar pemakai.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Sun Staff",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "AoE Blast",
+      "Statistik Dasar": "+20% Magic ATK",
+      "Efek Item": "Menghasilkan ledakan Magic DMG area saat menggunakan skill.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Knowledge Crystal",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Eksklusif Eruditio",
+      "Statistik Dasar": "+10% Physical ATK · +10% Magic ATK",
+      "Efek Item": "Memberikan peningkatan khusus untuk sinergi Eruditio.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Exorcist's Seal",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Eksklusif Exorcist",
+      "Statistik Dasar": "+25% Physical ATK · +25% Magic ATK",
+      "Efek Item": "Memberikan peningkatan khusus untuk sinergi Exorcist.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Blessing Shifter",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Shift Blessing",
+      "Statistik Dasar": "-",
+      "Efek Item": "Blessing: Memberi Blessing ke sebuah Hero dan menghapus 1 efek Blessing yang ada (+1 count ke Sinergi acak).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Flicker",
+      "Kategori": "Spell",
+      "Fungsi / Ringkasan": "Blink Saat Mulai & ATK Speed Naik",
+      "Statistik Dasar": "-",
+      "Efek Item": "Flicker: Saat babak mulai, blink ke seberang (prioritas baris terakhir, kebal 2s) dan tambah ATK Speed sendiri 50% selama 4s.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Blazing Hammer",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Brown's Artifact",
+      "Statistik Dasar": "-",
+      "Efek Item": "Artefak khusus Commander Brown untuk meningkatkan daya tempur.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Fluffy's Rage",
+      "Kategori": "Item Khusus / Upgrade",
+      "Fungsi / Ringkasan": "Panggil Explosive Fluffy",
+      "Statistik Dasar": "-",
+      "Efek Item": "Explosive Fluffy: Pembawa meninggalkan Fluffy saat berpindah tempat, meledak dan men-stun musuh di baris dan kolom yang sama.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Tier 1 Boxing Glove",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero 1 Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Glory: Salin Hero dengan cost 1 Gold.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Tier 2 Boxing Glove",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Salin Hero 2 Gold",
+      "Statistik Dasar": "-",
+      "Efek Item": "Glory: Salin Hero dengan cost 2 Gold.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Super Magic Crystal",
+      "Kategori": "Magic Crystal",
+      "Fungsi / Ringkasan": "Super Magic Crystal",
+      "Statistik Dasar": "-",
+      "Efek Item": "Super Magic Crystal: Memberikan sinergi kristal pilihan tingkat lanjut.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Equipment Duplicator",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Dapatkan 3 duplikat Equipment",
+      "Statistik Dasar": "-",
+      "Efek Item": "Copycat: Gunakan pada Equipment untuk mendapat 3 salinannya (Special Equipment tidak bisa disalin).",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Phantom Device",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Panggil Doppelganger",
+      "Statistik Dasar": "-",
+      "Efek Item": "Phantom Device: Dapatkan Equipment spesial: Saat battle dimulai, memanggil klon pemakai.",
+      "Efek Saat Di-upgrade": "-"
+    },
+    {
+      "Nama Item": "Equipment Forger",
+      "Kategori": "Habis Pakai",
+      "Fungsi / Ringkasan": "Tingkatkan Satu Equipment",
+      "Statistik Dasar": "-",
+      "Efek Item": "Molten Decree: Pilih sebuah Equipment untuk diperkuat. Bisa dipakai 2 kali (Special/Enhanced tidak bisa diperkuat).",
+      "Efek Saat Di-upgrade": "-"
+    }
+  ]
+}

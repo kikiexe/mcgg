@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "patch": "7.2",
+    "total": 21
+  },
+  "synergies": [
+    {
+      "Nama Sinergi": "Dragoncaller",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Setiap 3 detik, seekor naga turun untuk menyerang area 9 petak dengan lawan terbanyak, memberikan True DMG berdasarkan max HP lawan. Setiap kali naga turun, Hero Dragoncaller akan mendapatkan + Peningkatan DMG. Maksimal Turun per pertarungan: 3.",
+      "Efek Tingkat 1": "(2 Hero): Memberikan 8% True DMG berdasarkan HP lawan.",
+      "Efek Tingkat 2": "(4 Hero): Memberikan 10% True DMG berdasarkan HP lawan, dan Hero Dragoncaller mendapatkan +20% Peningkatan DMG.",
+      "Efek Tingkat 3": "(6 Hero): Memberikan 16% True DMG berdasarkan HP lawan, dan Hero Dragoncaller mendapatkan +35% Peningkatan DMG.",
+      "Efek Tingkat 4 (Ultra)": "(10 Hero): Memberikan 70% True DMG berdasarkan HP lawan, dan Hero Dragoncaller mendapatkan +200% Peningkatan DMG. Pada awal pertarungan, memanggil Naga Suci yang menyerang untuk memberikan 50% dari HP sebagai DMG. Semua serangan naga bisa menyebabkan stun ke lawan selama 3 detik.",
+      "Hero": "Eudora (1 Gold)\nBalmond (2 Gold)\nClint (3 Gold)\nGusion (4 Gold)\nZilong (4 Gold)\nBadang (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Bruiser",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Bruiser mendapat Basic ATK DMG tambahan, dan Basic ATK serta Enhanced Basic ATK mereka punya peluang mengenai dua kali.",
+      "Efek Tingkat 1": "(2 Hero): Dapatkan 15% Basic ATK DMG tambahan. 20% chance untuk menyerang dua kali.",
+      "Efek Tingkat 2": "(4 Hero): Dapatkan 30% Basic ATK DMG tambahan. 40% chance untuk menyerang dua kali.",
+      "Efek Tingkat 3": "(6 Hero): Dapatkan 55% Basic ATK DMG tambahan. 60% chance untuk menyerang dua kali.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Dyrroth (1 Gold)\nBelerick (2 Gold)\nAldous (3 Gold)\nPaquito (3 Gold)\nYin (4 Gold)\nBadang (5 Gold)\nGatotkaca (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Dauntless",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally mendapat Shield. Hero Dauntless mendapat tambahan Shield.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally mendapat Shield sebesar 5% Max HP. Hero Dauntless mendapat tambahan Shield sebesar 20% Max HP.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally mendapat Shield sebesar 10% Max HP. Hero Dauntless mendapat tambahan Shield sebesar 40% Max HP.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally mendapat Shield sebesar 20% Max HP. Hero Dauntless mendapat tambahan Shield sebesar 85% Max HP.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Uranus (1 Gold)\nBalmond (2 Gold)\nFranco (3 Gold)\nHilda (3 Gold)\nLolita (4 Gold)\nAlice (5 Gold)\nX.Borg (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Defender",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally mendapat Hybrid DEF. Defender mendapat tambahan Hybrid DEF, dengan bonus ini berlipat ganda selama 20s pertama.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally mendapat 6 Hybrid DEF. Defender mendapat tambahan 20 Hybrid DEF.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally mendapat 12 Hybrid DEF. Defender mendapat tambahan 30 Hybrid DEF.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally mendapat 24 Hybrid DEF. Defender mendapat tambahan 60 Hybrid DEF.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Minotaur (1 Gold)\nHylos (2 Gold)\nEdith (3 Gold)\nTigreal (3 Gold)\nAtlas (4 Gold)\nBaxia (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Weapon Master",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally mendapat Hybrid Lifesteal. Weapon Master mendapat tambahan Hybrid Lifesteal dan Physical ATK.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally mendapat 5% Hybrid Lifesteal. Weapon Master mendapat tambahan 5% Hybrid Lifesteal dan 40% Physical ATK.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally mendapat 10% Hybrid Lifesteal. Weapon Master mendapat tambahan 10% Hybrid Lifesteal dan 60% Physical ATK.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally mendapat 15% Hybrid Lifesteal. Weapon Master mendapat tambahan 15% Hybrid Lifesteal dan 120% Physical ATK.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Cici (1 Gold)\nMartis (2 Gold)\nFranco (3 Gold)\nSuyou (4 Gold)\nZilong (4 Gold)\nThamuz (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Marksman",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally mendapat ATK Speed. Marksman mendapat tambahan ATK Speed.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally mendapat 5% ATK Speed. Marksman mendapat tambahan 20% ATK Speed.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally mendapat 10% ATK Speed. Marksman mendapat tambahan 45% ATK Speed.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally mendapat 20% ATK Speed. Marksman mendapat tambahan 90% ATK Speed.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Granger (2 Gold)\nMiya (2 Gold)\nWanwan (3 Gold)\nIrithel (4 Gold)\nKarrie (4 Gold)\nLayla (5 Gold)\nMelissa (5 Gold)\nMoskov (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Scavenger",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Dapatkan Hero acak dari Shop di awal setiap babak.",
+      "Efek Tingkat 1": "(2 Hero): Dapatkan 1 Hero acak dengan biaya Gold terendah di Shop.",
+      "Efek Tingkat 2": "(3 Hero): Dapatkan 1 Hero acak dan 1 Gold.",
+      "Efek Tingkat 3": "-",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Phoveus (1 Gold)\nAngela (2 Gold)\nSora (4 Gold)"
+    },
+    {
+      "Nama Sinergi": "Swiftblade",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally mendapat Hybrid Penetration. Hero Swiftblade mendapat tambahan Hybrid Penetration.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally mendapat 10 Hybrid Penetration. Hero Swiftblade mendapat tambahan 25 Hybrid Penetration.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally mendapat 15 Hybrid Penetration. Hero Swiftblade mendapat tambahan 50 Hybrid Penetration.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally mendapat 25 Hybrid Penetration. Hero Swiftblade mendapat tambahan 100 Hybrid Penetration.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Yi Sun-shin (1 Gold)\nNatalia (2 Gold)\nKarina (3 Gold)\nSaber (3 Gold)\nGusion (4 Gold)\nFanny (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Stargazer",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally memulihkan Mana per detik. Stargazer memulihkan Mana tambahan per detik.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally memulihkan 2 Mana per detik. Stargazer memulihkan 6 Mana tambahan per detik.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally memulihkan 4 Mana per detik. Stargazer memulihkan 12 Mana tambahan per detik.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally memulihkan 6 Mana per detik. Stargazer memulihkan 18 Mana tambahan per detik.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Eudora (1 Gold)\nLuo Yi (2 Gold)\nKarina (3 Gold)\nMathilda (3 Gold)\nLunox (4 Gold)\nNana (5 Gold)\nNovaria (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Phasewarper",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Phasewarper mendapat DMG Increase. Saat HP pertama kali turun di bawah 40%, mereka langsung warp ke lokasi aman dan memulihkan HP.",
+      "Efek Tingkat 1": "(2 Hero): DMG Increase 10%; Pulihkan 30% HP",
+      "Efek Tingkat 2": "(3 Hero): DMG Increase 15%; Pulihkan 50% HP",
+      "Efek Tingkat 3": "-",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Harley (2 Gold)\nClint (3 Gold)\nKadita (3 Gold)\nLancelot (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Mage",
+      "Tipe Sinergi": "Role",
+      "Deskripsi Sinergi": "Semua ally mendapat Magic ATK. Mage mendapat tambahan Magic ATK.",
+      "Efek Tingkat 1": "(2 Hero): Semua ally mendapat 10% Magic ATK. Mage mendapat tambahan 40% Magic ATK.",
+      "Efek Tingkat 2": "(4 Hero): Semua ally mendapat 20% Magic ATK. Mage mendapat tambahan 80% Magic ATK.",
+      "Efek Tingkat 3": "(6 Hero): Semua ally mendapat 30% Magic ATK. Mage mendapat tambahan 120% Magic ATK.",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Vale (1 Gold)\nZhuxin (2 Gold)\nKadita (3 Gold)\nGord (4 Gold)\nVexana (4 Gold)\nOdette (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Echomancer",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Setiap pertandingan, panggil seorang Chrono Wanderer (Hero 5 Gold season sebelumnya yang dipilih acak dari Moskov, X.Borg, atau Gatotkaca). Dapatkan Echo Energy di akhir battle. Saat battle dimulai, setiap ally yang diturunkan memberi Echo Energy tambahan. Menambah Skill DMG dan HP semua Echomancer dan Chrono Wanderer sebesar 0.03%. Chrono Wanderer ikut battle saat Echo Energy mencapai 100. Terima hadiah tahap yang sesuai saat pertama kali mencapai 300, 600, dan 999 Echo Energy.",
+      "Efek Tingkat 1": "(2 Hero): Dapatkan 6 Echo Energy di akhir battle. Saat battle dimulai, setiap sekutu yang di-deploy memberi 1 Echo Energy tambahan.",
+      "Efek Tingkat 2": "(4 Hero): Dapatkan 18 Echo Energy di akhir battle. Saat battle dimulai, setiap sekutu yang di-deploy memberi 2 Echo Energy tambahan.",
+      "Efek Tingkat 3": "(6 Hero): Dapatkan 25 Echo Energy di akhir battle. Saat battle dimulai, setiap sekutu yang di-deploy memberi 3 Echo Energy tambahan.",
+      "Efek Tingkat 4 (Ultra)": "(10 Hero): Echo Energy langsung mencapai maksimum.",
+      "Hero": "Vale (1 Gold)\nHarley (2 Gold)\nNatalia (2 Gold)\nTigreal (3 Gold)\nSora (4 Gold)\nThamuz (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Spectre",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Saat pertama kali mendapat Hero SPECTRE 2-Star, terima Hero SPECTRE dengan cost lebih tinggi. Hero SPECTRE mendapat DMG Increase.",
+      "Efek Tingkat 1": "(2 Hero): Saat pertama kali mendapat Hero SPECTRE 1-Gold atau 2-Gold 2-Star, terima Hero SPECTRE dengan cost lebih tinggi untuk masing-masing. Hero SPECTRE mendapat 20% DMG Increase.",
+      "Efek Tingkat 2": "(4 Hero): Saat pertama kali mendapat Hero SPECTRE 3-Gold atau 4-Gold 2-Star, terima Hero SPECTRE dengan cost lebih tinggi untuk masing-masing. Hero SPECTRE mendapat 40% DMG Increase.",
+      "Efek Tingkat 3": "(6 Hero): Saat pertama kali mendapat Hero SPECTRE 2-Star 5-Gold, buka dan terima Hero 7-Gold (Alpha). Hero SPECTRE mendapat 60% DMG Increase.",
+      "Efek Tingkat 4 (Ultra)": "(11 Hero): Saat battle mulai, Alpha dengan Star tertinggi yang dipasang naik 1 Star level. Hero SPECTRE mendapat 400% DMG Increase dan HP.",
+      "Hero": "Phoveus (1 Gold)\nGranger (2 Gold)\nPaquito (3 Gold)\nSaber (3 Gold)\nGord (4 Gold)\nAlice (5 Gold)\nAlpha (7 Gold)"
+    },
+    {
+      "Nama Sinergi": "Dragon Altar",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Buat tile spesial di medan perang. Hero di tile ini mendapat bonus Hybrid ATK dan HP, dan Hero Dragon Altar menerima bonus 3 kali lipat.",
+      "Efek Tingkat 1": "(2 Hero): Buat 4 tile spesial. Dapatkan 5% Hybrid ATK dan HP.",
+      "Efek Tingkat 2": "(4 Hero): Buat 6 tile spesial. Dapatkan 10% Hybrid ATK dan HP.",
+      "Efek Tingkat 3": "(6 Hero): Ubah semua tile menjadi special tile. Dapatkan 16% Hybrid ATK dan HP.",
+      "Efek Tingkat 4 (Ultra)": "(10 Hero): Dapatkan semua efek Sinergi 6-count. Dapatkan 100% Hybrid ATK dan HP. Selain itu, seekor naga turun di awal battle, memberi True DMG sebesar 50% HP musuh dan menstun mereka selama 3s.",
+      "Hero": "Yi Sun-shin (1 Gold)\nLuo Yi (2 Gold)\nWanwan (3 Gold)\nSuyou (4 Gold)\nYin (4 Gold)\nBaxia (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Astro Power",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Hero Astro Power mendapat DMG Increase. Hero Astro Power dengan Equipment terbanyak menjadi Astro Sovereign dan mendapat DMG Increase serta Hybrid Lifesteal.",
+      "Efek Tingkat 1": "(2 Hero): Dapatkan 10% Peningkatan DMG. Astro Sovereign mendapat tambahan 20% Peningkatan DMG dan 5% Hybrid Lifesteal.",
+      "Efek Tingkat 2": "(4 Hero): Dapatkan 20% Peningkatan DMG. Astro Sovereign mendapat tambahan 40% Peningkatan DMG dan 10% Hybrid Lifesteal.",
+      "Efek Tingkat 3": "(6 Hero): Dapatkan 30% Peningkatan DMG. Astro Sovereign mendapat tambahan 90% Peningkatan DMG dan 15% Hybrid Lifesteal.",
+      "Efek Tingkat 4 (Ultra)": "(10 Hero): Dapatkan 100% Peningkatan DMG. Astro Sovereign tambahan akan muncul di antara Hero Astro Power lainnya. Kedua Astro Sovereign mendapat tambahan 300% Peningkatan DMG, 40% Hybrid Lifesteal, dan 600% Max HP. Basic ATK mereka menciptakan Astro Link, memberi True DMG sebesar 600% Adaptive ATK ke target dan 4 musuh di dekatnya.",
+      "Hero": "Minotaur (1 Gold)\nMartis (2 Gold)\nHilda (3 Gold)\nKarina (3 Gold)\nIrithel (4 Gold)\nOdette (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Starbelle",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Dapatkan Equipment spesial \"Lightstick\". Hero yang memakainya menjadi Fan. Saat battle dimulai, Starbelles dan Fan mendapat Hybrid DEF. Fan juga akan menyemangati Starbelles, memberi bonus ke Starbelles dan dirinya sendiri.",
+      "Efek Tingkat 1": "(2 Hero): Dapatkan 10 Hybrid DEF. Fan memberi bonus Hybrid ATK sebesar 15% dari nilai Hybrid ATK mereka yang lebih tinggi.",
+      "Efek Tingkat 2": "(4 Hero): Dapatkan 20 Hybrid DEF. Fan memberi bonus Hybrid ATK sebesar 25% dari nilai Hybrid ATK mereka yang lebih tinggi.",
+      "Efek Tingkat 3": "(6 Hero): Dapatkan 35 Hybrid DEF. Fan memberi bonus Hybrid ATK sebesar 50% dari nilai Hybrid ATK mereka yang lebih tinggi.",
+      "Efek Tingkat 4 (Ultra)": "(10 Hero): Dapatkan 300 Hybrid DEF dan 200% Hybrid ATK. Fan memberi bonus Hybrid ATK sebesar 100% dari nilai Hybrid ATK mereka yang lebih tinggi. Di awal battle, 3 sinar menyapu medan perang, masing-masing menurunkan Hybrid ATK semua musuh sebesar 10% dan memberi True DMG sebesar 12% Max HP mereka.",
+      "Hero": "Cici (1 Gold)\nMiya (2 Gold)\nZhuxin (2 Gold)\nEdith (3 Gold)\nLolita (4 Gold)\nFanny (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Kishin",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Dapatkan Equipment eksklusif Kishin. Hero Kishin mendapat Hybrid DEF. Beli duplikat dari Shop untuk meng-upgrade Equipment ke tier lebih tinggi. Upgrade Shop dibatasi sampai Arcane (Tier 3). Setiap pembelian mengisi ulang slot Shop dengan Hero. Mengaktifkan 10-Kishin meng-upgrade Equipment ke Supreme (Tier 4, Final).",
+      "Efek Tingkat 1": "(2 Hero): Dapatkan 1 Equipment Kishin. Hero Kishin mendapat 12 Hybrid DEF.",
+      "Efek Tingkat 2": "(4 Hero): Dapatkan 1 Equipment Kishin tambahan. Hero Kishin mendapat 16 Hybrid DEF.",
+      "Efek Tingkat 3": "(6 Hero): Dapatkan 1 Equipment Kishin tambahan. Hero Kishin mendapat 36 Hybrid DEF.",
+      "Efek Tingkat 4 (Ultra)": "(10 Hero): Equipment ditingkatkan ke Supreme. Hero Kishin mendapat 600 Hybrid DEF.",
+      "Hero": "Dyrroth (1 Gold)\nAngela (2 Gold)\nFranco (3 Gold)\nKarrie (4 Gold)\nLunox (4 Gold)\nLancelot (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Enchanted Tales",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Di awal setiap pertandingan, 1 Hero Enchanted Tales 4 Gold acak menjadi Protagonist dan mendapat skill yang diperkuat. Musuh menjatuhkan Tale Fragment saat mati. Kumpulkan Fragment untuk memperkuat Hero Enchanted Tales secara permanen. (Maks Fragment per battle: 3, maks total: 30)",
+      "Efek Tingkat 1": "(2 Hero): Setiap Tale Fragment memberi 1.5% Peningkatan DMG.",
+      "Efek Tingkat 2": "(4 Hero): Setiap Tale Fragment memberi 3% Peningkatan DMG.",
+      "Efek Tingkat 3": "-",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Belerick (2 Gold)\nMathilda (3 Gold)\nAtlas (4 Gold)\nVexana (4 Gold)"
+    },
+    {
+      "Nama Sinergi": "Shadeweaver",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Saat battle mulai, angin kencang terbentuk dan menyapu medan battle dari tile terakhir tiap kolom yang berisi Hero Shadeweaver, memberi ATK Speed ke ally dan melempar musuh di jalurnya ke udara.",
+      "Efek Tingkat 1": "(2 Hero): Beri 25% ATK Speed dan lempar musuh ke udara selama 1s.",
+      "Efek Tingkat 2": "(3 Hero): Beri 50% ATK Speed dan lempar musuh ke udara selama 1s.",
+      "Efek Tingkat 3": "-",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Hylos (2 Gold)\nKadita (3 Gold)\nMelissa (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Mistbender",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Saat Mistbender memakai skill, Spirit Sand muncul di Shop (Batas simpan: 99, maksimal 60 per babak). Ketuk untuk membuka Spirit Sand Shop dan membeli item.",
+      "Efek Tingkat 1": "(1 Hero): Dapatkan 1 Spirit Sand setelah meng-cast skill.",
+      "Efek Tingkat 2": "(3 Hero): Dapatkan 2 Spirit Sand setelah meng-cast skill.",
+      "Efek Tingkat 3": "-",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Uranus (1 Gold)\nAldous (3 Gold)\nNana (5 Gold)"
+    },
+    {
+      "Nama Sinergi": "Chrono Wanderer",
+      "Tipe Sinergi": "Faction",
+      "Deskripsi Sinergi": "Hero 5-Gold yang dipanggil oleh Echomancer.",
+      "Efek Tingkat 1": "(1 Hero): Dapatkan bonus atribut Sinergi Echomancer.",
+      "Efek Tingkat 2": "-",
+      "Efek Tingkat 3": "-",
+      "Efek Tingkat 4 (Ultra)": "-",
+      "Hero": "Gatotkaca (5 Gold)\nLayla (5 Gold)\nMoskov (5 Gold)\nNovaria (5 Gold)\nX.Borg (5 Gold)"
+    }
+  ]
+}

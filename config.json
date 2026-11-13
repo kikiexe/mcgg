@@ -1,0 +1,19 @@
+{
+  "agent_id": "agent-01",
+  "agent_name": "MCGG-Esports-Agent",
+  "game_window": {
+    "title_substring": "MagicChess",
+    "target_width": 1920,
+    "target_height": 1080,
+    "mode": "windowed"
+  },
+  "delays": {
+    "action_delay_ms": 180,
+    "loop_interval_sec": 1.5,
+    "llm_timeout_sec": 20
+  },
+  "logging": {
+    "save_match_history": true,
+    "log_dir": "logs"
+  }
+}
