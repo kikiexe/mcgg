@@ -8,10 +8,15 @@ from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 import litellm
 
+# Portabilitas multi-provider: hapus otomatis parameter yang tidak didukung provider tertentu
+litellm.drop_params = True
+
 from src.decision.models import GameState, TurnDecision, ActionCommand
 from src.decision.kb_loader import KnowledgeBase
 
-load_dotenv(dotenv_path=r"C:\Projects\mcgg\.env", override=True)
+# Resolusi path .env relatif otomatis agar portabel di semua laptop
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+load_dotenv(dotenv_path=os.path.join(ROOT_DIR, ".env"), override=True)
 
 class LLMBrain:
     def __init__(self, config: Dict[str, Any], kb: Optional[KnowledgeBase] = None):
@@ -66,6 +71,7 @@ class LLMBrain:
         if norm_round == "1-1":
             return TurnDecision(
                 strategic_plan="Ronde 1-1: Pasang hero gratis dari bench ke papan catur untuk mengalahkan creep pertama.",
+                policy_source="fast_rule",
                 actions=[
                     ActionCommand(action="CLOSE_SHOP", slot=None, reasoning="Tutup shop agar papan catur terlihat jelas"),
                     ActionCommand(action="DEPLOY", slot=1, reasoning="Menaruh Hero Gratis 1 ke papan catur"),
@@ -79,6 +85,7 @@ class LLMBrain:
         if norm_round == "1-2" and state.gold >= 4 and state.level == 3:
             return TurnDecision(
                 strategic_plan="Ronde 1-2: Naikkan Level ke 4 (-4G) untuk menambah kapasitas papan catur menjadi 4 hero.",
+                policy_source="fast_rule",
                 actions=[
                     ActionCommand(action="LEVEL_UP", slot=None, reasoning="Menaikkan level ke Level 4 agar kapasitas hero menjadi 4"),
                     ActionCommand(action="CLOSE_SHOP", slot=None, reasoning="Tutup shop agar formasi terlihat rapi"),
@@ -120,6 +127,7 @@ class LLMBrain:
             # Lengkapi reasoning jika model lupa menyertakannya
             if "strategic_plan" not in parsed_json:
                 parsed_json["strategic_plan"] = "Mengejar kombo sinergi dan bunga"
+            parsed_json["policy_source"] = "llm"
             for act in parsed_json.get("actions", []):
                 if "reasoning" not in act:
                     act["reasoning"] = "Aksi adaptasi otomatis dari LLM"
@@ -127,12 +135,12 @@ class LLMBrain:
             return TurnDecision.model_validate(parsed_json)
 
         except Exception as e:
-            print(f"[LLM Warning] Parsing LLM ({e}), beralih ke rule-based fallback.")
+            print(f"[LLM Warning] Parsing LLM gagal ({e}), beralih ke rule-based fallback.")
             return self._offline_heuristic_policy(state)
 
     def _offline_heuristic_policy(self, state: GameState) -> TurnDecision:
         actions = []
-        plan = "Strategi Heuristik: Membeli hero terjangkau dan menjaga bunga."
+        plan = "Strategi Heuristik (Fallback): Membeli hero terjangkau dan menjaga bunga."
 
         current_gold = state.gold
         for slot in state.shop:
@@ -145,6 +153,6 @@ class LLMBrain:
                 current_gold -= slot.cost
                 break
 
-        actions.append({"action": "CLOSE_SHOP", "slot": None, "reasoning": "Menutup shop via Spasi"})
+        actions.append({"action": "CLOSE_SHOP", "slot": None, "reasoning": "Menutup shop via klik netral"})
         actions.append({"action": "END_TURN", "slot": None, "reasoning": "Selesai fase belanja."})
-        return TurnDecision(strategic_plan=plan, actions=actions)
+        return TurnDecision(strategic_plan=plan, policy_source="offline_heuristic", actions=actions)

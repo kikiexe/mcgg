@@ -10,7 +10,7 @@ if %errorLevel% neq 0 (
     exit /b
 )
 
-cd /d "C:\Projects\mcgg"
+cd /d "%~dp0"
 echo =======================================================
 echo    MCGG AUTONOMOUS AGENT - ADMIN CONTROLLER AKTIF
 echo =======================================================

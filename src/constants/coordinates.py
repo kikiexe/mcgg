@@ -6,12 +6,10 @@ Calibrated & Visually Verified on Asset Ground Truth (Patch 7.2)
 from dataclasses import dataclass
 from typing import Tuple, Dict, List
 
-@dataclass(frozen=True)
 class UIResolution:
     WIDTH: int = 1920
     HEIGHT: int = 1080
 
-@dataclass(frozen=True)
 class ShopCardCoords:
     # 5 Hero Slots di Rak Toko (Y: 200..520)
     SLOT_1_BOX: Tuple[int, int, int, int] = (290, 200, 480, 520)
@@ -33,7 +31,6 @@ class ShopCardCoords:
     HERO_LIST_CLICK: Tuple[int, int] = (1734, 360)   # Daftar Hero
     LEVEL_UP_CLICK: Tuple[int, int] = (80, 975)      # Hotkey F (Level Up)
 
-@dataclass(frozen=True)
 class StatusRegions:
     GOLD_REGION: Tuple[int, int, int, int] = (1705, 840, 1905, 1040)
     ROUND_REGION: Tuple[int, int, int, int] = (610, 5, 700, 50)
@@ -41,10 +38,9 @@ class StatusRegions:
     LEVEL_REGION: Tuple[int, int, int, int] = (10, 905, 150, 1045)
     COMMANDER_SKILL_REGION: Tuple[int, int, int, int] = (30, 770, 130, 868)
 
-@dataclass(frozen=True)
 class BoardCoords:
     # 8 Slot Bench Cadangan (Tepat di atas platform heksagonal, Y: 965)
-    BENCH_SLOTS: List[Tuple[int, int]] = (
+    BENCH_SLOTS = [
         (450, 965),   # Slot 1
         (600, 965),   # Slot 2
         (745, 965),   # Slot 3
@@ -53,22 +49,21 @@ class BoardCoords:
         (1190, 965),  # Slot 6
         (1335, 965),  # Slot 7
         (1480, 965),  # Slot 8
-    )
+    ]
 
     # Grid Papan Catur 3 Baris Tempur x 7 Kolom (Row 1-3, Col 1-7)
-    CHESSBOARD_GRID: Dict[Tuple[int, int], Tuple[int, int]] = (
+    CHESSBOARD_GRID = {
         # Row 1 (Garis Depan)
-        {(1, 1): (560, 510), (1, 2): (695, 510), (1, 3): (830, 510), (1, 4): (965, 510),
-         (1, 5): (1100, 510), (1, 6): (1235, 510), (1, 7): (1370, 510),
+        (1, 1): (560, 510), (1, 2): (695, 510), (1, 3): (830, 510), (1, 4): (965, 510),
+        (1, 5): (1100, 510), (1, 6): (1235, 510), (1, 7): (1370, 510),
         # Row 2 (Garis Tengah)
-         (2, 1): (540, 615), (2, 2): (680, 615), (2, 3): (820, 615), (2, 4): (965, 615),
-         (2, 5): (1105, 615), (2, 6): (1250, 615), (2, 7): (1395, 615),
+        (2, 1): (540, 615), (2, 2): (680, 615), (2, 3): (820, 615), (2, 4): (965, 615),
+        (2, 5): (1105, 615), (2, 6): (1250, 615), (2, 7): (1395, 615),
         # Row 3 (Garis Belakang)
-         (3, 1): (515, 725), (3, 2): (665, 725), (3, 3): (815, 725), (3, 4): (965, 725),
-         (3, 5): (1115, 725), (3, 6): (1265, 725), (3, 7): (1425, 725)}
-    )
+        (3, 1): (515, 725), (3, 2): (665, 725), (3, 3): (815, 725), (3, 4): (965, 725),
+        (3, 5): (1115, 725), (3, 6): (1265, 725), (3, 7): (1425, 725)
+    }
 
-@dataclass(frozen=True)
 class ItemEventCoords:
     # 3 Pilihan Drop Item Ronde Creep di Sidebar Kiri
     DROP_ITEM_SLOTS = [
@@ -87,7 +82,6 @@ class ItemEventCoords:
         (579, 462),  # Hero 3 (Vale)
     ]
 
-@dataclass(frozen=True)
 class FateBoxCoords:
     CENTER_HERO_CLICK: Tuple[int, int] = (960, 610)
     REWARD_RING = [
@@ -100,7 +94,6 @@ class FateBoxCoords:
     ]
     CONFIRM_CLICK: Tuple[int, int] = (1803, 970)
 
-@dataclass(frozen=True)
 class GoGoCardCoords:
     CARD_1_CLICK: Tuple[int, int] = (695, 485) # Double Click
     CARD_2_CLICK: Tuple[int, int] = (1205, 485) # Double Click

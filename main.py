@@ -16,8 +16,10 @@ from src.decision.llm_router import LLMBrain
 from src.action.executor import ActionExecutor
 from src.action.window_manager import GameWindowManager
 
+ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
+
 def load_config() -> dict:
-    config_path = r"C:\Projects\mcgg\config.json"
+    config_path = os.path.join(ROOT_DIR, "config.json")
     with open(config_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -41,7 +43,7 @@ def run_dry_test():
         print("[WINDOW INFO] Game MCGG belum dibuka. Menjalankan simulasi via gambar...")
 
     # 1. Perception Step (Load test image)
-    test_img_path = r"C:\Projects\mcgg\asset\beli-hero.png"
+    test_img_path = os.path.join(ROOT_DIR, "asset", "beli-hero.png")
     frame = cv2.imread(test_img_path)
     assert frame is not None, "Gagal memuat aset beli-hero.png"
 

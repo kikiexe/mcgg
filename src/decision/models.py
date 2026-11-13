@@ -37,4 +37,7 @@ class ActionCommand(BaseModel):
 
 class TurnDecision(BaseModel):
     strategic_plan: str = Field(..., description="Rencana gambaran besar (kombo yang diincar)")
+    policy_source: Literal["llm", "offline_heuristic", "fast_rule"] = Field(
+        default="llm", description="Sumber kebijakan keputusan (llm, offline_heuristic, atau fast_rule)"
+    )
     actions: List[ActionCommand] = Field(default_factory=list, description="Urutan tindakan yang harus dieksekusi")

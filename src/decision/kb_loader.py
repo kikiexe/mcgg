@@ -6,13 +6,26 @@ import json
 from typing import Dict, Any, List
 
 class KnowledgeBase:
-    def __init__(self, base_dir: str = r"C:\Projects\mcgg\knowledge_base"):
-        self.base_dir = base_dir
+    def __init__(self, base_dir: str = None):
+        if base_dir is None:
+            # Resolusi path relatif otomatis agar portabel di semua laptop
+            root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+            candidates = [
+                os.path.join(root_dir, "data", "knowledge_base"),
+                os.path.join(root_dir, "knowledge_base")
+            ]
+            self.base_dir = next((c for c in candidates if os.path.exists(c)), candidates[0])
+        else:
+            self.base_dir = base_dir
+
         self.heroes: List[Dict[str, Any]] = self._load_json("heroes.json").get("heroes", [])
         self.synergies: List[Dict[str, Any]] = self._load_json("synergies.json").get("synergies", [])
         self.items: List[Dict[str, Any]] = self._load_json("items.json").get("items", [])
         self.gogo_cards: List[Dict[str, Any]] = self._load_json("gogo_cards.json").get("gogo_cards", [])
         self.rules: Dict[str, Any] = self._load_json("game_rules.json").get("game_rules", {})
+
+        if not self.heroes:
+            raise FileNotFoundError(f"[CRITICAL] Knowledge Base kosong! Direktori '{self.base_dir}' tidak ditemukan atau tidak valid.")
 
         # Fast lookup mapping: Hero Name -> Data Hero
         self.hero_map: Dict[str, Dict[str, Any]] = {}
@@ -24,6 +37,7 @@ class KnowledgeBase:
     def _load_json(self, filename: str) -> Dict[str, Any]:
         path = os.path.join(self.base_dir, filename)
         if not os.path.exists(path):
+            print(f"[WARN] File KB tidak ditemukan: {path}")
             return {}
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)

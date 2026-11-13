@@ -1,6 +1,15 @@
 import ctypes
 import time
 
+# DPI Awareness Initialization: Mencegah Windows Display Scaling (125%, 150%) menggeser koordinat klik fisik
+try:
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)  # PROCESS_PER_MONITOR_DPI_AWARE
+except Exception:
+    try:
+        ctypes.windll.user32.SetProcessDPIAware()
+    except Exception:
+        pass
+
 user32 = ctypes.windll.user32
 
 # Mouse flags

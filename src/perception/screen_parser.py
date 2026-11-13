@@ -48,6 +48,15 @@ class ScreenParser:
                 return "ITEM_SELECTION"
         return "NONE"
 
+    def detect_combat_active(self, frame: np.ndarray) -> bool:
+        """
+        Mendeteksi apakah ronde sedang dalam fase tempur animasi aktif.
+        Saat bertarung, bilah HP musuh (Red HP Bar) muncul di papan catur (Y: 200..700, X: 300..1600).
+        """
+        board_roi = frame[200:700, 300:1600]
+        red_hp_mask = (board_roi[:, :, 2] > 180) & (board_roi[:, :, 1] < 50) & (board_roi[:, :, 0] < 50)
+        return int(np.sum(red_hp_mask)) > 250
+
     def extract_game_status(self, frame: np.ndarray) -> Dict[str, Any]:
         gold = self.parse_digits_in_region(frame, StatusRegions.GOLD_REGION, default=0)
         round_str = self.read_text_in_region(frame, StatusRegions.ROUND_REGION)
@@ -67,13 +76,15 @@ class ScreenParser:
         level = int(level_digits[0]) if level_digits else 3
 
         special_phase = self.detect_special_phases(frame)
+        is_combat = self.detect_combat_active(frame)
 
         return {
             "gold": gold,
-            "round": round_str if round_str else "1-1",
+            "round": round_str if round_str else "UNKNOWN",
             "timer_seconds": timer,
             "level": level,
-            "special_phase": special_phase
+            "special_phase": special_phase,
+            "is_combat": is_combat
         }
 
     def extract_shop_cards(self, frame: np.ndarray) -> List[Dict[str, Any]]:

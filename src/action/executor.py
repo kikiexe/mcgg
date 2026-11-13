@@ -35,10 +35,14 @@ class ActionExecutor:
             self.click_point(pt[0], pt[1], label=f"Beli Hero Slot {slot}")
 
     def close_shop(self):
-        # VK_SPACE = 0x20
+        # Klik netral di luar drawer toko (Idempotent: hanya menutup jika toko terbuka, tidak toggle buta)
+        pt = ShopCardCoords.OUTSIDE_SHOP_CLICK
+        self.click_point(pt[0], pt[1], label="Tutup Shop (Klik Netral)")
+
+    def open_shop(self):
+        # Buka shop via hotkey Spasi
         win32_press_key(0x20)
-        time.sleep(0.1)
-        self.click_point(960, 200, label="Tutup Shop (Klik Netral)")
+        time.sleep(self.delay_sec)
 
     def toggle_shop_key(self):
         win32_press_key(0x20)
@@ -68,9 +72,9 @@ class ActionExecutor:
         # Konfirmasi dengan tombol centang/X di kanan bawah
         self.click_point(FateBoxCoords.CONFIRM_CLICK[0], FateBoxCoords.CONFIRM_CLICK[1], label="Konfirmasi Fatebox")
 
-    def equip_item_to_hero(self, hero_target_idx: int = 1):
+    def equip_item_to_hero(self, item_bag_idx: int = 1, hero_target_idx: int = 1):
         # 1. Buka modal tas item di sidebar kiri
-        self.click_point(ItemEventCoords.BAG_ICON_CLICK[0], ItemEventCoords.BAG_ICON_CLICK[1], label="Buka Tas Item")
+        self.click_point(ItemEventCoords.BAG_ICON_CLICK[0], ItemEventCoords.BAG_ICON_CLICK[1], label=f"Buka Tas Item (Item {item_bag_idx})")
         time.sleep(0.3)
 
         # 2. Klik slot '+' pada hero yang dituju
@@ -85,18 +89,14 @@ class ActionExecutor:
         time.sleep(0.1)
 
     def reroll_shop(self):
-        # Hotkey E = 0x45
+        # Jalur tunggal keyboard hotkey E untuk menghindari pembelanjaan ganda (double-spend)
         win32_press_key(0x45)
-        time.sleep(0.08)
-        pt = ShopCardCoords.REROLL_CLICK
-        self.click_point(pt[0], pt[1], label="Reroll Shop (Hotkey E)")
+        print("[EXECUTOR] Reroll Shop via Hotkey E")
 
     def level_up(self):
-        # Hotkey F = 0x46
+        # Jalur tunggal keyboard hotkey F untuk menghindari level-up ganda
         win32_press_key(0x46)
-        time.sleep(0.08)
-        pt = ShopCardCoords.LEVEL_UP_CLICK
-        self.click_point(pt[0], pt[1], label="Level Up (Hotkey F)")
+        print("[EXECUTOR] Level Up via Hotkey F")
 
     def pick_item_option(self, option_idx: int):
         idx = max(0, min(option_idx - 1, len(ItemEventCoords.DROP_ITEM_SLOTS) - 1))

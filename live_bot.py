@@ -20,8 +20,10 @@ from src.action.executor import ActionExecutor
 from src.action.window_manager import GameWindowManager
 from src.constants.coordinates import BoardCoords
 
+ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
+
 def load_config() -> dict:
-    config_path = r"C:\Projects\mcgg\config.json"
+    config_path = os.path.join(ROOT_DIR, "config.json")
     with open(config_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -55,6 +57,7 @@ def run_live_bot():
 
     last_acted_round = ""
     last_acted_phase = ""
+    board_deployed_count = 0
 
     print("\n[BOT ACTIVE] Agent memindai visual layar secara real-time...\n")
 
@@ -67,6 +70,7 @@ def run_live_bot():
             gold = status["gold"]
             level = status["level"]
             special_phase = status["special_phase"]
+            is_combat = status.get("is_combat", False)
 
             # -------------------------------------------------------------
             # SKENARIO 1: FATE BOX (Pemilihan Hadiah Putaran)
@@ -113,7 +117,8 @@ def run_live_bot():
             # -------------------------------------------------------------
             # SKENARIO 4: FASE PERSIAPAN PERTANDINGAN
             # -------------------------------------------------------------
-            is_prep_phase = ("-" in current_round) and timer > 2
+            # Saring fase persiapan: Label ronde valid, timer aktif, dan BUKAN fase combat animasi
+            is_prep_phase = (current_round != "UNKNOWN") and ("-" in current_round) and (timer > 2) and (not is_combat)
 
             if is_prep_phase and current_round != last_acted_round:
                 print(f"\n=======================================================")
@@ -122,14 +127,15 @@ def run_live_bot():
 
                 win_mgr.focus_game_window()
 
-                # Pindai hero yang secara NYATA terdeteksi oleh Computer Vision di bench
+                # Hitung kebutuhan deploy berdasarkan kapasitas board (Level)
+                heroes_needed = max(0, level - board_deployed_count)
                 occupied_bench = hero_det.scan_occupied_bench_slots(frame)
-                if occupied_bench:
-                    print(f"[VISION BENCH] Terdeteksi {len(occupied_bench)} hero nyata di bench: {[s[0] for s in occupied_bench]}")
+                
+                if heroes_needed > 0 and occupied_bench:
+                    print(f"[VISION BENCH] Terdeteksi {len(occupied_bench)} hero di bench. Membutuhkan deploy: {heroes_needed} hero.")
                     executor.close_shop()
                     time.sleep(0.2)
 
-                    # Penempatan terdistribusi pada grid catur 3x7 yang telah terkalibrasi visual
                     target_coords = [
                         BoardCoords.CHESSBOARD_GRID[(3, 4)],  # Center Back
                         BoardCoords.CHESSBOARD_GRID[(3, 3)],  # Mid-Left Back
@@ -140,28 +146,36 @@ def run_live_bot():
                         BoardCoords.CHESSBOARD_GRID[(2, 3)],  # Mid-Left Mid
                         BoardCoords.CHESSBOARD_GRID[(2, 5)],  # Mid-Right Mid
                     ]
-                    
-                    # Kapasitas maksimal pion di papan dibatasi oleh Level pemain
-                    max_deploy = min(len(occupied_bench), level)
-                    for i in range(max_deploy):
+
+                    deploy_count = min(len(occupied_bench), heroes_needed)
+                    for i in range(deploy_count):
                         slot_num, cx, cy = occupied_bench[i]
-                        target_xy = target_coords[i % len(target_coords)]
+                        target_idx = (board_deployed_count + i) % len(target_coords)
+                        target_xy = target_coords[target_idx]
                         print(f"[LIVE DEPLOY] Menarik Hero Slot {slot_num} dari ({cx}, {cy}) ke Board ({target_xy[0]}, {target_xy[1]})...")
                         executor.drag_hero_to_board(cx, cy, target_xy[0], target_xy[1], label=f"Deploy Hero Slot {slot_num}")
                         time.sleep(0.15)
+                    board_deployed_count += deploy_count
 
                 # Ekstraksi Toko & Keputusan LLM
                 raw_shop = parser.extract_shop_cards(frame)
                 shop_slots = []
                 for s in raw_shop:
                     matched = kb.match_hero(s["raw_text"])
-                    hero_name = matched.get("Nama Hero", s["raw_text"].strip())
-                    cost = int(float(matched.get("Harga Gold", 1))) if matched else 1
+                    if matched:
+                        hero_name = matched.get("Nama Hero")
+                        cost = int(float(matched.get("Harga Gold", 1)))
+                        is_empty = s["is_empty"]
+                    else:
+                        hero_name = s["raw_text"].strip() if s["raw_text"].strip() else "KOSONG"
+                        cost = 99  # Biaya tidak terjangkau untuk data noise
+                        is_empty = True
+
                     shop_slots.append(ShopSlot(
                         slot=s["slot"],
                         hero_name=hero_name,
                         cost=cost,
-                        is_empty=s["is_empty"]
+                        is_empty=is_empty
                     ))
 
                 game_state = GameState(
