@@ -14,10 +14,12 @@ class GameState(BaseModel):
     round: str = Field(default="1-1", description="Babak saat ini, misal: '1-1', '1-2', '1-3'")
     timer_seconds: int = Field(default=30, description="Sisa waktu fase persiapan (detik)")
     gold: int = Field(default=0, ge=0, description="Jumlah saldo gold saat ini")
-    level: int = Field(default=3, ge=3, le=10, description="Level commander saat ini")
-    commander_hp: int = Field(default=100, ge=0, le=100, description="Sisa HP Commander")
+    level: int = Field(default=3, ge=1, le=10, description="Level commander saat ini")
+    commander_hp: Optional[int] = Field(default=None, ge=1, le=100, description="Sisa HP Commander jika teramati visual")
+    hp_observed: bool = Field(default=False, description="Apakah HP berhasil diamati langsung dari visual")
     board_deployed_count: int = Field(default=0, ge=0, description="Jumlah hero yang berada di papan catur")
     bench: List[int] = Field(default_factory=list, description="Daftar nomor slot bench yang terisi hero (1-8)")
+    owned_heroes: List[str] = Field(default_factory=list, description="Daftar nama hero yang dimiliki dari pembelian")
     shop: List[ShopSlot] = Field(default_factory=list, description="5 Slot kartu di shop")
     current_phase: Literal["PREPARATION", "COMBAT", "GOGO_CARD", "ITEM_SELECTION"] = Field(
         default="PREPARATION", description="Fase game saat ini"
@@ -45,3 +47,11 @@ class TurnDecision(BaseModel):
     )
     latency_ms: float = Field(default=0.0, description="Durasi komputasi keputusan (ms)")
     actions: List[ActionCommand] = Field(default_factory=list, description="Urutan tindakan yang harus dieksekusi")
+
+class GoGoCardDecision(BaseModel):
+    slot: int = Field(..., ge=1, le=2, description="Nomor slot kartu terpilih (1 atau 2)")
+    reasoning: str = Field(..., description="Alasan strategis pemilihan kartu")
+    policy_source: Literal["llm", "offline_heuristic", "fast_rule"] = Field(
+        default="llm", description="Sumber kebijakan (llm, offline_heuristic, fast_rule)"
+    )
+    latency_ms: float = Field(default=0.0, description="Durasi komputasi keputusan (ms)")

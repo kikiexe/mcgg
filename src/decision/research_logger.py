@@ -8,7 +8,7 @@ import json
 import time
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
-from src.decision.models import GameState, TurnDecision
+from src.decision.models import GameState, TurnDecision, GoGoCardDecision
 
 class ResearchLogger:
     def __init__(self, config_path: Optional[str] = None):
@@ -43,13 +43,15 @@ class ResearchLogger:
         state: GameState,
         decision: TurnDecision,
         executed_actions: List[Dict[str, Any]],
-        execution_latency_ms: float
+        execution_latency_ms: float,
+        reconciliation: Optional[Dict[str, Any]] = None
     ):
         if not self.enabled:
             return
 
         record = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
+            "event": "TURN_DECISION",
             "agent_id": self.agent_id,
             "agent_name": self.agent_name,
             "round": state.round,
@@ -61,11 +63,16 @@ class ResearchLogger:
                 "gold": state.gold,
                 "level": state.level,
                 "commander_hp": state.commander_hp,
-                "board_deployed_count": state.board_deployed_count,
+                "hp_observed": state.hp_observed,
                 "bench_occupied_slots": state.bench,
                 "shop_cards": [s.model_dump() for s in state.shop],
                 "current_phase": state.current_phase
             },
+            "bot_belief": {
+                "board_deployed_count": state.board_deployed_count,
+                "owned_heroes": state.owned_heroes
+            },
+            "reconciliation": reconciliation or {},
             "decision": {
                 "strategic_plan": decision.strategic_plan,
                 "planned_actions": [a.model_dump() for a in decision.actions]
@@ -78,6 +85,54 @@ class ResearchLogger:
                 f.write(json.dumps(record, ensure_ascii=False) + "\n")
         except Exception as err:
             print(f"[LOGGER ERROR] Gagal menulis log turn ke {self.log_file}: {err}")
+
+    def log_gogo_card_decision(
+        self,
+        round_str: str,
+        cards_offered: List[Dict[str, Any]],
+        decision: GoGoCardDecision,
+        execution_latency_ms: float
+    ):
+        if not self.enabled:
+            return
+
+        record = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "event": "GOGO_CARD_SELECTION",
+            "agent_id": self.agent_id,
+            "round": round_str,
+            "policy_source": decision.policy_source,
+            "llm_latency_ms": round(decision.latency_ms, 2),
+            "execution_latency_ms": round(execution_latency_ms, 2),
+            "cards_offered": cards_offered,
+            "chosen_slot": decision.slot,
+            "reasoning": decision.reasoning
+        }
+
+        try:
+            with open(self.log_file, "a", encoding="utf-8") as f:
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+        except Exception as err:
+            print(f"[LOGGER ERROR] Gagal menulis log Go Go Card: {err}")
+
+    def log_error(self, round_str: str, error_message: str, traceback_str: str = ""):
+        if not self.enabled:
+            return
+
+        record = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "event": "RUNTIME_ERROR",
+            "agent_id": self.agent_id,
+            "round": round_str,
+            "error": error_message,
+            "traceback": traceback_str
+        }
+
+        try:
+            with open(self.log_file, "a", encoding="utf-8") as f:
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+        except Exception as err:
+            print(f"[LOGGER ERROR] Gagal menulis error log: {err}")
 
     def log_match_summary(self, final_placement: int, total_rounds: int, notes: str = ""):
         if not self.enabled:

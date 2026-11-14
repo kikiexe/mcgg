@@ -47,6 +47,34 @@ class DynamicUIDetector:
         cards.sort(key=lambda c: c["center"][0])
         return cards
 
+    def detect_gogo_cards(self, frame: np.ndarray) -> List[Dict[str, Any]]:
+        """
+        Mendeteksi entitas kartu Go Go Card (Slot 1 di kiri, Slot 2 di kanan)
+        beserta judul/deskripsi OCR dan koordinat klik tengah.
+        """
+        raw_items = self.detect_clickable_gogo_cards(frame)
+        card1_texts = [c for c in raw_items if c["center"][0] < 960]
+        card2_texts = [c for c in raw_items if c["center"][0] >= 960]
+
+        cards = []
+        if card1_texts:
+            cx = int(np.mean([c["center"][0] for c in card1_texts]))
+            cy = int(np.mean([c["center"][1] for c in card1_texts]))
+            title = " ".join([c["text"] for c in card1_texts])
+            cards.append({"slot": 1, "center": (cx, cy), "title": title})
+        else:
+            cards.append({"slot": 1, "center": (695, 485), "title": "Go Go Card 1 (Default)"})
+
+        if card2_texts:
+            cx = int(np.mean([c["center"][0] for c in card2_texts]))
+            cy = int(np.mean([c["center"][1] for c in card2_texts]))
+            title = " ".join([c["text"] for c in card2_texts])
+            cards.append({"slot": 2, "center": (cx, cy), "title": title})
+        else:
+            cards.append({"slot": 2, "center": (1205, 485), "title": "Go Go Card 2 (Default)"})
+
+        return cards
+
     def detect_clickable_items(self, frame: np.ndarray) -> List[Dict[str, Any]]:
         """
         Dynamically finds Item Equipment Drop options on screen.

@@ -5,14 +5,14 @@ import os
 import json
 import re
 import time
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from dotenv import load_dotenv
 import litellm
 
 # Portabilitas multi-provider: hapus otomatis parameter yang tidak didukung provider tertentu
 litellm.drop_params = True
 
-from src.decision.models import GameState, TurnDecision, ActionCommand
+from src.decision.models import GameState, TurnDecision, ActionCommand, GoGoCardDecision
 from src.decision.kb_loader import KnowledgeBase
 
 # Resolusi path .env relatif otomatis agar portabel di semua laptop
@@ -113,6 +113,7 @@ class LLMBrain:
             f"- Saldo Gold: {state.gold}G | Level: {state.level} (Kapasitas Board: {state.level} hero)\n"
             f"- HP Commander: {state.commander_hp} | Hero di Papan: {state.board_deployed_count}\n"
             f"- Slot Bench Terisi: {state.bench}\n"
+            f"- Hero Dimiliki: {state.owned_heroes}\n"
             f"- Pilihan Kartu Toko: {[s.model_dump() for s in state.shop]}\n\n"
             f"Tentukan keputusan aksi belanja terbaik dalam format JSON."
         )
@@ -183,3 +184,72 @@ class LLMBrain:
         actions.append({"action": "CLOSE_SHOP", "slot": None, "reasoning": "Menutup shop via klik netral"})
         actions.append({"action": "END_TURN", "slot": None, "reasoning": "Selesai fase belanja."})
         return TurnDecision(strategic_plan=plan, policy_source="offline_heuristic", actions=actions)
+
+    def decide_gogo_card(self, cards: List[Dict[str, Any]], state: GameState) -> GoGoCardDecision:
+        """
+        Memilih kartu Go Go Card terbaik (Slot 1 atau Slot 2) berdasarkan sinergi tim
+        menggunakan format terstruktur JSON.
+        """
+        t0 = time.perf_counter()
+        if not cards:
+            return GoGoCardDecision(
+                slot=1,
+                reasoning="Tidak ada kartu terdeteksi, memilih slot default 1",
+                policy_source="fast_rule",
+                latency_ms=(time.perf_counter() - t0) * 1000.0
+            )
+
+        if not self.api_key or self.api_key.strip() == "":
+            return GoGoCardDecision(
+                slot=cards[0].get("slot", 1),
+                reasoning="Offline fallback: memilih kartu pertama",
+                policy_source="offline_heuristic",
+                latency_ms=(time.perf_counter() - t0) * 1000.0
+            )
+
+        cards_desc = "\n".join([f"- Slot {c.get('slot', i+1)}: {c.get('title', '')}" for i, c in enumerate(cards)])
+        prompt = (
+            "Anda adalah AI Grandmaster Magic Chess: Go Go (MCGG) Patch 7.2.\n"
+            f"Komposisi hero saat ini: {state.owned_heroes}\n"
+            f"Level: {state.level} | Saldo: {state.gold}G | HP: {state.commander_hp if state.commander_hp is not None else 'Unknown'}\n\n"
+            f"Pilihan Go Go Card:\n{cards_desc}\n\n"
+            "Tentukan pilihan kartu terbaik yang paling mendukung sinergi atau ekonomi tim.\n"
+            "Format respon WAJIB JSON murni:\n"
+            '{"slot": 1, "reasoning": "Alasan strategis memilih kartu ini"}'
+        )
+
+        try:
+            kwargs = {
+                "model": self.model,
+                "messages": [{"role": "user", "content": prompt}],
+                "api_key": self.api_key,
+                "timeout": min(self.timeout_sec, 8),
+                "response_format": {"type": "json_object"}
+            }
+            if self.api_base:
+                kwargs["api_base"] = self.api_base
+
+            res = litellm.completion(**kwargs)
+            raw_text = res.choices[0].message.content.strip()
+            json_match = re.search(r'(\{.*\})', raw_text, re.DOTALL)
+            parsed = json.loads(json_match.group(1) if json_match else raw_text)
+
+            chosen_slot = int(parsed.get("slot", 1))
+            if chosen_slot not in [1, 2]:
+                chosen_slot = 1
+            reasoning = str(parsed.get("reasoning", "Dipilih berdasarkan sinergi tim"))
+            latency_ms = (time.perf_counter() - t0) * 1000.0
+            return GoGoCardDecision(
+                slot=chosen_slot,
+                reasoning=reasoning,
+                policy_source="llm",
+                latency_ms=latency_ms
+            )
+        except Exception as e:
+            print(f"[LLM Warning] Gagal memilih Go Go Card via LLM ({e}), beralih ke fallback.")
+            return GoGoCardDecision(
+                slot=cards[0].get("slot", 1),
+                reasoning=f"Fallback karena error LLM: {e}",
+                policy_source="offline_heuristic",
+                latency_ms=(time.perf_counter() - t0) * 1000.0
+            )

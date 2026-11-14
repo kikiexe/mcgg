@@ -62,4 +62,7 @@ def test_research_logger_writes_valid_jsonl(tmp_path):
     assert record["execution_latency_ms"] == 45.2
     assert record["observed_state"]["gold"] == 0
     assert record["observed_state"]["bench_occupied_slots"] == [1]
+    assert record["observed_state"]["commander_hp"] == 100
+    assert record["bot_belief"]["board_deployed_count"] == 1
+    assert "owned_heroes" in record["bot_belief"]
     assert len(record["actions_executed"]) == 1

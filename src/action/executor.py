@@ -3,7 +3,7 @@ Action Executor: Uses win32 hardware mouse_event and keybd_event
 100% bypasses Unity DirectX input consumption
 """
 import time
-from typing import Tuple
+from typing import Tuple, Optional, Dict
 from src.action.hardware_input import win32_click, win32_drag, win32_press_key
 from src.constants.coordinates import ShopCardCoords, BoardCoords, ItemEventCoords, GoGoCardCoords, FateBoxCoords
 from src.decision.models import ActionCommand
@@ -103,12 +103,16 @@ class ActionExecutor:
         pt = ItemEventCoords.DROP_ITEM_SLOTS[idx]
         self.click_point(pt[0], pt[1], label=f"Pilih Drop Item {option_idx}")
 
-    def pick_gogo_card(self, card_idx: int):
-        options = {
-            1: GoGoCardCoords.CARD_1_CLICK,
-            2: GoGoCardCoords.CARD_2_CLICK,
-        }
-        pt = options.get(card_idx, GoGoCardCoords.CARD_1_CLICK)
+    def pick_gogo_card(self, card_idx: int, custom_coords: Optional[Tuple[int, int]] = None):
+        if custom_coords:
+            pt = custom_coords
+        else:
+            options = {
+                1: GoGoCardCoords.CARD_1_CLICK,
+                2: GoGoCardCoords.CARD_2_CLICK,
+            }
+            pt = options.get(card_idx, GoGoCardCoords.CARD_1_CLICK)
+
         # Sesuai mekanik game: Double-click untuk mengunci kartu
         self.click_point(pt[0], pt[1], label=f"Pilih Go Go Card {card_idx} (Click 1)")
         time.sleep(0.12)

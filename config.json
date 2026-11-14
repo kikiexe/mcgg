@@ -1,6 +1,7 @@
 {
   "agent_id": "agent-01",
   "agent_name": "MCGG-Esports-Agent",
+  "player_name": "veteran",
   "game_window": {
     "title_substring": "MagicChess",
     "target_width": 1920,
